@@ -77,6 +77,7 @@ irb :001 > false == nil
 * Effect summarized:
   * Modulo returns a positive integer when the divisor is positive and a negative integer when the divisor is negative
   * Remainder returns a positive integer when the dividnd is positive and a negative integer when the dividend is negative
+
 a | b | a % b (modulo) | a.remainder(b) | a.divmod(b)
 -- | -- | -- | -- | --
 17 | 5 | 2 | 2 | [3, 2]
