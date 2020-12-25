@@ -4,25 +4,23 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 
 ## Introduction
 
-**Abstraction**
+### Abstraction
 * Hides details of lower layers
 
 ## Preparations
 
-### Chapter notes
-
-**Documentation**
+### Documentation
 * https://ruby-doc.org/core-2.7.2/
 * `::` denotes class methods
 * `#` denotes instance methods
 * `::` and `#` use in code is completely different from use in documentation
 * Included Modules - additional modules whose methods are avaialable to the class
 
-**Gems**
+### Gems
 * https://rubygems.org/
 * `gem install <gem name>`
 
-**Debugging with Pry**
+### Debugging with Pry
 * `gem install pry`
 ```ruby
 # preparation.rb
@@ -38,12 +36,10 @@ puts a
 
 ## The Basics
 
-### Chapter notes
-
-**String interpolation**
+### String interpolation
 * `#{ruby expression}`
 
-**Symbols**
+### Symbols
 * Created by placing a colon (`:`) before a word
 ```ruby
 # Examples of symbols
@@ -52,11 +48,11 @@ puts a
 :"surprisingly, this is also a symbol"
 ```
 
-**Numbers**
+### Numbers
 * `Integer`
 * `Float`
 
-**nil**
+### nil
 * `.nil?` check if nil
 * `nil` evaluates to false in conditional expression
 ```
@@ -71,7 +67,7 @@ irb :001 > false == nil
 => false
 ```
 
-**Modulo vs. Remainder**
+### Modulo vs. Remainder
 * Further studty
   * https://en.wikipedia.org/wiki/Modulo_operation
 * Effect summarized:
@@ -85,16 +81,16 @@ a | b | a % b (modulo) | a.remainder(b) | a.divmod(b)
 -17 | 5 | 3 | -2 | [-4, 3]
 -17 | -5 | -2 | -2 | [3, -2]
 
-**Type Conversion**
+### Type Conversion
 * `.to_i` convert to `Integer`
 * `.to_f` convert to `Float`
 * `.to_s` convert to `String`
 
-**Basic Data Structures**
+### Basic Data Structures
 * `Array` `[]`
 * `Hash` `{}`
 
-**Expressions and Return**
+### Expressions and Return
 * Ruby expressions always return a value, even if the value is nil or an error
 
 ### Exercises
