@@ -14,7 +14,7 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 * `::` denotes class methods
 * `#` denotes instance methods
 * `::` and `#` use in code is completely different from use in documentation
-* Included Modules - additional modules whose methods are avaialable to the class
+* Included Modules: additional modules whose methods are avaialable to the class
 
 ### Gems
 * https://rubygems.org/
@@ -37,7 +37,7 @@ puts a
 ## The Basics
 
 ### String interpolation
-* `#{ruby expression}`
+* `"#{ruby expression}"`
 
 ### Symbols
 * Created by placing a colon (`:`) before a word
@@ -53,8 +53,8 @@ puts a
 * `Float`
 
 ### nil
-* `.nil?` check if nil
-* `nil` evaluates to false in conditional expression
+* `.nil?` check if `nil`
+* `nil` evaluates to `false` in conditional expressions
 ```
 irb :001 > if nil
 irb :002 > puts "Hello, World!"
@@ -91,7 +91,7 @@ a | b | a % b (modulo) | a.remainder(b) | a.divmod(b)
 * `Hash` `{}`
 
 ### Expressions and Return
-* Ruby expressions always return a value, even if the value is nil or an error
+* Ruby expressions always return a value, even if the value is `nil` or an error
 
 ### Exercises
 * [exercises.rb](03_the_basics/exercises.rb)
