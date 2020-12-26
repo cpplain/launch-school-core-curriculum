@@ -94,7 +94,13 @@ a | b | a % b (modulo) | a.remainder(b) | a.divmod(b)
 * Ruby expressions always return a value, even if the value is `nil` or an error
 
 ### Exercises
-* [exercises.rb](03_the_basics/exercises.rb) (Exercises 1–7)
+1. [exercise_1.rb](03_the_basics/exercise_1.rb)
+1. [exercise_2.rb](03_the_basics/exercise_2.rb)
+1. [exercise_3.rb](03_the_basics/exercise_3.rb)
+1. [exercise_4.rb](03_the_basics/exercise_4.rb)
+1. [exercise_5.rb](03_the_basics/exercise_5.rb)
+1. [exercise_6.rb](03_the_basics/exercise_6.rb)
+1. There is an opening bracket somewhere in the program without a matching closing bracket
 
 ## Variables
 
