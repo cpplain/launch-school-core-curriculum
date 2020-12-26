@@ -2,6 +2,13 @@
 
 Notes for [Introduction to Programming with Ruby](https://launchschool.com/books/ruby) from Launch School’s RB100 course.
 
+## Contents
+* [Intoductin](##introduction)
+* [Preparations](##preparations)
+* [The Basics](##the-basics)
+* [Variables](##variables)
+* [Methods](##methods)
+
 ## Introduction
 
 ### Abstraction
@@ -75,12 +82,12 @@ irb :001 > false == nil
   * Modulo returns a positive integer when the divisor is positive and a negative integer when the divisor is negative
   * Remainder returns a positive integer when the dividnd is positive and a negative integer when the dividend is negative
 
-| a   | b  | a % b (modulo) | a.remainder(b) | a.divmod(b) |
-| --- | -- | -------------- | -------------- | ----------- |
-| 17  | 5  | 2              | 2              | [3, 2]      |
-| 17  | -5 | -3             | 2              | [-4, -3]    |
-| -17 | 5  | 3              | -2             | [-4, 3]     |
-| -17 | -5 | -2             | -2             | [3, -2]     |
+|   a |   b | a % b (modulo) | a.remainder(b) | a.divmod(b) |
+| --: | --: |            --: |            --: | :--         |
+|  17 |   5 |              2 |              2 | [3, 2]      |
+|  17 |  -5 |             -3 |              2 | [-4, -3]    |
+| -17 |   5 |              3 |             -2 | [-4, 3]     |
+| -17 |  -5 |             -2 |             -2 | [3, -2]     |
 
 ### Type Conversion
 * `.to_i` convert to `Integer`
@@ -207,7 +214,7 @@ puts "main method"
 ```
 
 | Call Stack     |
-| -------------- |
+| ---            |
 | puts           |
 | first: line 2  |
 | second: line 6 |
