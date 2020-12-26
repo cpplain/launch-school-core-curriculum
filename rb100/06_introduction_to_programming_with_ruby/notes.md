@@ -3,7 +3,7 @@
 Notes for [Introduction to Programming with Ruby](https://launchschool.com/books/ruby) from Launch School’s RB100 course.
 
 ## Contents
-* [Intoductin](##introduction)
+* [Introduction](##introduction)
 * [Preparations](##preparations)
 * [The Basics](##the-basics)
 * [Variables](##variables)
