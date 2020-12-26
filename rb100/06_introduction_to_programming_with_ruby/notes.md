@@ -136,7 +136,7 @@ Bob
 * `@@class_variable`
   * Available to the class and instances of the class
   * Must be initialized at the class level, outside of method definitions
-* `instance_variable`
+* `@instance_variable`
   * Available to instance of class
   * Can cross some scope boundaries (more to come in OOP)
 * `local_variable`
