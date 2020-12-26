@@ -16,6 +16,9 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 * `::` and `#` use in code is completely different from use in documentation
 * Included Modules: additional modules whose methods are avaialable to the class
 
+### Command Line and irb
+* [hello_world.rb](02_preparations/hello_world.rb)
+
 ### Gems
 * https://rubygems.org/
 * `gem install <gem name>`
@@ -31,8 +34,6 @@ a << 4
 binding.pry  # execution will pause here, allowing you to inspect all objects
 puts a
 ```
-### Exercises
-* [hello_world.rb](02_preparations/hello_world.rb)
 
 ## The Basics
 
@@ -74,12 +75,12 @@ irb :001 > false == nil
   * Modulo returns a positive integer when the divisor is positive and a negative integer when the divisor is negative
   * Remainder returns a positive integer when the dividnd is positive and a negative integer when the dividend is negative
 
-a | b | a % b (modulo) | a.remainder(b) | a.divmod(b)
--- | -- | -- | -- | --
-17 | 5 | 2 | 2 | [3, 2]
-17 | -5 | -3 | 2 | [-4, -3]
--17 | 5 | 3 | -2 | [-4, 3]
--17 | -5 | -2 | -2 | [3, -2]
+| a   | b  | a % b (modulo) | a.remainder(b) | a.divmod(b) |
+| --- | -- | -------------- | -------------- | ----------- |
+| 17  | 5  | 2              | 2              | [3, 2]      |
+| 17  | -5 | -3             | 2              | [-4, -3]    |
+| -17 | 5  | 3              | -2             | [-4, 3]     |
+| -17 | -5 | -2             | -2             | [3, -2]     |
 
 ### Type Conversion
 * `.to_i` convert to `Integer`
@@ -147,3 +148,72 @@ Bob
 1. [name.rb](04_variables/name.rb)
 1. [name.rb](04_variables/name.rb)
 1. The first prints `3` and the second throws an `undefined local variable or method` error because `x` is out of scope
+
+## Methods
+
+### What Are Methods?
+* Procedure that allows reusable code to be extracted into one place
+* Parameter and argument
+  * Parameter is part of the method definition
+  * Arguement is passed to a method when called
+* Default parameters used if no argument passed
+```ruby
+def say(words='hello')
+  puts words + '.'
+end
+```
+### obj.method or method(obj)
+* Two ways to call methods:
+  * `method(obj)`
+  * `obj.method` (explicit caller)
+
+### Mutating the Caller
+* Calling a method and permanently altering the argument is **mutaing the caller**
+* [mutate.rb](05_methods/mutate.rb)
+* Ruby is a pass-by-value and pass-by-reference language
+
+### puts vs return
+* Every method in Ruby returns the evaluated result of the last line executed
+* [return.rb](05_methods/return.rb)
+* Ruby methods return the evaluated result of the last line, unless an explicit return comes before it
+* Main take away: the `return` reserved word is not required in order to return something from a method
+
+### Chaining Methods
+* Chainging is possible because every method call returns something
+```ruby
+"hi there".length.to_s  # returns "8" - a String
+```
+* If anywhere along the chain there is a `nil` or an exception is thrown, the entire chained call will break
+
+### Method Calls as Arguments
+* Ruby allows passing method calls as arguments to other methods
+* `multiply(add(20, 45), subtract(80, 10))`
+* Use of parentheses in nested method calls is important to prevent confusion
+
+### The Call Stack
+* Blocks, procs, and lambdas use the call stack in Ruby in addition to methods
+```ruby
+def first
+  puts "first method"
+end
+
+def second
+  first
+  puts "second method"
+end
+
+second
+puts "main method"
+```
+
+| Call Stack     |
+| -------------- |
+| puts           |
+| first: line 2  |
+| second: line 6 |
+| main: line 10  |
+
+* If the stack runs out of room, a `SystemStackError` exception is thrown
+
+### Exercises
+1.
