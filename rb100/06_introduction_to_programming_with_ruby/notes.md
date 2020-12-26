@@ -138,7 +138,7 @@ Bob
 * `instance_variable`
   * Available to instance of class
   * Can cross some scope boundaries (more to come in OOP)
-* `local`
+* `local_variable`
   * Obey all scope boundaries
 
 ### Exercises
