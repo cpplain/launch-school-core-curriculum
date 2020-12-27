@@ -8,6 +8,7 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 * [The Basics](#the-basics)
 * [Variables](#variables)
 * [Methods](#methods)
+* [Flow Control](#flow-control)
 
 ## Introduction
 
@@ -63,14 +64,14 @@ puts a
 ### nil
 * `.nil?` check if `nil`
 * `nil` evaluates to `false` in conditional expressions
-```
+```ruby
 irb :001 > if nil
 irb :002 > puts "Hello, World!"
 irb :003 > end
 => nil
 ```
 * `nil` is not equivalent to `false`
-```
+```ruby
 irb :001 > false == nil
 => false
 ```
@@ -115,13 +116,13 @@ irb :001 > false == nil
 
 ### Getting Data from a User
 * `gets`
-```
+```ruby
 irb :001 > name = gets
 Bob
 => "Bob\n"
 ```
 * Remove newline with `.chomp`
-```
+```ruby
 irb :001 > name = gets.chomp
 Bob
 => "Bob"
@@ -229,5 +230,77 @@ puts "main method"
 1. [exercise_3.rb](05_methods/exercise_3.rb)
 1. The code will not print anything to the screen
 1. [exercise_5.rb](05_methods/exercise_5.rb)
-  * The code returns `nil`
+  1. The code returns `nil`
 1. The error indicates `calculate_product` requires two arguments but only one was given
+
+## Flow Control
+
+### Conditionals
+* Basic logic stuctures defined with `if`, `else`, `elsif`, and `end`
+* Comparison and logical operators are `<`, `>`, `<=`, `>=`, `==`, `!=`, `&&`, `||`
+* Exercise: [conditional.rb](06_flow_control/conditional.rb)
+```ruby
+if x == 3
+  puts "x is 3"
+end
+
+if x == 3 then puts "x is 3" end
+
+puts "x is 3" if x == 3
+
+puts "x is NOT 3" unless x == 3
+```
+
+### Comparisons
+* Comparison operators always return a boolean value (`true` or `false`)
+* The expressions to the left and right of the operator are the operands
+* `==` is equal to
+* `!=` not equal to
+* `<` less than
+* `>` greater than
+* `<=` less than or equal to
+* `>=` greater than or equal to
+
+### Combining Expressions
+* It is possible to combine multiple conditional expressions
+* `&&` and
+  * `(4 == 4) && (5 == 5)`
+* `||` or
+  * `(4 == 4) || (5 == 5)`
+* `!` not
+  * `!(4 == 4)` => false
+* Order of precedence
+  1. `<=`, `<`, `>`, `>=` (comparison)
+  1. `==`, `!=` (equality)
+  1. `&&` (logical AND)
+  1. `||` (logical OR)
+* It is helpful to group expressions together by parentheses for readability to ensure evaluation order
+  * Parenthese evalauted in normal algebraic order
+
+### Ternary Operator
+* Ternary operator is a Ruby idiom that makes a quick `if/else` statement on one line
+```ruby
+irb :001 > true ? "this is true" : "this is not true"
+=> "this is true"
+
+irb :001 > false ? "this is true" : "this is not true"
+=> "this is not true"
+```
+
+### Case Statement
+* A **case statement** has similar functionality to an `if` statement
+* User reserved words `case`, `when`, `else`, and `end`
+* Exercise: [case_statement.rb](06_flow_control/case_statement.rb)
+* Can save results of the case statement into a variable
+* Option to use without arguement but `if/else` is preferred, except for a few situations
+
+### True and False
+* In Ruby, every expression evaluates to `true` when used in flow control, except `false` and `nil`
+
+### Exercises
+1. `false`, `false`, `false`, `true`, `true`
+1. [exercise_2.rb](06_flow_control/exercise_2.rb)
+1. [exercise_3.rb](06_flow_control/exercise_3.rb)
+1. `FALSE`, `Did you get it right?`, `Alright now!`
+1. The error is returned because the `if` statement is missing the `end` reserved word
+1. Raises error, raises error, `false`, `true`, `false`, `true`
