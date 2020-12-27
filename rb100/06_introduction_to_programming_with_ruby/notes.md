@@ -109,7 +109,7 @@ irb :001 > false == nil
 1. [exercise_4.rb](03_the_basics/exercise_4.rb)
 1. [exercise_5.rb](03_the_basics/exercise_5.rb)
 1. [exercise_6.rb](03_the_basics/exercise_6.rb)
-1. There is an opening bracket somewhere in the program without a matching closing bracket
+1. The error indicates there is an opening bracket in the program without a matching closing bracket
 
 ## Variables
 
@@ -224,4 +224,10 @@ puts "main method"
 * If the stack runs out of room, a `SystemStackError` exception is thrown
 
 ### Exercises
-1.
+1. [exercise_1.rb](05_methods/exercise_1.rb)
+1. `2`, `nil`, `"Joe"`, `"four"`, `nil`
+1. [exercise_3.rb](05_methods/exercise_3.rb)
+1. The code will not print anything to the screen
+1. [exercise_5.rb](05_methods/exercise_5.rb)
+  * The code returns `nil`
+1. The error indicates `calculate_product` requires two arguments but only one was given
