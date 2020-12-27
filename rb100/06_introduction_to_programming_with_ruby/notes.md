@@ -230,7 +230,7 @@ puts "main method"
 1. [exercise_3.rb](05_methods/exercise_3.rb)
 1. The code will not print anything to the screen
 1. [exercise_5.rb](05_methods/exercise_5.rb)
-  1. The code returns `nil`
+   1. The code returns `nil`
 1. The error indicates `calculate_product` requires two arguments but only one was given
 
 ## Flow Control
