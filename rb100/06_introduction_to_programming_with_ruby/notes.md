@@ -21,10 +21,10 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 * `::` denotes class methods
 * `#` denotes instance methods
 * `::` and `#` use in code is completely different from use in documentation
-* Included Modules: additional modules whose methods are avaialable to the class
+* **Included Modules**: additional modules whose methods are avaialable to the class
 
 ### Command Line and irb
-* [hello_world.rb](02_preparations/hello_world.rb)
+* Exercise: [hello_world.rb](02_preparations/hello_world.rb)
 
 ### Gems
 * https://rubygems.org/
@@ -75,9 +75,7 @@ irb :001 > false == nil
 => false
 ```
 
-### Modulo vs. Remainder
-* Further study:
-  * https://en.wikipedia.org/wiki/Modulo_operation
+### Modulo vs Remainder
 * Effect summarized:
   * Modulo returns a positive integer when the divisor is positive and a negative integer when the divisor is negative
   * Remainder returns a positive integer when the dividnd is positive and a negative integer when the dividend is negative
@@ -88,6 +86,9 @@ irb :001 > false == nil
 |  17 |  -5 |             -3 |              2 | [-4, -3]    |
 | -17 |   5 |              3 |             -2 | [-4, 3]     |
 | -17 |  -5 |             -2 |             -2 | [3, -2]     |
+
+* Further study:
+  * https://en.wikipedia.org/wiki/Modulo_operation
 
 ### Type Conversion
 * `.to_i` convert to `Integer`
@@ -127,10 +128,10 @@ Bob
 ```
 
 ### Variable Scope
-* Scope determines where in a variable is available for use
-* Scope is defined by where the variable is initialized or created
-* Scope in Ruby is defined by a block (a piece of code following a method invocation, usually delimited by `{}` or `do/end`
-* Inner scope can access variables in an outer scope but not vice versa
+* Scope determines where a variable is available for use
+* A variable’s scope is determined by where the variable is initialized or created
+* In Ruby, scope is defined by a block (a piece of code following a method invocation, usually delimited by `{}` or `do/end`
+* Inner scopes can access variables in an outer scope but not vice versa
 
 ### Types of Variables
 * `CONSTANT_VARIABLE`
@@ -176,12 +177,12 @@ end
 
 ### Mutating the Caller
 * Calling a method and permanently altering the argument is **mutaing the caller**
-* [mutate.rb](05_methods/mutate.rb)
+* Exercise: [mutate.rb](05_methods/mutate.rb)
 * Ruby is a pass-by-value and pass-by-reference language
 
 ### puts vs return
 * Every method in Ruby returns the evaluated result of the last line executed
-* [return.rb](05_methods/return.rb)
+* Exercise: [return.rb](05_methods/return.rb)
 * Ruby methods return the evaluated result of the last line, unless an explicit return comes before it
 * Main take away: the `return` reserved word is not required in order to return something from a method
 
