@@ -9,6 +9,7 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 * [Variables](#variables)
 * [Methods](#methods)
 * [Flow Control](#flow-control)
+* [Loops & Iterators](#loops-&-iterators)
 
 ## Introduction
 
@@ -188,7 +189,7 @@ end
 * Main take away: the `return` reserved word is not required in order to return something from a method
 
 ### Chaining Methods
-* Chainging is possible because every method call returns something
+* Chaining is possible because every method call returns something
 ```ruby
 "hi there".length.to_s  # returns "8" - a String
 ```
@@ -304,3 +305,123 @@ irb :001 > false ? "this is true" : "this is not true"
 1. `FALSE`, `Did you get it right?`, `Alright now!`
 1. The error is returned because the `if` statement is missing the `end` reserved word
 1. Raises error, raises error, `false`, `true`, `false`, `true`
+
+## Loops & Iterators
+
+### A Simple Loop
+* `loop` the simplest way to create a loop in Ruby
+* Exercise: [loop_example.rb](07_loops_and_iterators/loop_example.rb)
+* Not likely to use in a real program as an infinite loop is not very useful and will result in a crash
+
+### Controlling Loop Execution
+* More useful by using `break` to exit loop
+* Exercise: [useful_loop.rb](07_loops_and_iterators/useful_loop.rb)
+* Can conditionally exit using an `if` statement
+* Exercise: [conditional_loop.rb](07_loops_and_iterators/conditional_loop.rb)
+* Similar to `break`, use `next` to skip the rest of the current iteration and move to the next iteration
+* Exercise: [next_loop.rb](07_loops_and_iterators/next_loop.rb)
+
+### While and Until Loops
+* A **while loop** is given a parameter that evaluates to a boolean and executes until the boolean is `false`
+* Exercise: [countdown.rb](07_loops_and_iterators/countdown.rb)
+
+### Do/While Loops
+* A **do/while loop** works in a similar way to a while loop but code within the loop gets executed at least once
+* The conditional check is placed at the end of the loop as opposed to the beginning
+```ruby
+loop do
+  puts "Do you want to do that again?"
+  answer = gets.chomp
+  if answer != 'Y'
+    break
+  end
+end
+```
+* The following works but is not recommended by Matz, the founder of Ruby
+```ruby
+begin
+  puts "Do you want to do that again?"
+  answer = gets.chomp
+end while answer == 'Y'
+```
+
+### For Loops
+* Used to loop over a collection of elements
+* Not possible to create an infinite loop, loops over finite number of elements
+```ruby
+x = gets.chomp.to_i
+
+for i in 1..x do
+  puts i
+end
+
+puts "Done!"
+```
+* Range (`..`) used in example above
+* For loop returns the collection of elements after it executes
+
+### Conditionals Within Loops
+* The reserved words `next` and `break` are useful when looping
+* The `next` reserved word will jump from to the next loop iteration without executing the code beneath it
+```ruby
+while x <= 10
+  if x == 3
+    x += 1
+    next
+  elsif x.odd?
+    puts x
+  end
+  x += 1
+end
+```
+* The `break` reserved word will exit the loop immediately without executing any further code in the loop
+```ruby
+while x <= 10
+  if x == 7
+    break
+  elsif x.odd?
+    puts x
+  end
+  x += 1
+end
+```
+* Most Rubyists prefer iterators instead of loops where possible
+
+### Iterators
+* **Iterators** are methods that loop over a given set of data and allow operations on each element in the collection
+* Two styles of blocks:
+  * Use curly braces (`{}`) when everything can be contained in one line
+  * Use reserved words `do` and `end` for multi-line operations
+```ruby
+names = ['Bob', 'Joe', 'Steve', 'Janice', 'Susan', 'Helen']
+
+names.each { |name| puts name }
+
+x = 1
+
+names.each do |name|
+  puts "#{x}. #{name}"
+  x += 1
+end
+```
+
+### Recursion
+* **Recursion** is the act of calling a method from within itself
+* Example: calculate the nth number in the fibonacci sequence
+```ruby
+def fibonacci(number)
+  if number < 2
+    number
+  else
+    fibonacci(number - 1) + fibonacci(number - 2)
+  end
+end
+
+puts fibonacci(6)
+```
+* The key concept with recursion is there is a baseline condition that returns a value that unwinds the recursive call
+
+### Exercise
+1. Returns `[1, 2, 3, 4, 5]`
+1. [exercise_2.rb](07_loops_and_iterators/exercise_2.rb)
+1. [exercise_3.rb](07_loops_and_iterators/exercise_3.rb)
