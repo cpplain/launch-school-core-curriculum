@@ -26,7 +26,7 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 * **Included Modules**: additional modules whose methods are avaialable to the class
 
 ### Command Line and irb
-* Exercise: [hello_world.rb](02_preparations/hello_world.rb)
+* Exercise: [hello_world.rb](preparations/hello_world.rb)
 
 ### Gems
 * https://rubygems.org/
@@ -105,12 +105,12 @@ irb :001 > false == nil
 * Ruby expressions always return a value, even if the value is `nil` or an error
 
 ### Exercises
-1. [exercise_1.rb](03_the_basics/exercise_1.rb)
-1. [exercise_2.rb](03_the_basics/exercise_2.rb)
-1. [exercise_3.rb](03_the_basics/exercise_3.rb)
-1. [exercise_4.rb](03_the_basics/exercise_4.rb)
-1. [exercise_5.rb](03_the_basics/exercise_5.rb)
-1. [exercise_6.rb](03_the_basics/exercise_6.rb)
+1. [exercise_1.rb](basics/exercise_1.rb)
+1. [exercise_2.rb](basics/exercise_2.rb)
+1. [exercise_3.rb](basics/exercise_3.rb)
+1. [exercise_4.rb](basics/exercise_4.rb)
+1. [exercise_5.rb](basics/exercise_5.rb)
+1. [exercise_6.rb](basics/exercise_6.rb)
 1. The error indicates there is an opening bracket in the program without a matching closing bracket
 
 ## Variables
@@ -153,10 +153,10 @@ Bob
   * Obey all scope boundaries
 
 ### Exercises
-1. [name.rb](04_variables/name.rb)
-1. [age.rb](04_variables/age.rb)
-1. [name.rb](04_variables/name.rb)
-1. [name.rb](04_variables/name.rb)
+1. [name.rb](variables/name.rb)
+1. [age.rb](variables/age.rb)
+1. [name.rb](variables/name.rb)
+1. [name.rb](variables/name.rb)
 1. The first prints `3` and the second throws an `undefined local variable or method` error because `x` is out of scope
 
 ## Methods
@@ -179,12 +179,12 @@ end
 
 ### Mutating the Caller
 * Calling a method and permanently altering the argument is **mutaing the caller**
-* Exercise: [mutate.rb](05_methods/mutate.rb)
+* Exercise: [mutate.rb](methods/mutate.rb)
 * Ruby is a pass-by-value and pass-by-reference language
 
 ### puts vs return
 * Every method in Ruby returns the evaluated result of the last line executed
-* Exercise: [return.rb](05_methods/return.rb)
+* Exercise: [return.rb](methods/return.rb)
 * Ruby methods return the evaluated result of the last line, unless an explicit return comes before it
 * Main take away: the `return` reserved word is not required in order to return something from a method
 
@@ -226,11 +226,11 @@ puts "main method"
 * If the stack runs out of room, a `SystemStackError` exception is thrown
 
 ### Exercises
-1. [exercise_1.rb](05_methods/exercise_1.rb)
+1. [exercise_1.rb](methods/exercise_1.rb)
 1. `2`, `nil`, `"Joe"`, `"four"`, `nil`
-1. [exercise_3.rb](05_methods/exercise_3.rb)
+1. [exercise_3.rb](methods/exercise_3.rb)
 1. The code will not print anything to the screen
-1. [exercise_5.rb](05_methods/exercise_5.rb)
+1. [exercise_5.rb](methods/exercise_5.rb)
    1. The code returns `nil`
 1. The error indicates `calculate_product` requires two arguments but only one was given
 
@@ -239,7 +239,7 @@ puts "main method"
 ### Conditionals
 * Basic logic stuctures defined with `if`, `else`, `elsif`, and `end`
 * Comparison and logical operators are `<`, `>`, `<=`, `>=`, `==`, `!=`, `&&`, `||`
-* Exercise: [conditional.rb](06_flow_control/conditional.rb)
+* Exercise: [conditional.rb](flow_control/conditional.rb)
 ```ruby
 if x == 3
   puts "x is 3"
@@ -291,7 +291,7 @@ irb :001 > false ? "this is true" : "this is not true"
 ### Case Statement
 * A **case statement** has similar functionality to an `if` statement
 * User reserved words `case`, `when`, `else`, and `end`
-* Exercise: [case_statement.rb](06_flow_control/case_statement.rb)
+* Exercise: [case_statement.rb](flow_control/case_statement.rb)
 * Can save results of the case statement into a variable
 * Option to use without arguement but `if/else` is preferred, except for a few situations
 
@@ -300,8 +300,8 @@ irb :001 > false ? "this is true" : "this is not true"
 
 ### Exercises
 1. `false`, `false`, `false`, `true`, `true`
-1. [exercise_2.rb](06_flow_control/exercise_2.rb)
-1. [exercise_3.rb](06_flow_control/exercise_3.rb)
+1. [exercise_2.rb](flow_control/exercise_2.rb)
+1. [exercise_3.rb](flow_control/exercise_3.rb)
 1. `FALSE`, `Did you get it right?`, `Alright now!`
 1. The error is returned because the `if` statement is missing the `end` reserved word
 1. Raises error, raises error, `false`, `true`, `false`, `true`
@@ -310,20 +310,20 @@ irb :001 > false ? "this is true" : "this is not true"
 
 ### A Simple Loop
 * `loop` the simplest way to create a loop in Ruby
-* Exercise: [loop_example.rb](07_loops_and_iterators/loop_example.rb)
+* Exercise: [loop_example.rb](loops_and_iterators/loop_example.rb)
 * Not likely to use in a real program as an infinite loop is not very useful and will result in a crash
 
 ### Controlling Loop Execution
 * More useful by using `break` to exit loop
-* Exercise: [useful_loop.rb](07_loops_and_iterators/useful_loop.rb)
+* Exercise: [useful_loop.rb](loops_and_iterators/useful_loop.rb)
 * Can conditionally exit using an `if` statement
-* Exercise: [conditional_loop.rb](07_loops_and_iterators/conditional_loop.rb)
+* Exercise: [conditional_loop.rb](loops_and_iterators/conditional_loop.rb)
 * Similar to `break`, use `next` to skip the rest of the current iteration and move to the next iteration
-* Exercise: [next_loop.rb](07_loops_and_iterators/next_loop.rb)
+* Exercise: [next_loop.rb](loops_and_iterators/next_loop.rb)
 
 ### While and Until Loops
 * A **while loop** is given a parameter that evaluates to a boolean and executes until the boolean is `false`
-* Exercise: [countdown.rb](07_loops_and_iterators/countdown.rb)
+* Exercise: [countdown.rb](loops_and_iterators/countdown.rb)
 
 ### Do/While Loops
 * A **do/while loop** works in a similar way to a while loop but code within the loop gets executed at least once
@@ -423,5 +423,5 @@ puts fibonacci(6)
 
 ### Exercise
 1. Returns `[1, 2, 3, 4, 5]`
-1. [exercise_2.rb](07_loops_and_iterators/exercise_2.rb)
-1. [exercise_3.rb](07_loops_and_iterators/exercise_3.rb)
+1. [exercise_2.rb](loops_and_iterators/exercise_2.rb)
+1. [exercise_3.rb](loops_and_iterators/exercise_3.rb)
