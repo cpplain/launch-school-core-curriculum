@@ -30,10 +30,10 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 
 ### Gems
 * https://rubygems.org/
-* `gem install <gem name>`
+`gem install <gem name>`
 
 ### Debugging with Pry
-* `gem install pry`
+`gem install pry`
 ```ruby
 # preparation.rb
 require "pry"
@@ -47,7 +47,9 @@ puts a
 ## The Basics
 
 ### String Interpolation
-* `"#{ruby expression}"`
+```ruby
+"#{ruby expression}"
+```
 
 ### Symbols
 * Created by placing a colon (`:`) before a word
@@ -197,8 +199,10 @@ end
 
 ### Method Calls as Arguments
 * Ruby allows passing method calls as arguments to other methods
-* `multiply(add(20, 45), subtract(80, 10))`
 * Use of parentheses in nested method calls is important to prevent confusion
+```ruby
+multiply(add(20, 45), subtract(80, 10))
+```
 
 ### The Call Stack
 * Blocks, procs, and lambdas use the call stack in Ruby in addition to methods
@@ -265,11 +269,17 @@ puts "x is NOT 3" unless x == 3
 ### Combining Expressions
 * It is possible to combine multiple conditional expressions
 * `&&` and
-  * `(4 == 4) && (5 == 5)`
+```ruby
+(4 == 4) && (5 == 5)
+```
 * `||` or
-  * `(4 == 4) || (5 == 5)`
+```ruby
+(4 == 4) || (5 == 5)
+```
 * `!` not
-  * `!(4 == 4)` => false
+```ruby
+!(4 == 4)  # => false
+```
 * Order of precedence
   1. `<=`, `<`, `>`, `>=` (comparison)
   1. `==`, `!=` (equality)
@@ -391,12 +401,14 @@ end
 * **Iterators** are methods that loop over a given set of data and allow operations on each element in the collection
 * Two styles of blocks:
   * Use curly braces (`{}`) when everything can be contained in one line
-  * Use reserved words `do` and `end` for multi-line operations
 ```ruby
 names = ['Bob', 'Joe', 'Steve', 'Janice', 'Susan', 'Helen']
 
 names.each { |name| puts name }
-
+```
+  * Use reserved words `do` and `end` for multi-line operations
+```ruby
+names = ['Bob', 'Joe', 'Steve', 'Janice', 'Susan', 'Helen']
 x = 1
 
 names.each do |name|
