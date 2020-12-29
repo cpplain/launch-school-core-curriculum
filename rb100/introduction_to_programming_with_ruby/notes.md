@@ -452,7 +452,7 @@ puts fibonacci(6)
 ```ruby
 array.push("another string")
 array << "another string"
-```*
+```
 * `.map` iterate over the array applying a block to each element and return new array
   * `.collect` is an alias to map
 ```ruby
