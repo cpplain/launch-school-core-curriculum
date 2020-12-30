@@ -13,3 +13,4 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 * [Arrays](arrays/notes.md)
 * [Hashes](hashes/notes.md)
 * [More Stuff!](more_stuff/notes.md)
+* [Exercises](exercises/notes.md)
