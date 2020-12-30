@@ -121,4 +121,4 @@ from greeting.rb:14:in `<main>'
 1. Nothing is printed because the block is not called (`.call`); returns a `Proc` object
 1. Exception handling is a way to handle and control errors without exiting the program
 1. [exercise_4.rb](exercise_4.rb)
-1. The method definition is missing the `&` before the block parameter
+1. The method definition is missing the `&` before the `block` parameter
