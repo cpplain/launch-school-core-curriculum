@@ -11,3 +11,4 @@ Notes for [Introduction to Programming with Ruby](https://launchschool.com/books
 * [Flow Control](flow_control/notes.md)
 * [Loops & Iterators](loops_and_iterators/notes.md)
 * [Arrays](arrays/notes.md)
+* [Hashes](hashes/notes.md)
