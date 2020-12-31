@@ -1,4 +1,4 @@
-# LS95 General Notes
+# General Notes
 
 Notes for [Launch School’s](https://launchschool.com) LS95 course.
 
@@ -35,7 +35,7 @@ Notes for [Launch School’s](https://launchschool.com) LS95 course.
   * [Pedagogy](https://launchschool.com/pedagogy)
 
 ### Read: Mastery
-* [Mastery by George Leonard](https://www.amazon.com/Mastery-Keys-Success-Long-Term-Fulfillment/dp/0452267560)
+* [Mastery by George Leonard](https://www.amazon.com/Mastery-Keys-Success-Long-Term-Fulfillment/dp/0452267560) (Amazon)
   * [Notes](mastery/notes.md)
 
 ### How Not To Learn
