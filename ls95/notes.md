@@ -19,7 +19,7 @@ Notes for [Launch School’s](https://launchschool.com) LS95 course.
   * Back-end Developer
   * Front-end Developer
 * Learning the topics in Launch School’s program will even assist pursuing other development roles ourside of web development
-  *  For example: it’s impossible to become a great mobile developer without knowing everything we tought in Launch School’s curriculum
+  *  For example: it’s impossible to become a great mobile developer without knowing everything taught in Launch School’s curriculum
 
 ### Our Learning Goals
 * Focus on First Principles
@@ -51,7 +51,17 @@ Notes for [Launch School’s](https://launchschool.com) LS95 course.
 
 ### Book: Introduction to the Command Line
 * [Introduction to the Command Line](https://launchschool.com/books/command_line)
-  * [Notes](introduction_to_the_command_line/notes.md)
+* `head` print beginging of file
+* `tail` print end of file
+* `more` one page at a time, forward navigation only
+* `less` one page at a time, forward and backward navigation
+* `man` uses less, allowing forward and backward navigation
+* `ls` `-h` option when used with `-l` will add unit suffixes
+* `which` locate an executable in the user’s path
+* `source ~/.zshrc`
+* `COMMAND="echo"` variable can be used as command
+* `export PATH="/path/to/my/executables-directory:$PATH"`
+* **Read-Eval-Print-Loop (REPL))** are interactive scripting consoles
 
 ### Set Your Editor Indentation
 * Ruby developers are often adamant about spacing: 2 spaces for indentation
@@ -60,4 +70,3 @@ Notes for [Launch School’s](https://launchschool.com) LS95 course.
 
 ### Book: Git and Github
 * [Git and Github](https://launchschool.com/books/git)
-  * [Notes](git_and_github/notes.md)
