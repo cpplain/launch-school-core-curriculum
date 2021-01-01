@@ -61,7 +61,7 @@ Notes for [Launch School’s](https://launchschool.com) LS95 course.
 * `source ~/.zshrc`
 * `COMMAND="echo"` variable can be used as command
 * `export PATH="/path/to/my/executables-directory:$PATH"`
-* **Read-Eval-Print-Loop (REPL))** are interactive scripting consoles
+* **Read-Eval-Print-Loop (REPL)** are interactive scripting consoles
 
 ### Set Your Editor Indentation
 * Ruby developers are often adamant about spacing: 2 spaces for indentation
@@ -70,3 +70,16 @@ Notes for [Launch School’s](https://launchschool.com) LS95 course.
 
 ### Book: Git and Github
 * [Git and Github](https://launchschool.com/books/git)
+* Config files
+  * `/etc/gitconfig` system
+  * `~/.gitconfig` global
+  * `<repo>/.git/config` local
+* `git log` commit history
+  * `git show` commit history with details
+* `git remote add origin <url_to_remote_git_repo>`
+* `git push -u origin main`
+  * `-u` sets upstream tracking branch
+* `git diff origin/main main`
+* `git pull --ff-only`
+  * `--ff-only` best to sepcify how to reconcile branches
+* `git pull` essecntially combines `git fetch` and `git merge`
