@@ -9,16 +9,16 @@ Notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to
 #### Introduction to the Focused and Diffuse Modes
 * Two fundamentally different modes of thinking: **Focused** and **Diffuse** modes
 * **Focused**: concentrating intently on something to learn or to understand
-* **Defuse**: relaxed thinking style related to a set of neural resting states
+* **Diffuse**: relaxed thinking style related to a set of neural resting states
 * Both metaphor and analogy are really helpful when trying to learn something new
 * Focused mode is like a pinball machine with tight spacing between bumpers
   * Ball moves around in a tight pattern over familiar pathways
   * Mode used when working on something related to familiar concepts
-* Difuse mode is like a pinball machine with widely spaced bumpers
+* Diffuse mode is like a pinball machine with widely spaced bumpers
   * Ball travels far and wide before hitting a bumper
   * In this mode things are viewed from a broad, big picture perspective
   * Mode is used when concepts are new or new ideas are needed
-* Current neuroscience indicates one is either in the focused mode or defuse mode
+* Current neuroscience indicates one is either in the focused mode or diffuse mode
   * Being in one seems to limit access to the other mode
 
 #### Using the Focused and Diffuse Modes
@@ -26,11 +26,11 @@ Notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to
   1. Relax in a chair with a key (Dali) or ball bearings (Edison) in hand above floor
   1. Let mind go free, often vaguely thinking of the problem
   1. Fall asleep, letting the item fall to the floor and waking them up
-  1. Return to focused mode with new connections made from defuse mode
+  1. Return to focused mode with new connections made from diffuse mode
 * When learning something new, important to go between the two modes
 * Summary
   * Anaologies provide powerful techniques for learning
-  * Focused and defuse modes help us learn but in different ways
+  * Focused and diffuse modes help us learn but in different ways
   * Learning something difficult takes time, as the brain needs to alternate modes
 
 ### Procrastination, Memory, and Sleep
