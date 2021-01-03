@@ -2,6 +2,12 @@
 
 Notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) (Coursera) from [Launch School’s](https://launchschool.com) LS95 course.
 
+## Contents
+* [What is Learning?](#what-is-learning?) (Week 1)
+* [Chunking](#chunking) (Week 2)
+* [Procrastination and Memory](#procrastination-and-memory) (Week 3)
+* [Renaissance Learning and Unlocking Your Potential](#renaissance-learning-and-unlocking-your-potential) (Week 4)
+
 ## What is Learning?
 
 ### Focused vs Diffuse Thinking
