@@ -226,9 +226,38 @@ Notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to
 
 ## Renaissance Learning and Unlocking Your Potential
 
-### Renaissance Learning and Unlocking Your Potential I
- 
+### How to Become a Better Learner
+* Two tips to learn better:
+  1. The best gift that you can give your brain is physical exercise
+     * New neurons help you learn new things but they will die if you don’t use them
+     * Exercise also helps new neurons 
+  1. Practice can repair, as well as train the brain
+     * *Fixing My Gaze, a Scientist's Journey Into Seeing in Three Dimensions* by Sue Barry
 
-### Renaissance Learning and Unlocking Your Potential II
- 
+### Introduction to Renaissance Learning and Unlocking Your Potential
+* Learning doesn’t progress logically
+* Sometimes you hit a wall in constructing your understanding; things that made sense before can suddenly seem confusing
+* This type of knowledge collapse seems to occur when your mind is restructuring its understanding, building a more solid foundation
 
+### Create a Lively Visual Metaphor of Analogy
+* One of the best things to do to remember and understand concepts is to create a metaphor or analogy; often the more visual the better
+* After gaining a more sophisticated understanding of a topic, it’s possible to revise the metaphors or toss them away and create more meaningful ones
+* Metaphors and models are often vitally important in giving a physical understanding of the central idea behind the process or concept
+* Metaphors help glue an idea into the mind because they make a connection to neural structures that already exist
+
+### No Need for Genius Envy
+* There’s an interesting connection between learning math and science and learning a sport
+* For example: in baseball you don’t learn how to hit in one day, instead your body perfects your swing from lots and lots of repetition over a period of years
+* At some point self-consciously understanding why you do what you do just slows you down and interrupts the flow resulting in worse decisions
+* It is practice, particularly deliberate practice on the toughest aspects of the material, that can help lift average brains into the realm of those with more natural gifts
+* Whether you’re naturally gifted or you have to struggle to get a solid grasp of the fundamentals, you should realize that you’re not alone if you think you’re an imposter
+
+### Change Your Thoughts, Change Your Life
+* There’s evidence that myelin sheaths, the fatty insulation that helps signals move more quickly along a neuron, don’t finish developing in some people until they’re in their twenties
+* When you use neural circuits, however, it seems you help build the myelin sheath over them, not to mention making many other microscopic changes
+* Practice appears to strengthen and reinforce connections between different brain regions, creating highways between the brain’s control centers and the centers that store knowledge
+* Taking responsibility for your own learning is one of the most important things you can do
+
+### The Value of Team Work
+* The right hemisphere serves as a sort of devil’s advocate to question the status quo and look for global inconsistencies, while the left hemisphere instead tries to cling tenaciously to the way things were
+* One of the best ways to catch your blind spots and errors is to brainstorm and work with others who are also smartly focused on the topic
