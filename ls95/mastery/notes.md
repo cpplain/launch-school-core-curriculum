@@ -3,7 +3,7 @@
 Notes for [Mastery by George Leonard](https://www.amazon.com/Mastery-Keys-Success-Long-Term-Fulfillment/dp/0452267560) (Amazon) from [Launch School’s](https://launchschool.com) LS95 course.
 
 ## Contents
-* [The Master’s Journey](#the-master’s-journey)
+* [The Master’s Journey](#the-masters-journey)
 * [The Five Master Keys](#the-five-master-keys)
 
 ## The Master’s Journey
@@ -39,6 +39,7 @@ Notes for [Mastery by George Leonard](https://www.amazon.com/Mastery-Keys-Succes
 * He doesn’t mind skipping stages essential to development of mastery if he can go out and hang with fellow hackers
 * He does only enough to get by
 
+#### Summary
 * The catagories are no quite this neat
 * It’s possible to be a Master, a Dabbler, an Obsessive, or a Hacker in different areas of one’s life
 * These characters help us see why we’re not on the path of mastery
