@@ -10,7 +10,7 @@ Notes for [Introduction](https://launchschool.com/books/ruby/read/introduction) 
 ## Preparations
 
 ### Documentation
-* https://ruby-doc.org/core-2.7.2/
+* https://docs.ruby-lang.org/en/
 * `::` denotes class methods
 * `#` denotes instance methods
 * `::` and `#` use in code is completely different from use in documentation
