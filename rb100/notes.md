@@ -66,3 +66,6 @@ end
 * Spend as much time as needed to go through this book carefully; it’s the most important part of the prep course
 * It’s vital to be comfortable reading and writing basic Ruby syntax and understanding fundamental programming constructs such as loops, variables, and conditionals
 * Push code for exercises to a GitHub repo
+
+## Exercises: Ruby Basics
+* [Exercises](exercises_ruby_basics/notes.md)
