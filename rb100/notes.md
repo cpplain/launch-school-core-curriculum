@@ -26,8 +26,8 @@ Notes for [Launch School’s](https://launchschool.com) RB100 course.
 
 ## Ruby Style
 1. Text editor should use two spaces for tabs and indenting should be set to use spaces
-1. `#` sign at the beginning of a line signifies everything on the same line is a comment
-1. Always use snake_case formatting to define or initialize a method, variable, or file
+2. `#` sign at the beginning of a line signifies everything on the same line is a comment
+3. Always use snake_case formatting to define or initialize a method, variable, or file
 ```ruby
 # Naming a file
 this_is_a_snake_cased_file.rb
@@ -40,12 +40,12 @@ def this_is_a_great_method
   do_some_stuff
 end
 ```
-1. Define a constant variable (all uppercase) when value will not change
+4. Define a constant variable (all uppercase) when value will not change
 ```ruby
 FOUR = 'four'
 FIVE = 5
 ```
-1. Prefer `{}` when the entire code expression fits on one line
+5. Prefer `{}` when the entire code expression fits on one line
 ```ruby
 [1, 2, 3].each do |i|
   do_some_stuff
@@ -53,7 +53,7 @@ end
 
 [1, 2, 3].each { |i| do_some_stuff }
 ```
-1. Use **PascalCase** when naming classes
+6. Use **PascalCase** when naming classes
 ```ruby
 class MyFirstClass
 end
