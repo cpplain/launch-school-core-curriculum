@@ -5,6 +5,7 @@ Notes for [Mastery by George Leonard](https://www.amazon.com/Mastery-Keys-Succes
 ## Contents
 * [The Master’s Journey](#the-masters-journey)
 * [The Five Master Keys](#the-five-master-keys)
+* [Tools for Mastery](#tools-for-mastery)
 
 ## The Master’s Journey
 
@@ -65,3 +66,77 @@ Notes for [Mastery by George Leonard](https://www.amazon.com/Mastery-Keys-Succes
 ### Key 1: Instruction
 * If you intend to tak the journey of mastery, the best thing you can do is arrange for first-rate instruction
 * Even those who will some day overthrow conventional ways of thinking need to know what is is they are overthrowing
+
+### Key 2: Practice
+* Practice as a verb is clear to all of us
+* For someone on the master’s journey, the word is best conceived as a noun, something you have
+* Practice is the path on which you travel
+* A practice can be anything practiced on a regualr basis as an integral part of life
+  * A doctor practices medicine and has a practice
+* Masters devote themselves to their particular skill not just to get better but because they love to practice
+* Because they practice they get better, and the better they get the more they enjoy the practice
+* At the heart of it, mastery is practice
+
+### Key 3: Surrender
+* The early stages of any significant learning invoke the spirit of the fool
+* Surrendering to your teacher and to the fundamentsls of the art are only the beginning
+* For the master, surrender means there are no experts, only learners
+
+### Key 4: Intentionality
+* Intentionality is using the power that comes from i
+* Every master is a master of vision
+
+### Key 5: The Edge
+* Masters are dedicated to te fundamentals of their calling
+* At the same time, they are the ones likely to press the limits
+* The trick is not only to test the edges of the envelope but also to walk the fine line between endless, goalless practice and alluring goals along the way
+* Playing the edge is a balancing act
+
+## Tools for Mastery
+
+### Why Resolutions Fail – and What to Do About It
+* Backsliding is a universal experince
+* Every one of us resists significant change, whether it is for better or worse
+* This is homeostasis
+* Homeostatis resists all change
+* Guildelines to deal with homeostasis:
+  1. Be aware of the way homeostasis works
+  1. Be willing to negotiate with your resistance to change
+  1. Develop a support system
+  1. Follow a regular practice
+  1. Dedicate oneself to lifelone learning
+
+### Getting Energy for Mastery
+* Tap into and put to work native energy:
+  1. Maintain physical fitness
+  1. Acknowledge the negative and accentuate the positive
+  1. Try telling the truth
+  1. Honor but don’t indulge your own dark side
+     * The author uses anger as an example, but anger is not necessarily, in itself, dark
+     * This is one point where I amy disagree with the auther, there is never a time to “honor” that which is truely dark
+     * I’ll have to revisit this topic at a later date to see if I see something different in the author’s argument
+  1. Set ones priorities
+  1. Make commitments, take action
+  1. Get on the path of mastery and stay on it
+
+### Pitfalls Along the Path
+* It’s not likely to avoid pitfalls, but it helps to know they are there.
+  1. Conflicting way of life
+  1. Obsessive goal orientation
+  1. Poor instruction
+  1. Lack of competitiveness
+  1. Overcompetitiveness
+  1. Laziness
+     * The path is the best possible cure for laziness
+  1. Injuries
+  1. Drugs
+  1. Prizes and medals
+  1. Vanity
+  1. Dead seriousness
+  1. Inconsistency
+  1. Perfectionism
+
+### Mastering the Commonplace
+* Most of life is the supposedly “in between”
+* Life is filled with opportunites for practicing mastery, which focuses on process rather than product
+* Ultimately, nothing in this life is “commonplace” or “in between”
