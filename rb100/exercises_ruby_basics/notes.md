@@ -25,7 +25,7 @@ Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.co
 1. `7`
 1. `Xy-zy`
 1. `Xyzzy`
-1. ```my_value': undefined local variable or method `a' for main:Object (NameError)``
+1. `` `my_value': undefined local variable or method `a' for main:Object (NameError) ``
 1. `3`
 1. ``undefined local variable or method `a' for main:Object (NameError)``
 1. `7`
