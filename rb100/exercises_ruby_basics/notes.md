@@ -15,4 +15,41 @@ Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.co
 ## Reading Documentation 2
 1. `"xyx".uppcase`
 1. `a.insert(3, 5, 6, 7)`
-1. `["abc", "def", "ghi,jkl", "mno", "pqr,stu", "vwx", "yz"]`, `["abc def ghi", "jkl mno pqr", "stu vwx yz"]`, `["abc def ghi", "jkl mno pqr,stu vwx yz"]`
+1. `["abc", "def", "ghi,jkl", "mno", "pqr,stu", "vwx", "yz"]`,
+   `["abc def ghi", "jkl mno pqr", "stu vwx yz"]`,
+   `["abc def ghi", "jkl mno pqr,stu vwx yz"]`
+
+## Variable Scope
+1. `7`
+1. `7`
+1. `7`
+1. `Xy-zy`
+1. `Xyzzy`
+1. ```my_value': undefined local variable or method `a' for main:Object (NameError)``
+1. `3`
+1. ``undefined local variable or method `a' for main:Object (NameError)``
+1. `7`
+1. ``undefined method `+' for nil:NilClass (NoMethodError)``
+
+## Loops 1
+1. 
+```ruby
+loop do
+  puts 'Just keep printing...'
+  break
+end
+```
+1. 
+```ruby
+loop do
+  puts 'This is the outer loop.'
+
+  loop do
+    puts 'This is the inner loop.'
+    break
+  end
+  break
+end
+
+puts 'This is outside all loops.'
+```
