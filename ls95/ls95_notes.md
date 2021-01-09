@@ -1,4 +1,4 @@
-# General Notes
+# LS95 Notes
 
 Notes for [Launch School’s](https://launchschool.com) LS95 course.
 
@@ -36,12 +36,12 @@ Notes for [Launch School’s](https://launchschool.com) LS95 course.
 
 ### Read: Mastery
 * [Mastery by George Leonard](https://www.amazon.com/Mastery-Keys-Success-Long-Term-Fulfillment/dp/0452267560) (Amazon)
-  * [Notes](mastery/notes.md)
+  * [Notes](mastery/mastery_notes.md)
 
 ### How Not To Learn
 * [Learning anti-patterns](https://www.launchschool.com/blog/webinar-learning-to-code-anti-patterns)
 * [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) (Coursera)
-  * [Notes](learning_how_to_learn/notes.md)
+  * [Notes](learning_how_to_learn/learning_how_to_learn_notes.md)
 
 ### Join Our Community
 * [General Forums](https://launchschool.com/forum)
