@@ -10,3 +10,4 @@ Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.co
 * [Loops 2](loops2.md)
 * [User Input](user_input.md)
 * [Methods](methods.md)
+* [Return](return.md)
