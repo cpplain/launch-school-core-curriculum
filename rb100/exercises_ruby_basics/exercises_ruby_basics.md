@@ -8,3 +8,4 @@ Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.co
 * [Variable Scope](variable_scope.md)
 * [Loops 1](loops1.md)
 * [Loops 2](loops2.md)
+* [User Input](user_input.md)
