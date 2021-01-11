@@ -12,3 +12,4 @@ Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.co
 * [Methods](methods.md)
 * [Return](return.md)
 * [Conditionals](conditionals.md)
+* [Strings](strings.md)
