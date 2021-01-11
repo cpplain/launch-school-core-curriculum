@@ -14,3 +14,4 @@ Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.co
 * [Conditionals](conditionals.md)
 * [Strings](strings.md)
 * [Arrays](arrays.md)
+* [Hashes](hashes.md)
