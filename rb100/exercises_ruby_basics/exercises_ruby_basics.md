@@ -15,3 +15,4 @@ Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.co
 * [Strings](strings.md)
 * [Arrays](arrays.md)
 * [Hashes](hashes.md)
+* [Debugging](debugging.md)
