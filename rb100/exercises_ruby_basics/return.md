@@ -2,9 +2,17 @@
 
 Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.com) RB100 course.
 
-1. `Breakfast`
-2. `Evening`
-3. `Breakfast`
+1. 
+```
+Breakfast
+```
+2. 
+```Evening
+```
+3. 
+```
+Breakfast
+```
 4. 
 ```
 Dinner
@@ -15,7 +23,10 @@ Breakfast
 Dinner
 nil
 ```
-6. `Breakfast`
+6. 
+```
+Breakfast
+```
 7. 
 ```
 0
@@ -41,4 +52,7 @@ nil
 2
 nil
 ```
-10. `1`
+10. 
+```
+1
+```

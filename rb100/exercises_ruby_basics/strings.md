@@ -2,8 +2,14 @@
 
 Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.com) RB100 course.
 
-1. `new_string = String.new`
-2. `puts "It's now 12 o'clock."`
+1. 
+```ruby
+new_string = String.new
+```
+2. 
+```ruby
+puts "It's now 12 o'clock."
+```
 3. 
 ```ruby
 name = 'Roger'

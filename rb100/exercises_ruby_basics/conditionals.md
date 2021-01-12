@@ -23,7 +23,10 @@ puts 'The clouds are blocking the sun!' unless sun == 'visible'
 boolean = [true, false].sample
 boolean ? puts("I'm true!") : puts("I'm false!")
 ```
-5. `My favorite number is 7.`
+5. 
+```
+My favorite number is 7.
+```
 6. 
 ```ruby
 stoplight = ['green', 'yellow', 'red'].sample

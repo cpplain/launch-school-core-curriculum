@@ -46,7 +46,10 @@ numbers = [5, 9, 21, 26, 39]
 divisible_by_three = numbers.select { |num| num % 3 == 0 }
 p divisible_by_three
 ```
-8. `[['Dave', 7], ['Miranda', 3], ['Jason', 11]]`
+8. 
+```ruby
+[['Dave', 7], ['Miranda', 3], ['Jason', 11]]
+```
 9. 
 ```ruby
 favorites = [['Dave', 7], ['Miranda', 3], ['Jason', 11]]
