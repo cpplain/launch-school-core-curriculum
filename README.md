@@ -13,3 +13,8 @@ Notes and exercises for Launch School’s [Core Curriculum](https://launchschool
 * [RB100 Notes](rb100/rb100_notes.md)
 * [Introduction to Programming with Ruby](rb100/introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md)
 * [Exercises: Ruby Basics](rb100/exercises_ruby_basics/exercises_ruby_basics.md)
+
+## Programming and Back-end Development
+
+### RB101 Programming Foundations
+* [RB101 Notes](rb101/rb101_notes.md)
