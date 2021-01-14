@@ -87,7 +87,7 @@ def divide(number, divisor)
 end
 ```
 
-## Exceptions & Stack Traces
+## Exceptions and Stack Traces
 * When an exception is raised execution will halt unless there is code in place to rescue the exception (see previous section)
 * Ruby has built-in exceptions
 * Some common excpetions are:
