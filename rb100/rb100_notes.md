@@ -68,4 +68,4 @@ end
 * Push code for exercises to a GitHub repo
 
 ## Exercises: Ruby Basics
-* [Exercises](exercises_ruby_basics/exercises_ruby_basics.md)
+* [Exercises](../exercises/ruby_basics/ruby_basics_contents.md)

@@ -1,6 +1,6 @@
 # Exercises: Ruby Basics
 
-Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.com) RB100 course.
+Ruby Basics exercises from [Launch School’s](https://launchschool.com) Core Curriculum.
 
 ## Contents
 * [Reading Documentation](reading_documentation.md)
