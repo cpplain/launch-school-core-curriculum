@@ -74,3 +74,35 @@ end
   * TA office hours
 * Learning application development
   * Applicablable to all types of app programming (web, mobile, etc.)
+
+## Truthiness
+* Ability to express “true” or “false” in any laguage is important
+* Helps build conditional logic and understand state of object or expression
+* **Boolean** is an object whose purpose is to express “true” or “false”
+* Booleans are classes with assocaited methods
+```ruby
+true.class          # => TrueClass
+true.nil?           # => false
+true.to_s           # => "true"
+true.methods        # => list of methods you can call on the true object
+
+false.class         # => FalseClass
+false.nil?          # => false
+false.to_s          # => "false"
+false.methods       # => list of methods you can call on the false object
+```
+* `&&` is the “and” operator and will return `true` only if both expressions evaluated are `true`
+* `||` is the “or” operator and will return `true` if either of the expressions evaluated are `true`
+* Operators stop evaluating expressions once they can guarantee the return value, this is called **short circuiting**
+* **Truthiness** differs from `true` in that Ruby considers more than the `true` object to be “truthy”
+* Ruby considers everyting to be “truthy” other than `false` and `nil`
+* An expression Ruby considers true is not the same as the `true` object
+```ruby
+name = find_name
+
+if name && name.valid?
+  puts "great name!"
+else
+  puts "either couldn't find name or it's invalid"
+end
+```
