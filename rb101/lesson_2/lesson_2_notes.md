@@ -43,4 +43,34 @@ class MyFirstClass
 end
 ``` 
 
-
+## Lecture: Kickoff
+* Goal of Ruby lessons
+  * Build fluency in language syntax
+  * Learn to think like a programmer
+  * Learn to build applications
+  * Build a debugging mindset
+* Summary of topics covered
+  * Programming precedurally
+  * Testing
+  * Blocks
+  * Tools
+  * Solving problems
+  * Developing language familiarity
+* Learning to Code vs Learning to Program
+  * First, Ruby grammar and syntax (coding)
+  * Second, building applications (programming)
+  * Jumping between the two is frustrating
+  * Tools like pseudo code used to keep this from happening
+* Looking for help
+  * Search using the “right” phrases
+    * Takes time and familiarity
+  * Stack Overflow
+  * Ruby Docs
+* Ask for help
+  * Treat instructors, TAs, and fellow students as coworkers (i.e., communicate professionally)
+  * Push everything to GitHub
+  * Forums
+  * Slack
+  * TA office hours
+* Learning application development
+  * Applicablable to all types of app programming (web, mobile, etc.)
