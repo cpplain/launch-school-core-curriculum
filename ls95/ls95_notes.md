@@ -3,7 +3,7 @@ LS95 Orientation
 
 # LS95 Orientation
 
-Notes for [Launch School](https://launchschool.com)’s LS95 course.
+Notes for [Launch School’s](https://launchschool.com) LS95 course.
 
 ## Start Here
 

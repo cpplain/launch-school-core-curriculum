@@ -5,7 +5,7 @@ Flow Control
 
 # Flow Control
 
-Notes for [Flow Control](https://launchschool.com/books/ruby/read/flow_control) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for [Flow Control](https://launchschool.com/books/ruby/read/flow_control) chapter of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## Conditionals
 * Basic logic stuctures defined with `if`, `else`, `elsif`, and `end`

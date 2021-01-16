@@ -5,7 +5,7 @@ Loops and Iterators
 
 # Loops and Iterators
 
-Notes for [Loops and Iterators](https://launchschool.com/books/ruby/read/loops_iterators) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for [Loops and Iterators](https://launchschool.com/books/ruby/read/loops_iterators) chapter of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## A Simple Loop
 * `loop` the simplest way to create a loop in Ruby

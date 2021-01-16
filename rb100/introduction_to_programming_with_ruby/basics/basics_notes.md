@@ -5,7 +5,7 @@ The Basics
 
 # The Basics
 
-Notes for [The Basics](https://launchschool.com/books/ruby/read/basics) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for [The Basics](https://launchschool.com/books/ruby/read/basics) chapter of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## String Interpolation
 ```ruby

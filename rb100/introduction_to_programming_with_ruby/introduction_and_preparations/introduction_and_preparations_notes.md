@@ -5,7 +5,7 @@ Introduction and Preparations
 
 # Introduction and Preparations
 
-Notes for [Introduction](https://launchschool.com/books/ruby/read/introduction) and [Preparations](https://launchschool.com/books/ruby/read/preparations) chapters of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for [Introduction](https://launchschool.com/books/ruby/read/introduction) and [Preparations](https://launchschool.com/books/ruby/read/preparations) chapters of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## Introduction
 

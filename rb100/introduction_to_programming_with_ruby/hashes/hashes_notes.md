@@ -5,7 +5,7 @@ Hashes
 
 # Hashes
 
-Notes for [Hashes](https://launchschool.com/books/ruby/read/hashes) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for [Hashes](https://launchschool.com/books/ruby/read/hashes) chapter of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## What is a Hash?
 * A **hash** is a data structure that stores elements as key-value pairs

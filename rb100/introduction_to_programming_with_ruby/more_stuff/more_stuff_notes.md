@@ -5,7 +5,7 @@ More Stuff!
 
 # More Stuff!
 
-Notes for [More Stuff!](https://launchschool.com/books/ruby/read/more_stuff) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for [More Stuff!](https://launchschool.com/books/ruby/read/more_stuff) chapter of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## Regex
 * **Regular expression** (**regex**) are pattern matching rules used to find patterns in strings

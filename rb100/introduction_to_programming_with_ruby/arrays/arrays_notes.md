@@ -5,7 +5,7 @@ Arrays
 
 # Arrays
 
-Notes for [Arrays](https://launchschool.com/books/ruby/read/arrays) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for [Arrays](https://launchschool.com/books/ruby/read/arrays) chapter of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## What is an Array?
 * **Array** is an ordered list of elements that can be of any type

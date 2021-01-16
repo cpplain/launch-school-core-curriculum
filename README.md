@@ -1,6 +1,6 @@
 # Launch School Core Curriculum
 
-Notes and exercises for [Launch School](https://launchschool.com)’s [Core Curriculum](https://launchschool.com/courses).
+Notes and exercises for [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
 ## Preparatory Work
 

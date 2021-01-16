@@ -5,7 +5,7 @@ Methods
 
 # Methods
 
-Notes for [Methods](https://launchschool.com/books/ruby/read/methods) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for [Methods](https://launchschool.com/books/ruby/read/methods) chapter of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## What Are Methods?
 * Procedure that allows reusable code to be extracted into one place

@@ -5,7 +5,7 @@ Variables
 
 # Variables
 
-Notes for [Variables](https://launchschool.com/books/ruby/read/variables) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for [Variables](https://launchschool.com/books/ruby/read/variables) chapter of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## Getting Data from a User
 * `gets`

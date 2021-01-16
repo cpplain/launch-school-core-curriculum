@@ -2,7 +2,7 @@
 
 # RB100 Programming and Back-end Prep
 
-Notes for [Launch School](https://launchschool.com)’s RB100 course.
+Notes for [Launch School’s](https://launchschool.com) RB100 course.
 
 ## Introduction
 * The goal of the prep course is to give you some structure and guidance before starting the program
