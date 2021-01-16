@@ -106,3 +106,16 @@ else
   puts "either couldn't find name or it's invalid"
 end
 ```
+
+## Walk-through: Calculator
+* [calculator.rb](calculator.rb)
+* Local variables initialized within an `if` statement can be accessed outside of the statement
+* Ruby `if` statements can return a value
+```ruby
+answer = if true
+           'yes'
+         else
+           'no'
+         end
+puts answer       # => yes
+```
