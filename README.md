@@ -18,3 +18,7 @@ Notes and exercises for [Launch School’s](https://launchschool.com) [Core Curr
 
 ### RB101 Programming Foundations
 * [RB101 Notes](rb101/rb101_notes.md)
+
+## Exercises
+* [Ruby Basics](exercises/ruby_basics/ruby_basics_contents.md)
+* [Small Problems](exercises/small_problems/small_problems_contents.md)

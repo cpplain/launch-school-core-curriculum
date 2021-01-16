@@ -1,6 +1,10 @@
+[Launch School Core Curriculum](/README.md) >
+[Exercises: Ruby Basics](/exercises/ruby_basics/ruby_basics_contents.md) >
+Variable Scope
+
 # Variable Scope
 
-Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.com) RB100 course.
+Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
 1. `7`
 2. `7`

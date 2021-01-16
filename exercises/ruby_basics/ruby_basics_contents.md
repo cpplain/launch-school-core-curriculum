@@ -1,6 +1,9 @@
-# Exercises: Ruby Basics
+[Launch School Core Curriculum](/README.md) >
+Exercises: Ruby Basics
 
-Ruby Basics exercises from [Launch School’s](https://launchschool.com) Core Curriculum.
+# Ruby Basics
+
+Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
 ## Contents
 * [Reading Documentation](reading_documentation.md)

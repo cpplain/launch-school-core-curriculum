@@ -1,6 +1,10 @@
+[Launch School Core Curriculum](/README.md) >
+[Exercises: Ruby Basics](/exercises/ruby_basics/ruby_basics_contents.md) >
+Reading Documentation
+
 # Reading Documentation
 
-Notes for Ruby Basics Exercises from [Launch School’s](https://launchschool.com) RB100 course.
+Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
 1. https://docs.ruby-lang.org/en/
 2. https://docs.ruby-lang.org/en/2.7.0/doc/syntax/control_expressions_rdoc.html#label-while+Loop
