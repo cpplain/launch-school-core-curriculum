@@ -1,6 +1,9 @@
-# LS95 Notes
+[Launch School Core Curriculum](/README.md) >
+LS95 Orientation
 
-Notes for [Launch School’s](https://launchschool.com) LS95 course.
+# LS95 Orientation
+
+Notes for [Launch School](https://launchschool.com)’s LS95 course.
 
 ## Start Here
 

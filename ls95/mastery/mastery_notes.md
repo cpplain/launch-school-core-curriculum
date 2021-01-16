@@ -1,6 +1,10 @@
+[Launch School Core Curriculum](/README.md) >
+[LS95 Orientation](/ls95/ls95_notes.md) >
+Mastery
+
 # Mastery by George Leonard 
 
-Notes for [Mastery by George Leonard](https://www.amazon.com/Mastery-Keys-Success-Long-Term-Fulfillment/dp/0452267560) (Amazon) from [Launch School’s](https://launchschool.com) LS95 course.
+Notes for [Mastery](https://www.amazon.com/Mastery-Keys-Success-Long-Term-Fulfillment/dp/0452267560) by George Leonard (Amazon).
 
 ## Contents
 * [The Master’s Journey](#the-masters-journey)

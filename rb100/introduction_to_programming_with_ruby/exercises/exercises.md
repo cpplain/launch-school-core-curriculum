@@ -1,6 +1,11 @@
+[Launch School Core Curriculum](/README.md) >
+[RB100 Programming and Back-end Prep](/rb100/rb100_notes.md) >
+[Introduction to Programming with Ruby](/rb100/introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) >
+Exercises
+
 # Exercises
 
-Notes for [Exercises](https://launchschool.com/books/ruby/read/intro_exercises) chapter of [Introduction to Programming with Ruby](https://launchschool.com/books/ruby/read/hashes) from Launch School’s RB100 course.
+Notes for [Exercises](https://launchschool.com/books/ruby/read/intro_exercises) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 1. [exercise_1.rb](exercise_1.rb)
 1. [exercise_2.rb](exercise_2.rb)

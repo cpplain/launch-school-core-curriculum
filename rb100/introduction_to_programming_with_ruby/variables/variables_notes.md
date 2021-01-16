@@ -1,6 +1,11 @@
+[Launch School Core Curriculum](/README.md) >
+[RB100 Programming and Back-end Prep](/rb100/rb100_notes.md) >
+[Introduction to Programming with Ruby](/rb100/introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) >
+Variables
+
 # Variables
 
-Notes for [Variables](https://launchschool.com/books/ruby/read/variables) chapter of [Introduction to Programming with Ruby](https://launchschool.com/books/ruby) from Launch School’s RB100 course.
+Notes for [Variables](https://launchschool.com/books/ruby/read/variables) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## Getting Data from a User
 * `gets`

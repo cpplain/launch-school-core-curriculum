@@ -1,6 +1,11 @@
+[Launch School Core Curriculum](/README.md) >
+[RB100 Programming and Back-end Prep](/rb100/rb100_notes.md) >
+[Introduction to Programming with Ruby](/rb100/introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) >
+Arrays
+
 # Arrays
 
-Notes for [Arrays](https://launchschool.com/books/ruby/read/arrays) chapter of [Introduction to Programming with Ruby](https://launchschool.com/books/ruby) from Launch School’s RB100 course.
+Notes for [Arrays](https://launchschool.com/books/ruby/read/arrays) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## What is an Array?
 * **Array** is an ordered list of elements that can be of any type

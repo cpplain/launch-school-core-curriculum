@@ -1,6 +1,11 @@
+[Launch School Core Curriculum](/README.md) >
+[RB100 Programming and Back-end Prep](/rb100/rb100_notes.md) >
+[Introduction to Programming with Ruby](/rb100/introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) >
+More Stuff!
+
 # More Stuff!
 
-Notes for [More Stuff!](https://launchschool.com/books/ruby/read/more_stuff) chapter of [Introduction to Programming with Ruby](https://launchschool.com/books/ruby/read/hashes) from Launch School’s RB100 course.
+Notes for [More Stuff!](https://launchschool.com/books/ruby/read/more_stuff) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## Regex
 * **Regular expression** (**regex**) are pattern matching rules used to find patterns in strings

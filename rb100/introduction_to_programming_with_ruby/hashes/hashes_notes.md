@@ -1,6 +1,11 @@
+[Launch School Core Curriculum](/README.md) >
+[RB100 Programming and Back-end Prep](/rb100/rb100_notes.md) >
+[Introduction to Programming with Ruby](/rb100/introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) >
+Hashes
+
 # Hashes
 
-Notes for [Hashes](https://launchschool.com/books/ruby/read/hashes) chapter of [Introduction to Programming with Ruby](https://launchschool.com/books/ruby/read/hashes) from Launch School’s RB100 course.
+Notes for [Hashes](https://launchschool.com/books/ruby/read/hashes) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## What is a Hash?
 * A **hash** is a data structure that stores elements as key-value pairs

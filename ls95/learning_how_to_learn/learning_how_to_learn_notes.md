@@ -1,6 +1,10 @@
+[Launch School Core Curriculum](/README.md) >
+[LS95 Orientation](/ls95/ls95_notes.md) >
+Learning How to Learn
+
 # Learning How to Learn
 
-Notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) (Coursera) from [Launch School’s](https://launchschool.com) LS95 course.
+Notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) (Coursera).
 
 ## Contents
 * [What is Learning?](#what-is-learning?) (Week 1)

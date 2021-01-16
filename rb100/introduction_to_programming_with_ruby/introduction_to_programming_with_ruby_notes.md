@@ -1,6 +1,10 @@
+[Launch School Core Curriculum](/README.md) >
+[RB100 Programming and Back-end Prep](/rb100/rb100_notes.md) >
+Introduction to Programming with Ruby
+
 # Introduction to Programming with Ruby
 
-Notes for [Introduction to Programming with Ruby](https://launchschool.com/books/ruby) from Launch School’s RB100 course.
+Notes for [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## Contents
 * [Introduction](introduction_and_preparations/introduction_and_preparations_notes.md)

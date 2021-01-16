@@ -1,6 +1,8 @@
-# RB100 Notes
+[Launch School Core Curriculum](/README.md) > RB100 Programming and Back-end Prep
 
-Notes for [Launch School’s](https://launchschool.com) RB100 course.
+# RB100 Programming and Back-end Prep
+
+Notes for [Launch School](https://launchschool.com)’s RB100 course.
 
 ## Introduction
 * The goal of the prep course is to give you some structure and guidance before starting the program
@@ -68,4 +70,4 @@ end
 * Push code for exercises to a GitHub repo
 
 ## Exercises: Ruby Basics
-* [Exercises](../exercises/ruby_basics/ruby_basics_contents.md)
+* [Exercises](/exercises/ruby_basics/ruby_basics_contents.md)

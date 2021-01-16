@@ -1,12 +1,12 @@
 # Launch School Core Curriculum
 
-Notes and exercises for Launch School’s [Core Curriculum](https://launchschool.com/courses).
+Notes and exercises for [Launch School](https://launchschool.com)’s [Core Curriculum](https://launchschool.com/courses).
 
 ## Preparatory Work
 
 ### LS95 Orientation
 * [LS95 Notes](ls95/ls95_notes.md)
-* [Mastery by George Leonard](ls95/mastery/mastery_notes.md)
+* [Mastery](ls95/mastery/mastery_notes.md) by George Leonard
 * [Learning How to Learn](ls95/learning_how_to_learn/learning_how_to_learn_notes.md)
 
 ### RB100 Programming and Back-end Prep

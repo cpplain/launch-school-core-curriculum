@@ -1,6 +1,11 @@
+[Launch School Core Curriculum](/README.md) >
+[RB100 Programming and Back-end Prep](/rb100/rb100_notes.md) >
+[Introduction to Programming with Ruby](/rb100/introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) >
+Loops and Iterators
+
 # Loops and Iterators
 
-Notes for [Loops and Iterators](https://launchschool.com/books/ruby/read/loops_iterators) chapter of [Introduction to Programming with Ruby](https://launchschool.com/books/ruby) from Launch School’s RB100 course.
+Notes for [Loops and Iterators](https://launchschool.com/books/ruby/read/loops_iterators) chapter of [Launch School](https://launchschool.com)’s [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
 
 ## A Simple Loop
 * `loop` the simplest way to create a loop in Ruby
