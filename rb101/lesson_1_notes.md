@@ -1,3 +1,7 @@
+[Launch School Core Curriculum](/README.md) >
+[RB101 Programming Foundations](/rb101/rb101_notes.md) >
+Lesson 1: Preparations
+
 # Lesson 1: Preparations
 
 Notes for Lesson 1 of [Launch School’s](https://launchschool.com) RB101 course.

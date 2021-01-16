@@ -1,4 +1,5 @@
-[Launch School Core Curriculum](/README.md) > RB100 Programming and Back-end Prep
+[Launch School Core Curriculum](/README.md) >
+RB100 Programming and Back-end Prep
 
 # RB100 Programming and Back-end Prep
 

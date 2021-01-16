@@ -1,4 +1,7 @@
-# RB101 Notes
+[Launch School Core Curriculum](/README.md) >
+RB101 Programming Foundations
+
+# RB101 Programming Foundations
 
 Notes for [Launch School’s](https://launchschool.com) RB101 course.
 

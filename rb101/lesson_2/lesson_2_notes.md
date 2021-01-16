@@ -1,3 +1,7 @@
+[Launch School Core Curriculum](/README.md) >
+[RB101 Programming Foundations](/rb101/rb101_notes.md) >
+Lesson 2: Small Programs
+
 # Lesson 2: Small Programs
 
 Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course.
