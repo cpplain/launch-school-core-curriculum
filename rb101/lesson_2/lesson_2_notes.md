@@ -178,3 +178,18 @@ end
 ```
 * For more sophisticated problems, apply pseudo-code to smaller parts of the problem then translate that to Ruby code to verify the logic before moving on to the next piece in the problem
 * [pseudo_code_practice.md](pseudo_code_practice.md)
+
+## Flowchart
+* **Flowchart** helps map out the logical sequence of a possible solution in a visual way
+* Flowchart components:
+  * **Oval** start/end
+  * **Rectangle** processing step
+  * **Parrallelogram** input/output
+  * **Diamond** decision (two branches per diamond)
+  * **Circle** connector
+* Use an imperative approach when working with flowcharts
+  * **Imperative** or **procedural** is step-by-step way of solving a problem
+  * **Declarative** uses abstracted or encapsulated components of a language, such as `each`
+* Using pseudo-code and flowcharts to help dissect the logic of a problem, requires trying to figure out how detailed to make the chart and pseudo-code and what to extract to sub-processes
+* This is exactly what a programmer should be thinking about when designing a solution
+* Start at a high level, using declarative syntax, then drill down a level (sub-processes), using imperative pseudo-code
