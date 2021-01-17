@@ -193,3 +193,14 @@ end
 * Using pseudo-code and flowcharts to help dissect the logic of a problem, requires trying to figure out how detailed to make the chart and pseudo-code and what to extract to sub-processes
 * This is exactly what a programmer should be thinking about when designing a solution
 * Start at a high level, using declarative syntax, then drill down a level (sub-processes), using imperative pseudo-code
+
+## RuboCop
+* [RuboCop](https://rubocop.org) is a static code analyzer
+* Rules are **cops**
+* Cops are grouped into **departments**
+* The two departments we care about are style formatting and code linting (syntax and logic)
+* Recommend using `v0.86.0`
+* [Gemfile](Gemfile)
+* Install: `bundle install`
+* Usage: `bundle exec rubocop file.rb`
+* [.rubocop.yml](.rubocop.yml)
