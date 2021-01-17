@@ -125,6 +125,7 @@ puts answer       # => yes
 * It’s used to try to dissect, understand, and solve a problem
 * Helps focus on the logical problem and not the programming language
 * Formalizing pseudo-code helps make translation to programming code easier
+
 | keyword             | meaning                              |
 | :------------------ | :----------------------------------- |
 | START               | start of the program                 |
@@ -135,6 +136,7 @@ puts answer       # => yes
 | IF / ELSE IF / ELSE | show conditional branches in logic   |
 | WHILE               | show looping logic                   |
 | END                 | end of the program                   |
+
 * Psuedo-code example
 ```
 START
