@@ -119,3 +119,60 @@ answer = if true
          end
 puts answer       # => yes
 ```
+
+## Pseudo-Code
+* Pseudo-code is used to load the problem into our brain
+* It’s used to try to dissect, understand, and solve a problem
+* Helps focus on the logical problem and not the programming language
+* Formalizing pseudo-code helps make translation to programming code easier
+| keyword             | meaning                              |
+| :------------------ | :----------------------------------- |
+| START               | start of the program                 |
+| SET                 | sets a variable we can use for later |
+| GET                 | retrieve input from user             |
+| PRINT               | displays output to user              |
+| READ                | retrieve value from variable         |
+| IF / ELSE IF / ELSE | show conditional branches in logic   |
+| WHILE               | show looping logic                   |
+| END                 | end of the program                   |
+* Psuedo-code example
+```
+START
+
+# Given a collection of integers called "numbers"
+
+SET iterator = 1
+SET saved_number = value within numbers collection at space 1
+
+WHILE iterator <= length of numbers
+  SET current_number = value within numbers collection at space "iterator"
+  IF saved_number >= current_number
+    go to the next iteration
+  ELSE
+    saved_number = current_number
+
+  iterator = iterator + 1
+
+PRINT saved_number
+
+END
+```
+* Translation of psuedo-code to Ruby
+```ruby
+def find_greatest(numbers)
+  saved_number = nil
+
+  numbers.each do |num|
+    saved_number ||= num  # assign to first value
+    if saved_number >= num
+      next
+    else
+      saved_number = num
+    end
+  end
+
+  saved_number
+end
+```
+* For more sophisticated problems, apply pseudo-code to smaller parts of the problem then translate that to Ruby code to verify the logic before moving on to the next piece in the problem
+* [pseudo_code_practice.md](pseudo_code_practice.md)
