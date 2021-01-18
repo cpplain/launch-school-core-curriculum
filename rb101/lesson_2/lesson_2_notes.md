@@ -202,3 +202,16 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * Install: `bundle install`
 * Usage: `bundle exec rubocop file.rb`
 * [.rubocop.yml](.rubocop.yml)
+
+## Walk-through: Refactoring Calculator
+* Multiline string using **heredoc**:
+  ```ruby
+  operator_prompt = <<-MSG
+    What operation would you like to perform?
+    1) add
+    2) subtract
+    3) multiply
+    4) divide
+  MSG
+  ```
+* The `Kernel` module is included by class `Object`, so its methods are available in every Ruby object
