@@ -9,17 +9,17 @@ Notes for [Variables](https://launchschool.com/books/ruby/read/variables) chapte
 
 ## Getting Data from a User
 * `gets`
-```ruby
-irb :001 > name = gets
-Bob
-=> "Bob\n"
-```
+  ```ruby
+  irb :001 > name = gets
+  Bob
+  => "Bob\n"
+  ```
 * Remove newline with `.chomp`
-```ruby
-irb :001 > name = gets.chomp
-Bob
-=> "Bob"
-```
+  ```ruby
+  irb :001 > name = gets.chomp
+  Bob
+  => "Bob"
+  ```
 
 ## Variable Scope
 * Scope determines where a variable is available for use
@@ -45,8 +45,8 @@ Bob
   * Obey all scope boundaries
 
 ## Exercises
-1. [name.rb](name.rb)
-1. [age.rb](age.rb)
-1. [name.rb](name.rb)
-1. [name.rb](name.rb)
-1. The first prints `3` and the second throws an `undefined local variable or method` error because `x` is out of scope
+1.  [name.rb](name.rb)
+1.  [age.rb](age.rb)
+1.  [name.rb](name.rb)
+1.  [name.rb](name.rb)
+1.  The first prints `3` and the second throws an `undefined local variable or method` error because `x` is out of scope

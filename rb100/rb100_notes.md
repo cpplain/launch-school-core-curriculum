@@ -19,8 +19,8 @@ Notes for [Launch School’s](https://launchschool.com) RB100 course.
 
 ### Why do I need to learn Ruby before starting the first Ruby course?
 * Learning to program in the early stages is a two-step process:
-  1. Learn programming constructs and grammar and syntax
-  1. Learn to build a functioning application with knowledge from above; the “putting it together” stage
+  1.  Learn programming constructs and grammar and syntax
+  1.  Learn to build a functioning application with knowledge from above; the “putting it together” stage
 * Programmers get paid to do #2
 * Launch School courses are focused on #2, however, to teach higher-level concepts, knowledge of basic grammar and syntax is assumed
 
@@ -28,44 +28,43 @@ Notes for [Launch School’s](https://launchschool.com) RB100 course.
 * Do every assignment listed in the course, and you should be ready
 
 ## Ruby Style
-1. Text editor should use two spaces for tabs and indenting should be set to use spaces
-2. `#` sign at the beginning of a line signifies everything on the same line is a comment
-3. Always use snake_case formatting to define or initialize a method, variable, or file
-```ruby
-# Naming a file
-this_is_a_snake_cased_file.rb
+1.  Text editor should use two spaces for tabs and indenting should be set to use spaces
+2.  `#` sign at the beginning of a line signifies everything on the same line is a comment
+3.  Always use snake_case formatting to define or initialize a method, variable, or file
+    ```ruby
+    # Naming a file
+    this_is_a_snake_cased_file.rb
 
-# Assigning a variable
-forty_two = 42
+    # Assigning a variable
+    forty_two = 42
 
-# Defining a method
-def this_is_a_great_method
-  do_some_stuff
-end
-```
-4. Define a constant variable (all uppercase) when value will not change
-```ruby
-FOUR = 'four'
-FIVE = 5
-```
-5. Prefer `{}` when the entire code expression fits on one line
-```ruby
-[1, 2, 3].each do |i|
-  do_some_stuff
-end
+    # Defining a method
+    def this_is_a_great_method
+      do_some_stuff
+    end
+    ```
+4.  Define a constant variable (all uppercase) when value will not change
+    ```ruby
+    FOUR = 'four'
+    FIVE = 5
+    ```
+5.  Prefer `{}` when the entire code expression fits on one line
+    ```ruby
+    [1, 2, 3].each do |i|
+      do_some_stuff
+    end
 
-[1, 2, 3].each { |i| do_some_stuff }
-```
-6. Use **PascalCase** when naming classes
-```ruby
-class MyFirstClass
-end
-```
+    [1, 2, 3].each { |i| do_some_stuff }
+    ```
+6.  Use **PascalCase** when naming classes
+    ```ruby
+    class MyFirstClass
+    end
+    ```
 * Further research: [Ruby Style Guide](https://github.com/rubocop-hq/ruby-style-guide)
 
 ## Book: Introduction to Programming with Ruby
-* [Introduction to Programming with Ruby](https://launchschool.com/books/ruby)
-  * [Notes](introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md)
+* [[Notes](introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) for [Introduction to Programming with Ruby](https://launchschool.com/books/ruby)
 * Spend as much time as needed to go through this book carefully; it’s the most important part of the prep course
 * It’s vital to be comfortable reading and writing basic Ruby syntax and understanding fundamental programming constructs such as loops, variables, and conditionals
 * Push code for exercises to a GitHub repo

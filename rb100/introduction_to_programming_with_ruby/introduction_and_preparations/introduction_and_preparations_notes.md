@@ -26,7 +26,7 @@ Notes for [Introduction](https://launchschool.com/books/ruby/read/introduction) 
 
 ### Gems
 * https://rubygems.org/
-`gem install <gem name>`
+* `gem install <gem name>`
 
 ### Debugging with Pry
 `gem install pry`

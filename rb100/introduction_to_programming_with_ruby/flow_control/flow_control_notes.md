@@ -11,17 +11,17 @@ Notes for [Flow Control](https://launchschool.com/books/ruby/read/flow_control) 
 * Basic logic stuctures defined with `if`, `else`, `elsif`, and `end`
 * Comparison and logical operators are `<`, `>`, `<=`, `>=`, `==`, `!=`, `&&`, `||`
 * [conditional.rb](conditional.rb)
-```ruby
-if x == 3
-  puts "x is 3"
-end
+  ```ruby
+  if x == 3
+    puts "x is 3"
+  end
 
-if x == 3 then puts "x is 3" end
+  if x == 3 then puts "x is 3" end
 
-puts "x is 3" if x == 3
+  puts "x is 3" if x == 3
 
-puts "x is NOT 3" unless x == 3
-```
+  puts "x is NOT 3" unless x == 3
+  ```
 
 ## Comparisons
 * Comparison operators always return a boolean value (`true` or `false`)
@@ -36,34 +36,34 @@ puts "x is NOT 3" unless x == 3
 ## Combining Expressions
 * It is possible to combine multiple conditional expressions
 * `&&` and
-```ruby
-(4 == 4) && (5 == 5)
-```
+  ```ruby
+  (4 == 4) && (5 == 5)
+  ```
 * `||` or
-```ruby
-(4 == 4) || (5 == 5)
-```
+  ```ruby
+  (4 == 4) || (5 == 5)
+  ```
 * `!` not
-```ruby
-!(4 == 4)  # => false
-```
+  ```ruby
+  !(4 == 4)  # => false
+  ```
 * Order of precedence
-  1. `<=`, `<`, `>`, `>=` (comparison)
-  1. `==`, `!=` (equality)
-  1. `&&` (logical AND)
-  1. `||` (logical OR)
+  1.  `<=`, `<`, `>`, `>=` (comparison)
+  1.  `==`, `!=` (equality)
+  1.  `&&` (logical AND)
+  1.  `||` (logical OR)
 * It is helpful to group expressions together by parentheses for readability to ensure evaluation order
   * Parenthese evalauted in normal algebraic order
 
 ## Ternary Operator
 * Ternary operator is a Ruby idiom that makes a quick `if/else` statement on one line
-```ruby
-irb :001 > true ? "this is true" : "this is not true"
-=> "this is true"
+  ```ruby
+  irb :001 > true ? "this is true" : "this is not true"
+  => "this is true"
 
-irb :001 > false ? "this is true" : "this is not true"
-=> "this is not true"
-```
+  irb :001 > false ? "this is true" : "this is not true"
+  => "this is not true"
+  ```
 
 ## Case Statement
 * A **case statement** has similar functionality to an `if` statement
@@ -76,10 +76,10 @@ irb :001 > false ? "this is true" : "this is not true"
 * In Ruby, every expression evaluates to `true` when used in flow control, except `false` and `nil`
 
 ## Exercises
-1. `false`, `false`, `false`, `true`, `true`
-1. [exercise_2.rb](exercise_2.rb)
-1. [exercise_3.rb](exercise_3.rb)
-1. `FALSE`, `Did you get it right?`, `Alright now!`
-1. The error is returned because the `if` statement is missing the `end` reserved word
-1. Raises error, raises error, `false`, `true`, `false`, `true`
+1.  `false`, `false`, `false`, `true`, `true`
+1.  [exercise_2.rb](exercise_2.rb)
+1.  [exercise_3.rb](exercise_3.rb)
+1.  `FALSE`, `Did you get it right?`, `Alright now!`
+1.  The error is returned because the `if` statement is missing the `end` reserved word
+1.  Raises error, raises error, `false`, `true`, `false`, `true`
 
