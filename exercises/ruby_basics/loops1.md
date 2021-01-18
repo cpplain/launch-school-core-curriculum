@@ -6,7 +6,7 @@ Loops 1
 
 Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
-1.  ----
+1.  --
     ```ruby
     loop do
       puts 'Just keep printing...'
