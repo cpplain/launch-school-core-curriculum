@@ -125,7 +125,6 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * It’s used to try to dissect, understand, and solve a problem
 * Helps focus on the logical problem and not the programming language
 * Formalizing pseudo-code helps make translation to programming code easier
-
   | keyword             | meaning                              |
   | :------------------ | :----------------------------------- |
   | START               | start of the program                 |
@@ -136,7 +135,6 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
   | IF / ELSE IF / ELSE | show conditional branches in logic   |
   | WHILE               | show looping logic                   |
   | END                 | end of the program                   |
-
 * Psuedo-code example
   ```
   START
