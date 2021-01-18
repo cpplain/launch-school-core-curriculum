@@ -6,32 +6,32 @@ Return
 
 Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
-1.  
+1.  --
     ```
     Breakfast
     ```
-2.  
+2.  --
     ```Evening
     ```
-3.  
+3.  --
     ```
     Breakfast
     ```
-4.  
+4.  --
     ```
     Dinner
     Breakfast
     ```
-5.  
+5.  --
     ```
     Dinner
     nil
     ```
-6.  
+6.  --
     ```
     Breakfast
     ```
-7.  
+7.  --
     ```
     0
     1
@@ -40,7 +40,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     4
     5
     ```
-8.  
+8.  --
     ```
     0
     1
@@ -49,14 +49,14 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     4
     10
     ```
-9.  
+9.  --
     ```
     0
     1
     2
     nil
     ```
-10. 
+10. --
     ```
     1
     ```

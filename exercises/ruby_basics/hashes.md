@@ -6,11 +6,11 @@ Hashes
 
 Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
-1.  
+1.  --
     ```ruby
     car = { type: 'sedan', color: 'blue', mileage: 80_000 }
     ```
-2.  
+2.  --
     ```ruby
     car = {
       type:    'sedan',
@@ -19,7 +19,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     }
     car[:year] = 2003
     ```
-3.  
+3.  --
     ```ruby
     car = {
       type:    'sedan',
@@ -29,7 +29,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     }
     car.delete :mileage
     ```
-4.  
+4.  --
     ```ruby
     car = {
       type:    'sedan',
@@ -38,7 +38,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     }
     puts car[:color]
     ```
-5.  
+5.  --
     ```ruby
     numbers = {
       high:   100,
@@ -47,7 +47,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     }
     numbers.each { |key, value| puts "A #{key} number is #{value}." }
     ```
-    6.  
+6.  --
     ```ruby
     numbers = {
       high:   100,
@@ -57,7 +57,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     half_numbers = numbers.map { |key, value| value / 2 }
     p half_numbers
     ```
-7.  
+7.  --
     ```ruby
     numbers = {
       high:   100,
@@ -67,7 +67,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     low_numbers = numbers.select { |key, value| value < 25 }
     p low_numbers
     ```
-8.  
+8.  --
     ```ruby
     numbers = {
       high:   100,
@@ -82,7 +82,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     p low_numbers
     p numbers
     ```
-9.  
+9.  --
     ```ruby
     nested_hash = {
       car: {
@@ -97,7 +97,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       }
     }
     ```
-10. 
+10. --
     ```ruby
     car = [
       [:type, 'sedan'],

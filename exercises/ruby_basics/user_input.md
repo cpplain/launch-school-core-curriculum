@@ -6,25 +6,25 @@ User Input
 
 Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
-1.  
+1.  --
     ```ruby
     puts ">> Type anything you want:"
     input = gets.chomp
     puts input
     ```
-2.  
+2.  --
     ```ruby
     puts ">> What is your age in years?"
     age = gets.chomp.to_i
     puts "You are #{age * 12} months old."
     ```
-3.  
+3.  --
     ```ruby
     puts ">> Do you want me to print something? (y/n)"
     answer = gets.chomp
     puts "something" if answer == "y"
     ```
-4.  
+4.  --
     ```ruby
     answer = nil
     loop do
@@ -35,7 +35,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     end
     puts "something" if answer == "y"
     ```
-5.  
+5.  --
     ```ruby
     num = 0
 
@@ -50,7 +50,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts "Launch School is the best!"
     end
     ```
-6.  
+6.  --
     ```ruby
     PASSWORD = "NotAGoodPassword"
 
@@ -63,7 +63,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
 
     puts "Welcome!"
     ```
-7.  
+7.  --
     ```ruby
     USERNAME = "christopher"
     PASSWORD = "NotAGoodPassword"
@@ -79,7 +79,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
 
     puts "Welcome!"
     ```
-8.  
+8.  --
     ```ruby
     def valid_number?(number_string)
       number_string.to_i.to_s == number_string
@@ -110,7 +110,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     denominator = denominator.to_i
     puts "#{numerator} / #{denominator} is #{numerator / denominator}"
     ```
-9.  
+9.  --
     ```ruby
     loop do
       input = nil
@@ -136,7 +136,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       end
     end
     ```
-10. 
+10. --
     ```ruby
     def valid_number?(number_string)
       number_string.to_i.to_s == number_string && number_string.to_i != 0

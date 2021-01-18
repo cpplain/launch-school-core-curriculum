@@ -40,7 +40,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
 
     puts "The result is #{multiply_by_five(number)}!"
     ```
-4.  
+4.  --
     ```ruby
     pets = { cat: 'fluffy', dog: ['sparky', 'fido'], fish: 'oscar' }
 

@@ -6,32 +6,32 @@ Conditionals
 
 Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
-1.  
+1.  --
     ```ruby
     sun = ['visible', 'hidden'].sample
     puts 'The sun is so bright!' if sun == 'visible'
     ```
-2.  
+2.  --
     ```ruby
     sun = ['visible', 'hidden'].sample
     puts 'The clouds are blocking the sun!' unless sun == 'visible'
     ```
-3.  
+3.  --
     ```ruby
     sun = ['visible', 'hidden'].sample
     puts 'The sun is so bright!' if sun == 'visible'
     puts 'The clouds are blocking the sun!' unless sun == 'visible'
     ```
-4.  
+4.  --
     ```ruby
     boolean = [true, false].sample
     boolean ? puts("I'm true!") : puts("I'm false!")
     ```
-5.  
+5.  --
     ```
     My favorite number is 7.
     ```
-6.  
+6.  --
     ```ruby
     stoplight = ['green', 'yellow', 'red'].sample
     case stoplight
@@ -43,7 +43,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts 'Stop!'
     end
     ```
-7.  
+7.  --
     ```ruby
     stoplight = ['green', 'yellow', 'red'].sample
 
@@ -55,7 +55,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts 'Stop!'
     end
     ```
-8.  
+8.  --
     ```ruby
     status = ['awake', 'tired'].sample
 
@@ -66,7 +66,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
             end
     puts action
     ```
-9.  
+9.  --
     ```ruby
     number = rand(10)
 
@@ -76,7 +76,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts 'Other numbers are cool too!'
     end
     ```
-10. 
+10. --
     ```ruby
     stoplight = ['green', 'yellow', 'red'].sample
 

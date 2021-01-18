@@ -6,7 +6,7 @@ Loops 2
 
 Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
 
-1.  
+1.  --
     ```ruby
     count = 1
 
@@ -21,7 +21,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       break if count > 5
     end
     ```
-2.  
+2.  --
     ```ruby
     loop do
       number = rand(100)
@@ -29,7 +29,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       break if number.between?(0, 10)
     end
     ```
-3.  
+3.  --
     ```ruby
     process_the_loop = [true, false].sample
 
@@ -42,7 +42,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts "The loop wasn't processed!"
     end
     ```
-4.  
+4.  --
     ```ruby
     loop do
       puts 'What does 2 + 2 equal?'
@@ -56,7 +56,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       end
     end
     ```
-5.  
+5.  --
     ```ruby
     numbers = []
 
@@ -69,7 +69,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     end
     puts numbers
     ```
-6.  
+6.  --
     ```ruby
     names = ['Sally', 'Joe', 'Lisa', 'Henry']
 
@@ -79,14 +79,14 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts name 
     end
     ```
-7.  
+7.  --
     ```ruby
     5.times do |index|
       puts index
       break if index == 2
     end
     ```
-8.  
+8.  --
     ```ruby
     number = 0
 
@@ -96,7 +96,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts number
     end
     ```
-9.  
+9.  --
     ```ruby
     number_a = 0
     number_b = 0
@@ -110,7 +110,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       break
     end
     ```
-10. 
+10. --
     ```ruby
     def greeting
       puts 'Hello!'
