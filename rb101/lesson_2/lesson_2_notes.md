@@ -37,7 +37,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 
     [1, 2, 3].each { |i| do_some_stuff }
     ```
-    6. Use **PascalCase** when naming classes
+6.  Use **PascalCase** when naming classes
     ```ruby
     class MyFirstClass
     end
