@@ -64,7 +64,7 @@ Notes for [Launch School’s](https://launchschool.com) RB100 course.
 * Further research: [Ruby Style Guide](https://github.com/rubocop-hq/ruby-style-guide)
 
 ## Book: Introduction to Programming with Ruby
-* [[Notes](introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) for [Introduction to Programming with Ruby](https://launchschool.com/books/ruby)
+* [Notes](introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) for [Introduction to Programming with Ruby](https://launchschool.com/books/ruby)
 * Spend as much time as needed to go through this book carefully; it’s the most important part of the prep course
 * It’s vital to be comfortable reading and writing basic Ruby syntax and understanding fundamental programming constructs such as loops, variables, and conditionals
 * Push code for exercises to a GitHub repo
