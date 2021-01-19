@@ -6,6 +6,15 @@ Lesson 1: Preparations
 
 Notes for Lesson 1 of [Launch School’s](https://launchschool.com) RB101 course.
 
+## Contents
+* [Welcome](#welcome)
+* [Using Markdown](#using-markdown)
+* [Differences Between Ruby Versions](#differences-between-ruby-versions)
+* [Git and GitHub](#git-and-github)
+* [Good vs Bad Questions](#good-vs-bad-questions)
+* [Lesson Discussion Forums](#lesson-discussion-forums)
+* [Exercises: Small Problems](#exercises-small-problems)
+
 ## Welcome
 
 ### Discussions vs General Forums
@@ -36,7 +45,7 @@ Notes for Lesson 1 of [Launch School’s](https://launchschool.com) RB101 course
 ## Differences Between Ruby Versions
 * Features are sometimes added or deprecated in new Ruby releases
 * Refer to the Ruby documentation specific to the version of Ruby being run
-* In assessments, specific sections of the Ruby docs related to API changes will be required for reference 
+* In assessments, specific sections of the Ruby docs related to API changes will be required for reference
 
 ## Git and GitHub
 * Ensure GitHub repos are public

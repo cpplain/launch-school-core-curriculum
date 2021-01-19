@@ -6,6 +6,18 @@ Lesson 2: Small Programs
 
 Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course.
 
+## Contents
+* [Ruby Style](#ruby-style)
+* [Lecture: Kickoff](#lecture-kickoff)
+* [Truthiness](#truthiness)
+* [Walk-through: Calculator](#walk-through-calculator)
+* [Pseudo-Code](#pseudo-code)
+* [Flowchart](#flowchart)
+* [RuboCop](#rubocop)
+* [Walk-through: Refactoring Calculator](#walk-through-refactoring-calculator)
+* [Debugging](#debugging)
+* [Precedence](#precedence)
+
 ## Ruby Style
 1.  Text editor should use two spaces for tabs and indenting should be set to use spaces
 2.  `#` sign at the beginning of a line signifies everything on the same line is a comment
