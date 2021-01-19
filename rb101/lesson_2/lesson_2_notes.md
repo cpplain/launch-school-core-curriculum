@@ -41,7 +41,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
     ```ruby
     class MyFirstClass
     end
-    ``` 
+    ```
 
 ## Lecture: Kickoff
 * Goal of Ruby lessons
@@ -218,7 +218,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 
 ## Debugging
 * Debugging is arguably the most important skill a programmer needs to learn
-* Work to develop a systematic, patient temperament 
+* Work to develop a systematic, patient temperament
 
 ### Online Resources
 1.  Search engine
@@ -240,3 +240,31 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 3.  Walk away
 4.  Use Pry
 5.  Use a debugger
+
+## Precedence
+* **Operator precedence** is a set of rules that determine the order operators are evaluated
+* Parentheses override the default evaluation order
+* Don’t rely too much on precedence, use parentheses to explicitly define the meaning
+* Operator with a higher precedence is said to **bind** tighter to its operands than those with lower priority
+* Ruby doesn’t evaluate `?:`, `&&`, and `||` subexpressions unless it needs them
+* Blocks have the lowest precedence of all operators
+* A `{}` block has higher priority than a `do...end` block
+* The following shows how operator precedence can affect outcome (parentheses added to visualize order)
+  ```ruby
+  array = [1, 2, 3]
+
+  p(array.map) do |num|
+    num + 1                           #  <Enumerator: [1, 2, 3]:map>
+  end                                 #  => <Enumerator: [1, 2, 3]:map>
+
+  p(array.map { |num| num + 1 })   r  # [2, 3, 4]
+                                      # => [2, 3, 4]
+  ```
+* Object’s `tap` method extremely useful for debugging
+  ```ruby
+  (1..10)                  .tap { |x| p x }   # 1..10
+    .to_a                  .tap { |x| p x }   # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    .select {|x| x.even? } .tap { |x| p x }   # [2, 4, 6, 8, 10]
+    .map {|x| x*x }        .tap { |x| p x }   # [4, 16, 36, 64, 100]
+  ```
+* Moral of the storay: **Use Parentheses!**
