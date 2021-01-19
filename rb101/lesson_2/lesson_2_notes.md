@@ -215,3 +215,28 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
   MSG
   ```
 * The `Kernel` module is included by class `Object`, so its methods are available in every Ruby object
+
+## Debugging
+* Debugging is arguably the most important skill a programmer needs to learn
+* Work to develop a systematic, patient temperament 
+
+### Online Resources
+1.  Search engine
+2.  Stack Overflow
+3.  Documentation
+
+### Steps to Debugging
+1.  Reproduce the error
+2.  Determine the boundaries of the error
+3.  Trace the code
+4.  Understand the problem well
+5.  Implement a fix
+    * Important: fix one problem at a time
+6.  Test the fix
+
+### Techniques for Debugging
+1.  Line by line (patient, systematic)
+2.  Rubber duck
+3.  Walk away
+4.  Use Pry
+5.  Use a debugger
