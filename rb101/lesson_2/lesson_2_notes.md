@@ -17,6 +17,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * [Walk-through: Refactoring Calculator](#walk-through-refactoring-calculator)
 * [Debugging](#debugging)
 * [Precedence](#precedence)
+* [Assignment: Mortgage / Car Loan Calculator](#assignment-mortgage-/-car-loan-calculator)
 
 ## Ruby Style
 1.  Text editor should use two spaces for tabs and indenting should be set to use spaces
@@ -280,3 +281,6 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
     .map {|x| x*x }        .tap { |x| p x }   # [4, 16, 36, 64, 100]
   ```
 * Moral of the storay: **Use Parentheses!**
+
+## Assignment: Mortgage / Car Loan Calculator
+* [loan_calculator.rb](loan_calculator.rb)
