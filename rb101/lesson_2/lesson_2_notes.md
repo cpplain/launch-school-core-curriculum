@@ -18,6 +18,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * [Debugging](#debugging)
 * [Precedence](#precedence)
 * [Assignment: Mortgage / Car Loan Calculator](#assignment-mortgage--car-loan-calculator)
+* [Coding Tips](#coding-tips)
 
 ## Ruby Style
 1.  Text editor should use two spaces for tabs and indenting should be set to use spaces
@@ -284,3 +285,62 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 
 ## Assignment: Mortgage / Car Loan Calculator
 * [loan_calculator.rb](loan_calculator.rb)
+
+## Coding Tips
+
+### Dramatic Experience and Retaining Knowledge
+* The only way to retain information is to pay with time or get burned
+* Better to pay with time
+
+### Naming Things
+* Don’t save characters; choose descriptive variable and method names
+* Try to capture the intent of the variable in the name
+* One small exception to descriptive variable names is for very small blocks of code
+
+### Naming Conventions
+* Use `snake_case` for everything, except use `CamelCase` for classes and `UPPERCASE` for constants
+
+### Mutating Constants
+* Although Ruby allows it, constants should not be mutated
+* Constants should be immutable
+
+### Methods
+* Methods should do one thing and be limited in scope
+* Length should be kept around 10 lines
+* Consider breaking methods of 15 lines or longer into multiple methods
+* Methods should return a value **OR** perform side effects **NOT** both
+* The method name should refelect whether it has side effects or not
+
+### Method Abstraction
+* Methods should be at the same level of abstraction
+* Using the method should not require thinking about its implementation
+* Can a method be used without studying the implementation?
+
+### Method Names
+* Names should reflect if a method mutates a value
+* Names should reflect if a method displays output
+* What a method does should be obvious from the name
+
+### Miscellaneous Tips
+* Don’t prematurely exit a program; it should likely have a single exit point
+* Know when to use `do/while` vs `while`
+  * Works:
+    ```ruby
+    answer = ''
+    while answer.downcase != 'n' do
+      puts "Continue? (y/n)"
+      answer = gets.chomp
+    end
+    ```
+  * Better:
+    ```ruby
+    loop do
+      puts "Continue? (y/n)"
+      answer = gets.chomp
+      break if answer.downcase == 'n'
+    end
+    ```
+### Approach to Learning
+* Learning to program takes focus, attention, and repetition
+* It’s normal not to remember most of what is done the first time around
+* Keep moving forward
