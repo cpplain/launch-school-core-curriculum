@@ -350,7 +350,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * This assignment deals only with **local variables**
 * Two major areas where local variable scoping rules are encountered are **method definition** and **method invocation with a block**
 
-**Variables and Blocks**
+### Variables and Blocks
 * In a method invocation with a block, the block is the `do...end` or `{...}` following the invocation
 * Block creates a new local scope
 * Nested blocks create nested scopes
@@ -371,12 +371,12 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
   ```
   * Variable shadowing should be avoided
 
-**Variables and Method Definitions**
+### Variables and Method Definitions
 * A method’s scope is entirely self-contained
 * Only variables that have been defined as parameters can be accessed within the method
 * Variables must be passed into the method as arguements
 
-**Constants**
+### Constants
 * Scope for constant variables is not the same as for local variables
 * Contants behave like global variables and said to have **lexical scope**
   ```ruby
