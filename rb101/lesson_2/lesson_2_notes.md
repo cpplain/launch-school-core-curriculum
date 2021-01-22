@@ -19,6 +19,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * [Precedence](#precedence)
 * [Assignment: Mortgage / Car Loan Calculator](#assignment-mortgage--car-loan-calculator)
 * [Coding Tips](#coding-tips)
+* [Variable Scope](#variable-scope)
 
 ## Ruby Style
 1.  Text editor should use two spaces for tabs and indenting should be set to use spaces
@@ -344,3 +345,45 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * Learning to program takes focus, attention, and repetition
 * It’s normal not to remember most of what is done the first time around
 * Keep moving forward
+
+## Variable Scope
+* This assignment deals only with **local variables**
+* Two major areas where local variable scoping rules are encountered are **method definition** and **method invocation with a block**
+
+**Variables and Blocks**
+* In a method invocation with a block, the block is the `do...end` or `{...}` following the invocation
+* Block creates a new local scope
+* Nested blocks create nested scopes
+* A variables scope is determined by where it is initialized
+* Outer scope variables can be accessed from the inner scope
+* Inner scope variables cannot be access from the outer scope
+* Peer scopes do not conflict
+* Nested blocks follow the same rules with "inner" and "outer" relative depending on the blocks being referenced
+* **Variable shadowing** happens when a block takes a parameter that is named identically to an outer scope variable
+  ```ruby
+  n = 10
+
+  1.times do |n|
+    n = 11
+  end
+
+  puts n          # => 10
+  ```
+  * Variable shadowing should be avoided
+
+**Variables and Method Definitions**
+* A method’s scope is entirely self-contained
+* Only variables that have been defined as parameters can be accessed within the method
+* Variables must be passed into the method as arguements
+
+**Constants**
+* Scope for constant variables is not the same as for local variables
+* Contants behave like global variables and said to have **lexical scope**
+  ```ruby
+  loop do
+    MY_TEAM = "Phoenix Suns"
+    break
+  end
+
+  puts MY_TEAM    # => Phoenix Suns
+  ```
