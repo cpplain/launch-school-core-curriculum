@@ -20,6 +20,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * [Assignment: Mortgage / Car Loan Calculator](#assignment-mortgage--car-loan-calculator)
 * [Coding Tips](#coding-tips)
 * [Variable Scope](#variable-scope)
+* [More Variable Scope](#more-variable-scope)
 
 ## Ruby Style
 1.  Text editor should use two spaces for tabs and indenting should be set to use spaces
@@ -387,3 +388,34 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 
   puts MY_TEAM    # => Phoenix Suns
   ```
+
+## More Variable Scope
+* Any method can be called with a block, but the block is only executed if the method is defined in a particular way
+* A block is part of the method invocation
+* The block acts as an arguement to the method
+  ```ruby
+    def greetings
+    yield
+    puts "Goodbye"
+  end
+
+  word = "Hello"
+
+  greetings do
+    puts word
+  end
+
+  # Outputs 'Hello'
+  # Outputs 'Goodbye'
+  ```
+  * `yield` executes the block
+* The method can use the return value of the block
+* For example, `Array#map` is defined in such a way to use the return value of the block to tranform the each element
+  ```ruby
+  a = "hello"
+
+  [1, 2, 3].map { |num| a } # => ["hello", "hello", "hello"]
+  ```
+  * `#map` doesn’t have access to `a` but the block passed to `#map`does so the return value of the block can be used
+* Method definition sets the scope of any local variables defined in terms of parameters and if/how it interacts with blocks
+* Method invocation uses the scope set by the method definition
