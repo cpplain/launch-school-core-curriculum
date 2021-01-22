@@ -394,7 +394,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * A block is part of the method invocation
 * The block acts as an arguement to the method
   ```ruby
-    def greetings
+  def greetings
     yield
     puts "Goodbye"
   end
@@ -416,6 +416,6 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 
   [1, 2, 3].map { |num| a } # => ["hello", "hello", "hello"]
   ```
-  * `#map` doesn’t have access to `a` but the block passed to `#map`does so the return value of the block can be used
+  * `#map` doesn’t have access to `a` but the block passed to `#map` does so the return value of the block can be used
 * Method definition sets the scope of any local variables defined in terms of parameters and if/how it interacts with blocks
 * Method invocation uses the scope set by the method definition
