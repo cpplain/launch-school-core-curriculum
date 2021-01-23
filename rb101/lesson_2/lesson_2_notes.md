@@ -21,6 +21,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * [Coding Tips](#coding-tips)
 * [Variable Scope](#variable-scope)
 * [More Variable Scope](#more-variable-scope)
+* [Pass by Reference vs Pass by Value](#pass-by-reference-vs-pass-by-value)
 
 ## Ruby Style
 1.  Text editor should use two spaces for tabs and indenting should be set to use spaces
@@ -419,3 +420,20 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
   * `#map` doesn’t have access to `a` but the block passed to `#map` does so the return value of the block can be used
 * Method definition sets the scope of any local variables defined in terms of parameters and if/how it interacts with blocks
 * Method invocation uses the scope set by the method definition
+
+## Pass by Reference vs Pass by Value
+* In **pass by value** the method is given a copy of the object and any changes to the method’s object do not affect the original
+* In **pass by reference** the method is given a reference to the arguement variable and any changes affect the original object
+* Ruby exhibits a combination of both behaviors
+* Sometimes referred to as **call by sharing**
+* Most important thing to remember: when an operation within a method mutates the caller, it will affect the original object
+* [Variable References and Mutability of Ruby Objects](https://launchschool.com/blog/references-and-mutability-in-ruby)
+  * Variable can be said to be **bound** to the object
+  * Ruby behavior is similar to pass by value when dealing with immutable objects
+  * Ruby behaviro is similar to pass by reference when dealing with mutable objects
+* [Mutating and Non-Mutating Methods in Ruby](https://launchschool.com/blog/mutating-and-non-mutating-methods)
+  * Most methods do not mutate their arguments or caller, some mutate the caller, few mutate the arguments
+* [Object Passing in Ruby - Pass by Reference or Pass by Value](https://launchschool.com/blog/object-passing-in-ruby)
+  * With **strict evaluation**, every expression is evaluated and converted to an object before being passed to a method
+  * Ruby uses strict evaluation
+  * Pass by object_id?
