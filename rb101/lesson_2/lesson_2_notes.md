@@ -22,6 +22,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * [Variable Scope](#variable-scope)
 * [More Variable Scope](#more-variable-scope)
 * [Pass by Reference vs Pass by Value](#pass-by-reference-vs-pass-by-value)
+* [Walk-through: Rock Paper Scissors](#walk-through-rock-paper-scissors)
 
 ## Ruby Style
 1.  Text editor should use two spaces for tabs and indenting should be set to use spaces
@@ -437,3 +438,6 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
   * With **strict evaluation**, every expression is evaluated and converted to an object before being passed to a method
   * Ruby uses strict evaluation
   * Pass by object_id?
+
+## Walk-through: Rock Paper Scissors
+* [rock_paper_scissors.rb](rock_paper_scissors.rb)
