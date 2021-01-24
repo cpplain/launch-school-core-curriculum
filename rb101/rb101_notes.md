@@ -8,4 +8,4 @@ Notes for [Launch School’s](https://launchschool.com) RB101 course.
 ## Contents
 * [Lesson 1: Preparations](lesson_1_notes.md)
 * [Lesson 2: Small Programs](lesson_2/lesson_2_notes.md)
-* [Lesson 3: Practice Problems](lesson_3/lesson_3_notes.md)
+* [Lesson 3: Practice Problems](lesson_3/lesson_3_contents.md)
