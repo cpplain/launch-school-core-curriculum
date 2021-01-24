@@ -441,3 +441,18 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 
 ## Walk-through: Rock Paper Scissors
 * [rock_paper_scissors.rb](rock_paper_scissors.rb)
+
+## Coding Tips 2
+* Don’t mutate the caller during iteration
+  * Mutating elements in a collection is acceptable but not the collection (e.g, deleting elements)
+* Don’t use assignment in the arguement of a conditional
+  * Hard to determine if `=` or `==` was intended
+* Use an underscore for unused parameters
+  ```ruby
+  names.each_with_index do|_, idx|
+    puts "#{idx+1}. got a name!"
+  end
+  ```
+* Gain exerience through struggle
+  * Don’t memorize best practices but spend enough time programming to understand the context of the practices
+  * Don’t be afraid to make mistakes
