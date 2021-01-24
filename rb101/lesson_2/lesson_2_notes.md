@@ -23,6 +23,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 * [More Variable Scope](#more-variable-scope)
 * [Pass by Reference vs Pass by Value](#pass-by-reference-vs-pass-by-value)
 * [Walk-through: Rock Paper Scissors](#walk-through-rock-paper-scissors)
+* [Coding Tips 2](#coding-tips-2)
 
 ## Ruby Style
 1.  Text editor should use two spaces for tabs and indenting should be set to use spaces
