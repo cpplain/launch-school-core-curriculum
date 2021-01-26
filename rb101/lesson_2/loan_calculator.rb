@@ -1,12 +1,17 @@
 # ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin20]
 # require "pry"
+require "yaml"
 
-# Print a message prepended with prompt identifier
+MESSAGES = YAML.load_file("loan_calculator_messages.yml")
+
+def clear_display
+  system("clear") || system("cls")
+end
+
 def prompt(message)
   puts "=> #{message}"
 end
 
-# Validate number is a positive integer
 def positive_integer?(num)
   begin
     integer = Integer(num)
@@ -14,10 +19,9 @@ def positive_integer?(num)
     return false
   end
 
-  integer > 0 ? integer : false
+  integer > 0
 end
 
-# Validate number is a valid interest rate
 def valid_rate?(num)
   begin
     rate = Float(num) * 0.01
@@ -25,76 +29,90 @@ def valid_rate?(num)
     return false
   end
 
-  rate > 0.0 && rate < 1.0 ? rate : false
+  rate >= 0.0 && rate < 1.0
 end
 
-# Make the screen nice and pretty
-system("clear") || system("cls")
+def display_welcome
+  clear_display
+  prompt MESSAGES["welcome"]
+end
 
-prompt "Welcome to the loan calculator!"
-
-loop do
-  # Get the loan amount in whole dollars from the user
-  loan_amount = ""
+def get_loan_amount
   loop do
-    prompt "Please enter the loan amount in whole dollars (Example: 10000):"
-    print "$"
-    input = gets.chomp
+    prompt MESSAGES["enter_loan_amount"]
+    loan_amount = gets.chomp
 
-    loan_amount = positive_integer? input
-
-    if loan_amount
-      break
-    else
-      prompt "That doesn't look like a whole dollar amount."
-    end
+    return loan_amount.to_i if positive_integer? loan_amount
+    prompt MESSAGES["invalid_dollar_amount"]
   end
+end
 
-  # Get the annual percentage rate from the user
-  annual_percentage_rate = ""
+def get_apr
   loop do
-    prompt "Please enter the annual percentage rate (Example: 8.5 for 8.5%):"
-    input = gets.chomp
+    prompt MESSAGES["enter_apr"]
+    apr = gets.chomp
 
-    annual_percentage_rate = valid_rate? input
-
-    if annual_percentage_rate
-      break
-    else
-      prompt "That doesn't look like a valid percentage rate."
-    end
+    return apr.to_f * 0.01 if valid_rate? apr
+    prompt MESSAGES["invalid_apr"]
   end
+end
 
-  # Get the loan duration in months from the user
-  loan_duration = ""
+def get_loan_duration
   loop do
-    prompt "Please enter the loan duration in months (Example: 36):"
-    input = gets.chomp
+    prompt MESSAGES["enter_loan_duration"]
+    loan_duration = gets.chomp
 
-    loan_duration = positive_integer? input
-
-    if loan_duration
-      break
-    else
-      prompt "That doesn't look like a valid loan duration."
-    end
+    return loan_duration.to_i if positive_integer? loan_duration
+    prompt MESSAGES["invalid_loan_duration"]
   end
+end
 
-  # Calculate and display the monthly payment
+def calculate_monthly_payment(loan_amount, apr, loan_duration)
   # Formula: m = p * (j / (1 - (1 + j)**(-n)))
-  monthly_percentage_rate = annual_percentage_rate / 12
+  monthly_payment = if apr > 0
+                      mpr = apr / 12
+                      loan_amount * (mpr / (1 - (1 + mpr)**(-loan_duration)))
+                    else
+                      loan_amount / loan_duration
+                    end
 
-  monthly_payment = loan_amount * (monthly_percentage_rate / (1 -
-                    (1 + monthly_percentage_rate)**(-loan_duration)))
-
-  prompt "Your payment will be $#{monthly_payment.ceil(2)} per month."
-
-  # Ask the user if they would like to recalculate the loan
-  prompt "Would you like to recalculate the loan? ('y' to recalculate)"
-  answer = gets.chomp.downcase
-  break unless answer.start_with? "y"
-
-  system("clear") || system("cls")
+  monthly_payment.ceil(2)
 end
 
-prompt "Thank you for using the loan calculator!"
+def display_payment(monthly_payment)
+  prompt format(MESSAGES["payment_is"], dollars: monthly_payment)
+end
+
+def recalculate_loan?
+  loop do
+    prompt MESSAGES["recalculate_loan"]
+    answer = gets.chomp.downcase
+
+    return true if answer == "yes"
+    return false if answer == "no"
+    prompt MESSAGES["invalid_response"]
+  end
+end
+
+def display_goodbye
+  prompt MESSAGES["goodbye"]
+end
+
+# - Welcome user
+# - Get the loan amount in from the user
+# - Get the annual percentage rate (APR) from the user
+# - Get the loan duration from the user
+# - Calculate and display the monthly payment
+# - Ask the user if they would like to recalculate the loan
+# - Exit the calculator
+
+display_welcome
+loop do
+  loan_amount = get_loan_amount
+  apr = get_apr
+  loan_duration = get_loan_duration
+  monthly_payment = calculate_monthly_payment(loan_amount, apr, loan_duration)
+  display_payment monthly_payment
+  break unless recalculate_loan?
+end
+display_goodbye
