@@ -95,6 +95,10 @@ def new_game?
   end
 end
 
+def reset_score(score)
+  score.transform_values! { |_| 0 }
+end
+
 def display_goodbye
   prompt MESSAGES["goodbye"]
 end
@@ -109,8 +113,8 @@ end
 # - Exit game
 
 display_welcome
-
 score = { player1: 0, player2: 0 }
+
 loop do
   player1_choice = get_player_choice
   player2_choice = VALID_CHOICES.keys.sample
@@ -126,6 +130,7 @@ loop do
 
   break unless new_game?
   clear_display
+  reset_score score
 end
 
 display_goodbye
