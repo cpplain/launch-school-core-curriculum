@@ -33,25 +33,20 @@ def get_player_choice
     display_options
     player_choice = gets.chomp
 
-    return player_choice if VALID_CHOICES.include? player_choice
+    return VALID_CHOICES[player_choice] if VALID_CHOICES.include? player_choice
     prompt MESSAGES["invalid_choice"]
   end
 end
 
 def display_choices(player1_choice, player2_choice)
   prompt format(MESSAGES["player_choices"],
-                player1: VALID_CHOICES[player1_choice][:hand],
-                player2: VALID_CHOICES[player2_choice][:hand])
+                player1: player1_choice[:hand],
+                player2: player2_choice[:hand])
 end
 
 def winner?(player1_choice, player2_choice)
-  player1_hand = VALID_CHOICES[player1_choice][:hand]
-  player1_beats = VALID_CHOICES[player1_choice][:beats]
-  player2_hand = VALID_CHOICES[player2_choice][:hand]
-  player2_beats = VALID_CHOICES[player2_choice][:beats]
-
-  return :player1 if player1_beats == player2_hand
-  return :player2 if player2_beats == player1_hand
+  return :player1 if player1_choice[:beats] == player2_choice[:hand]
+  return :player2 if player2_choice[:beats] == player1_choice[:hand]
   :tie
 end
 
@@ -117,7 +112,7 @@ score = { player1: 0, player2: 0 }
 
 loop do
   player1_choice = get_player_choice
-  player2_choice = VALID_CHOICES.keys.sample
+  player2_choice = VALID_CHOICES[VALID_CHOICES.keys.sample]
   display_choices player1_choice, player2_choice
 
   winner = winner? player1_choice, player2_choice
