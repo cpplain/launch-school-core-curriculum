@@ -2,14 +2,12 @@
 # require "pry"
 require "yaml"
 
-MESSAGES = YAML.load_file("messages.yml")
+MESSAGES = YAML.load_file("rock_paper_scissors_messages.yml")
 
-VALID_CHOICES = %w(rock paper scissors)
-
-POSSIBLE_WINS = {
-  "rock" => "scissors",      # rock beats scissors
-  "paper" => "rock",         # paper beats rock
-  "scissors" => "paper"      # scissors beats paper
+VALID_CHOICES = {
+  "r" => { hand: "rock", beats: "scissors" },
+  "p" => { hand: "paper", beats: "rock" },
+  "s" => { hand: "scissors", beats: "paper" }
 }
 
 def clear_display
@@ -20,9 +18,19 @@ def prompt(message)
   puts "=> #{message}"
 end
 
+def display_welcome
+  clear_display
+  prompt MESSAGES["welcome"]
+end
+
+def display_options
+  VALID_CHOICES.each { |key, value| prompt "'#{key}' for '#{value[:hand]}'" }
+end
+
 def get_player_choice
   loop do
-    prompt format(MESSAGES["choose"], valid_choices: VALID_CHOICES.join(', '))
+    prompt MESSAGES["choose"]
+    display_options
     player_choice = gets.chomp
 
     return player_choice if VALID_CHOICES.include? player_choice
@@ -30,46 +38,94 @@ def get_player_choice
   end
 end
 
-def winner?(player1_choice, player2_choice)
-  return "player1" if POSSIBLE_WINS[player1_choice] == player2_choice
-  return "player2" if POSSIBLE_WINS[player2_choice] == player1_choice
-  "tie"
+def display_choices(player1_choice, player2_choice)
+  prompt format(MESSAGES["player_choices"],
+                player1: VALID_CHOICES[player1_choice][:hand],
+                player2: VALID_CHOICES[player2_choice][:hand])
 end
 
-def display_results(player1_choice, player2_choice)
-  prompt format(MESSAGES["player_choices"], player1_choice: player1_choice,
-                                            player2_choice: player2_choice)
+def winner?(player1_choice, player2_choice)
+  player1_hand = VALID_CHOICES[player1_choice][:hand]
+  player1_beats = VALID_CHOICES[player1_choice][:beats]
+  player2_hand = VALID_CHOICES[player2_choice][:hand]
+  player2_beats = VALID_CHOICES[player2_choice][:beats]
 
-  winner = winner? player1_choice, player2_choice
+  return :player1 if player1_beats == player2_hand
+  return :player2 if player2_beats == player1_hand
+  :tie
+end
+
+def display_hand_winner(winner)
   case winner
-  when "player1"
-    prompt MESSAGES["player1_wins"]
-  when "player2"
-    prompt MESSAGES["player2_wins"]
-  when "tie"
+  when :player1
+    prompt MESSAGES["player1_wins_hand"]
+  when :player2
+    prompt MESSAGES["player2_wins_hand"]
+  when :tie
     prompt MESSAGES["tie"]
   end
+end
+
+def update_score(score, winner)
+  score[winner] += 1 unless winner == :tie
+end
+
+def display_score(score)
+  prompt format(MESSAGES["score"],
+                player1: score[:player1],
+                player2: score[:player2])
+end
+
+def display_game_winner(winner)
+  if winner == :player1
+    prompt MESSAGES["player1_wins_game"]
+  else
+    prompt MESSAGES["player2_wins_game"]
+  end
+end
+
+def new_game?
+  loop do
+    prompt MESSAGES["new_game"]
+    answer = gets.chomp.downcase
+
+    return true if answer == "yes"
+    return false if answer == "no"
+    prompt MESSAGES["invalid_response"]
+  end
+end
+
+def display_goodbye
+  prompt MESSAGES["goodbye"]
 end
 
 # - Welcome player
 # - Get the player's choice
 # - Generate computer's choice
-# - Display results of the game
+# - Display results of the hand
+# - Update game score
+# - Display results of the game once a player reaches 5 wins
 # - Contine if the player would like a new game
 # - Exit game
 
-clear_display
-prompt MESSAGES["welcome"]
+display_welcome
 
+score = { player1: 0, player2: 0 }
 loop do
   player1_choice = get_player_choice
-  player2_choice = VALID_CHOICES.sample
+  player2_choice = VALID_CHOICES.keys.sample
+  display_choices player1_choice, player2_choice
 
-  display_results player1_choice, player2_choice
+  winner = winner? player1_choice, player2_choice
+  display_hand_winner winner
+  update_score score, winner
+  display_score score
 
-  prompt MESSAGES["new_game"]
-  break unless gets.chomp == "y"
+  next unless score[:player1] == 5 || score[:player2] == 5
+  display_game_winner winner
+
+  break unless new_game?
   clear_display
 end
 
-prompt MESSAGES["farewell"]
+display_goodbye
