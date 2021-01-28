@@ -1,6 +1,6 @@
 [Launch School Core Curriculum](/README.md) >
 [RB101 Programming Foundations](/rb101/rb101_notes.md) >
-[Lesson 3: Practice Problems](rb101/lesson_3/lesson_3_contents.md) >
+[Lesson 3: Practice Problems](/rb101/lesson_3/lesson_3_contents.md) >
 Practice Problems: Easy 1
 
 # Practice Problems: Easy 1
