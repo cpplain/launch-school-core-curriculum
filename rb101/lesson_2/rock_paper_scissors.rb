@@ -23,6 +23,10 @@ def display_welcome
   prompt MESSAGES["welcome"]
 end
 
+def display_rules
+  prompt MESSAGES["rules"]
+end
+
 def display_options
   VALID_CHOICES.each { |key, value| prompt "'#{key}' for '#{value[:hand]}'" }
 end
@@ -31,7 +35,7 @@ def get_player_choice
   loop do
     prompt MESSAGES["choose"]
     display_options
-    player_choice = gets.chomp
+    player_choice = gets.chomp.downcase
 
     return VALID_CHOICES[player_choice] if VALID_CHOICES.include? player_choice
     prompt MESSAGES["invalid_choice"]
@@ -108,6 +112,7 @@ end
 # - Exit game
 
 display_welcome
+display_rules
 score = { player1: 0, player2: 0 }
 
 loop do

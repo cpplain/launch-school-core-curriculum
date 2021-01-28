@@ -1,4 +1,5 @@
 welcome: "Welcome to rock, paper, scissors!"
+rules: "The first player to win five (5) hands wins the game."
 choose: "Choose one:"
 invalid_choice: "That is not a valid choice."
 player_choices: "You chose %{player1} and the computer chose %{player2}..."
