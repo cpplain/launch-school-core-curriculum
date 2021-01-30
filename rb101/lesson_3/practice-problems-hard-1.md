@@ -10,24 +10,24 @@ Exercises for Lesson 3 of [Launch School’s](https://launchschool.com) RB101 co
 1.  `greeting` will return `nil` even though the `if` block is not called the variable is initialized to `nil`
 2.  Output is `{:a=>"hi there"}` because `informal_greeting` is a reference to the `"hi"` string which is then mutated
 3.  --
-    1. 'A' prints:
-    ```
-    one is: one
-    two is: two
-    three is: three
-    ```
-    2. 'B' prints:
-    ```
-    one is: one
-    two is: two
-    three is: three
-    ```
-    3. 'C' prints:
-    ```
-    one is: two
-    two is: three
-    three is: one
-    ```
+    1.  'A' prints:
+        ```
+        one is: one
+        two is: two
+        three is: three
+        ```
+    2.  'B' prints:
+        ```
+        one is: one
+        two is: two
+        three is: three
+        ```
+    3.  'C' prints:
+        ```
+        one is: two
+        two is: three
+        three is: one
+        ```
 4.  --
     ```ruby
     def dot_separated_ip_address?(input_string)
