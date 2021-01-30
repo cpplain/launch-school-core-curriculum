@@ -11,3 +11,4 @@ Exercises for Lesson 3 of [Launch School’s](https://launchschool.com) RB101 co
 * [Practice Problems: Easy 2](practice-problems-easy-2.md)
 * [Practice Problems: Medium 1](practice-problems-medium-1.md)
 * [Practice Problems: Medium 2](practice-problems-medium-2.md)
+* [Practice Problems: Hard 1](practice-problems-hard-1.md)
