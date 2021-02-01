@@ -9,6 +9,7 @@ Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course
 ## Contents
 * [Introduction](#introduction)
 * [Collections Basics](#collections-basics)
+* [Looping](#looping)
 
 ## Introduction
 * Programming involves working with data
@@ -78,3 +79,110 @@ Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course
 #### Hash Element Assignment
 * Hash assignment is done passing the key instead of the index
 * `hsh[:apple] = 'Fruit'` assigns the value 'Fruit' to the key `:apple`
+
+## Looping
+
+### Controlling a Loop
+* Create a simple loop by calling `Kernel#loop` and passing a blcok to it
+* `break` will exit the nearest loop
+* If loop needs to execute more than once, use a conditional statement to call `break` when the condition is met
+  ```ruby
+  loop do
+    number = rand(1..10)   # a random number between 1 and 10
+    puts 'Hello!'
+    if number == 5
+      puts 'Exiting...'
+      break
+    end
+  end
+  ```
+
+#### Iteration
+* To iterate a specific number of times, can use a counter variable to track iteration number
+  ```ruby
+  counter = 0
+
+  loop do
+    puts 'Hello!'
+    counter += 1
+    break if counter == 5
+  end
+  ```
+* Counter needs to be incremented every loop to track number of iterations
+* Counter must be initialized before the loop, otherwise it will be reset each iteration and `break` condition won’t be met
+
+#### Break Placement
+* `break` placed on the last line of the loop mimics the behavior of a do/while loop
+  * The code within the block is guaranteed to execute at least once
+* `break` placed on the first line of the loop mimics the behavior of a while loop
+  * The code below the `break` or within the `while` loop may not execute
+
+#### Next
+* `next` skips the rest of the code within the block and starts the next loop iteration
+  ```ruby
+  counter = 0
+
+  loop do
+    counter += 1
+    next if counter.odd?
+    puts counter
+    break if counter > 5
+  end
+  ```
+
+### Iterating Over Collections
+
+#### String
+* Reference each character via its index in the string
+  ```ruby
+  alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  counter = 0
+
+  loop do
+    break if counter == alphabet.size
+    puts alphabet[counter]
+    counter += 1
+  end
+  ```
+
+#### Array
+* Reference each element via its index in the array
+  ```ruby
+  colors = ['green', 'blue', 'purple', 'orange']
+  counter = 0
+
+  loop do
+    break if counter == colors.size
+    puts "I'm the color #{colors[counter]}!"
+    counter += 1
+  end
+  ```
+
+#### Hash
+* Multi step process: create array of keys, iterate over each key in the array, get value using the key
+  ```ruby
+  number_of_pets = {
+    'dogs' => 2,
+    'cats' => 4,
+    'fish' => 1
+  }
+  pets = number_of_pets.keys # => ['dogs', 'cats', 'fish']
+  counter = 0
+
+  loop do
+    break if counter == number_of_pets.size
+    current_pet = pets[counter]
+    current_pet_number = number_of_pets[current_pet]
+    puts "I have #{current_pet_number} #{current_pet}!"
+    counter += 1
+  end
+  ```
+
+### Summary
+* Looping comprises four basic elements:
+  1.  A loop
+  2.  A counter
+  3.  A way to retrieve the current value
+  4.  A way to exit the loop
+* It is important to understand how to manually loop over collections with nothing more than these four tools
+* Methods can be useful, but they shouldn’t be used as a crutch
