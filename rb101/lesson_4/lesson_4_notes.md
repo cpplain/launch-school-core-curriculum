@@ -235,18 +235,108 @@ Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course
 - Always verify your assumptions either by looking at the test cases or by asking the interviewer
 - Conclude this part of the PEDAC process by writing down the inputs, outputs, and rules (explicit and implicit requirements)
 
-  ```
+  ```ruby
   # input: string
   # output: string (not the same object)
   # rules:
   #      Explicit requirements:
-  #        - every palindrome in the string must be converted to
-  #          uppercase. (Reminder: a palindrome is a word that reads
-  #          the same forwards and backward).
-  #        - Palindromes are case sensitive ("Dad" is not a palindrome, but "dad" is.)
+  #        - every palindrome in the string must be converted to uppercase.
+  #          (Reminder: a palindrome is a word that reads the same forwards and
+  #          backward).
+  #        - Palindromes are case sensitive ("Dad" is not a palindrome, but
+  #          "dad" is.)
 
   #      Implicit requirements:
   #        - the returned string shouldn't be the same string object.
   #        - if the string is an empty string, the result should be an empty
   #          array
   ```
+
+### Data Structure / Algorithm
+
+- Data structures influence the algorithm, thus the two steps are often paired
+- Biggest problem students have when writing algorithms is providing sufficient detail
+- Formal pseudocode is an intermediary step between informal pseudocode and final code
+
+  ```ruby
+  # input: a string
+  # output: an array of substrings
+  # rules: palindrome words should be case sensitive, meaning "abBA" is not a
+  #        palindrome
+
+  # Algorithm:
+  #  substrings method
+  #  =================
+  #  - create an empty array called `result` that will contain all required
+  #    substrings
+  #  - create a `starting_index` variable (value `0`) for the starting index of
+  #    a substring
+  #  - start a loop that iterates over `starting_index` from `0` to the length
+  #    of the string minus 2
+  #    - create a `num_chars` variable (value `2`) for the length of a substring
+  #    - start an inner loop that iterates over `num_chars` from `2` to `string.
+  #      length - starting_index`
+  #      - extract a substring of length `num_chars` from `string` starting at
+  #        `starting_index`
+  #      - append the extracted substring to the `result` array
+  #      - increment the `num_chars` variable by `1`
+  #    - end the inner loop
+  #    - increment the `starting_index` variable by `1`
+  #  - end the outer loop
+  #  - return the `result` array
+
+  #  is_palindrome? method
+  #  =====================
+  #  - Inside the `is_palindrome?` method, check whether the string
+  #    value is equal to its reversed value. You can use the
+  #    String#reverse method.
+
+  #  palindrome_substrings method
+  #  ============================
+  #  - initialize a result variable to an empty array
+  #  - create an array named substring_arr that contains all of the
+  #    substrings of the input string that are at least 2 characters long.
+  #  - loop through the words in the substring_arr array.
+  #  - if the word is a palindrome, append it to the result
+  #    array
+  #  - return the result array
+  ```
+
+- It isn’t needed but can be helpful
+- Example of complete informal pseudocode:
+- Main takeaway: should be able to write a plain English solution to the problem
+- Also, don’t need “fancy” methods to solve the problems
+
+### Testing Frequently
+
+- Testing isn’t properly part of PEDAC but it is important and shouldn’t be skipped
+- Test code early and often while writing
+- Test code as soon as it can be tested
+- The sooner a bug is identified the easier it is to identify what’s wrong
+
+### Summary
+
+- Practice working through PEDAC while solving problems
+- It may be difficult at first but will improve in time and make solving difficult problems easier
+
+**\*Informal Pseudocode Outline/Template**
+
+```text
+input: input 1, ...
+output: output
+rules:
+  Explicit requirements:
+  - Req 1
+  ...
+  Implicit requirements:
+  - Req 1
+  ...
+
+Algorithm:
+  First method:
+  - Step 1
+  ...
+  Second method:
+  - Step 1
+  ...
+```
