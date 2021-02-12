@@ -11,6 +11,7 @@ Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course
 - [Introduction](#introduction)
 - [Collections Basics](#collections-basics)
 - [Looping](#looping)
+- [Introduction to PEDAC Process](#introduction-to-pedac-process)
 
 ## Introduction
 
@@ -52,7 +53,7 @@ Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course
 - Referencing an out of bound index returns `nil`
 - Not necessarily a problem for strings but can be confusing for arrays
 - `#fetch` throws an `IndexError` exception if index is out of bounds
-- `#fetch` is saffest but rarely used in Ruby code
+- `#fetch` is safest but rarely used in Ruby code
 
 #### Negative Indices
 
@@ -62,7 +63,7 @@ Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course
 #### Invalid Hash Keys
 
 - Invalid hash key will return `nil`
-- Hash has a `#fetch` method that throws a `KeyError` exception if a key is invalide
+- Hash has a `#fetch` method that throws a `KeyError` exception if a key is invalid
 
 ### Conversion
 
@@ -96,9 +97,10 @@ Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course
 
 ### Controlling a Loop
 
-- Create a simple loop by calling `Kernel#loop` and passing a blcok to it
+- Create a simple loop by calling `Kernel#loop` and passing a block to it
 - `break` will exit the nearest loop
 - If loop needs to execute more than once, use a conditional statement to call `break` when the condition is met
+
   ```ruby
   loop do
     number = rand(1..10) # a random number between 1 and 10
@@ -202,9 +204,49 @@ Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course
 ### Summary
 
 - Looping comprises four basic elements:
-  1.  A loop
-  2.  A counter
-  3.  A way to retrieve the current value
-  4.  A way to exit the loop
+  1. A loop
+  2. A counter
+  3. A way to retrieve the current value
+  4. A way to exit the loop
 - It is important to understand how to manually loop over collections with nothing more than these four tools
 - Methods can be useful, but they shouldn’t be used as a crutch
+
+## Introduction to PEDAC Process
+
+- The PEDAC process is an approach to solving programming problems
+- The primary goal is to help identify and avoid pitfalls that occur when coding without intent
+- PEDAC
+  1. **P** - [Understand the] **P**roblem
+  2. **E** - **E**xamples / Test cases
+  3. **D** - **D**ata Structure
+  4. **A** - **A**lgorithm
+  5. **C** - **C**ode
+- This assignment discusses a "lighter" version of PEDAC useful for passing upcoming interview assessment
+  - PEDAC discussed in more detail later in the course
+- Following the PEDAC process saves time and allows solving complex problems efficiently
+
+### P - [Understand the] Problem
+
+- Understanding the problem has three steps:
+  1. Read the problem description
+  2. Check the test cases, if any
+  3. If any part of the problem is unclear, ask the interviewer or problem requester to clarify
+- One of the most important and overlooked questions is whether to return the original object or a new object
+- Always verify your assumptions either by looking at the test cases or by asking the interviewer
+- Conclude this part of the PEDAC process by writing down the inputs, outputs, and rules (explicit and implicit requirements)
+
+  ```
+  # input: string
+  # output: string (not the same object)
+  # rules:
+  #      Explicit requirements:
+  #        - every palindrome in the string must be converted to
+  #          uppercase. (Reminder: a palindrome is a word that reads
+  #          the same forwards and backward).
+  #        - Palindromes are case sensitive ("Dad" is not a palindrome, but "dad" is.)
+
+  #      Implicit requirements:
+  #        - the returned string shouldn't be the same string object.
+  #        - if the string is an empty string, the result should be an empty
+  #          array
+  ```
