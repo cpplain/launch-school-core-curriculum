@@ -346,22 +346,22 @@ Algorithm:
 
 ### P: Understanding the Problem
 
-- Establish the rules (define the boundaries of the problem)
+- Establish the rules and define the boundaries of the problem
   - Assess available information
   - Restate explicit requirements
   - Identify implicit requirements
-- Spend enough time - don’t rush this step
+- Spend enough time: don’t rush this step!
 
 ### E: Examples and Test Cases
 
 - Can confirm or refute assumptions
-- Helps to answer questions about implicit requirements
-- Acts as assertions that help codify the rules and boundaries
+- Help to answer questions about implicit requirements
+- Act as assertions that help codify the rules and boundaries
 
 ### D: Data Structures
 
-- Helps reason with data logically
-- Helps interact with data at the implementation level
+- Help reason with data logically
+- Help interact with data at the implementation level
 - Thinking in terms of data structures is part of the problem solving process
 - Data structures closely linked to the algorithm
   - An algorithm is a set of steps from input to output
@@ -371,7 +371,7 @@ Algorithm:
 
 - A logical sequence of steps for accomplishing a task
   - Closely linked to data structures
-  - Series of steps to structure data to produce the required output
+  - Series of steps to structure data and produce the required output
 - Stay abstract and high-level
   - Avoid implementation details
   - Don’t worry about efficiency for now
