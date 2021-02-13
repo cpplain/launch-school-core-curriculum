@@ -1,4 +1,9 @@
 {
-  "version": "0.1",
-  "words": ["pedac", "pseudocode"]
+    "version": "0.1",
+    "words": [
+        "downcase",
+        "pedac",
+        "pseudocode",
+        "rubocop"
+    ]
 }
