@@ -12,6 +12,7 @@ Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course
 - [Collections Basics](#collections-basics)
 - [Looping](#looping)
 - [Introduction to PEDAC Process](#introduction-to-pedac-process)
+- [The PEDAC Problem Solving Process](#the-pedac-problem-solving-process)
 
 ## Introduction
 
@@ -340,3 +341,55 @@ Algorithm:
   - Step 1
   ...
 ```
+
+## The PEDAC Problem Solving Process
+
+### P: Understanding the Problem
+
+- Establish the rules (define the boundaries of the problem)
+  - Assess available information
+  - Restate explicit requirements
+  - Identify implicit requirements
+- Spend enough time - don’t rush this step
+
+### E: Examples and Test Cases
+
+- Can confirm or refute assumptions
+- Helps to answer questions about implicit requirements
+- Acts as assertions that help codify the rules and boundaries
+
+### D: Data Structures
+
+- Helps reason with data logically
+- Helps interact with data at the implementation level
+- Thinking in terms of data structures is part of the problem solving process
+- Data structures closely linked to the algorithm
+  - An algorithm is a set of steps from input to output
+  - Involves structuring data in a certain way
+
+### A: Algorithms
+
+- A logical sequence of steps for accomplishing a task
+  - Closely linked to data structures
+  - Series of steps to structure data to produce the required output
+- Stay abstract and high-level
+  - Avoid implementation details
+  - Don’t worry about efficiency for now
+
+### C: Implementing a Solution in Code
+
+- Translate algorithm solution to code
+- Think about algorithm in context of the programming language
+  - Language features and constraints
+  - Characteristics of data structures
+  - Built in functions and methods
+  - Syntax and coding patterns
+- Create test cases
+- Code with intent
+
+### Final Thoughts
+
+- Not a completely linear process
+- Move back and forth between the steps
+- Switch from implementation to abstract problem solving mode when necessary
+- Don’t try to problem solve at the code level
