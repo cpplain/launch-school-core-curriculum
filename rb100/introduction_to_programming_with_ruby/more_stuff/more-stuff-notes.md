@@ -12,10 +12,10 @@ Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introductio
 - **Regular expression** (**regex**) are pattern matching rules used to find patterns in strings
 - `=~` or `.match()` to check for a match
 
-  ```ruby
-  'powerball' =~ /b/
-  /b/.match('powerball')
-  ```
+```ruby
+'powerball' =~ /b/
+/b/.match('powerball')
+```
 
 ## Ruby Standard Classes
 
@@ -36,36 +36,35 @@ Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introductio
 
 - Blocks can be passed into methods just like normal variables
 
-  ```ruby
-  def take_block(number, &block)
-    block.call(number)
-  end
+```ruby
+def take_block(number, &block)
+  block.call(number)
+end
 
-  number = 42
-  take_block(number) { |num| puts "Block being called in the method! #{num}" }
-  ```
+number = 42
+take_block(number) { |num| puts "Block being called in the method! #{num}" }
+```
 
 - **Procs** are blocks wrapped in a proc object and stored in a variable to be passed around
 - Procs can take arguments
 
-  ```ruby
-  talk = Proc.new { |name| puts "I am talking to #{name}" }
+```ruby
+talk = Proc.new { |name| puts "I am talking to #{name}" }
 
-  talk.call 'Bob'
-  ```
+talk.call 'Bob'
+```
 
 - Procs can be passed into methods
 
-  ```ruby
-  def take_proc(proc)
-    [1, 2, 3, 4, 5].each { |number| proc.call number }
-  end
+```ruby
+def take_proc(proc)
+  [1, 2, 3, 4, 5].each { |number| proc.call number }
+end
 
-  proc =
-    Proc.new { |number| puts "#{number}. Proc being called in the method!" }
+proc = Proc.new { |number| puts "#{number}. Proc being called in the method!" }
 
-  take_proc(proc)
-  ```
+take_proc(proc)
+```
 
 ## Exception Handling
 
@@ -73,34 +72,34 @@ Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introductio
 - Ruby has an `Exception` class to make handling errors easier
 - Exception handling syntax uses the reserved words `begin`, `rescue`, and `end`
 
-  ```ruby
-  begin
-    # perform an operation
-  rescue StandardError
-    # do this if operation fails
-    # for example: log the error
-  end
-  ```
+```ruby
+begin
+  # perform an operation
+rescue StandardError
+  # do this if operation fails
+  # for example: log the error
+end
+```
 
 - `rescue` can be used inline as well
 
-  <!-- prettier-ignore -->
-  ```ruby
-  zero = 0
-  zero.each { |element| puts element } rescue puts "Can't do that!"
-  ```
+<!-- prettier-ignore -->
+```ruby
+zero = 0
+zero.each { |element| puts element } rescue puts "Can't do that!"
+```
 
 - Can also rescue pre-existing errors
 
-  ```ruby
-  def divide(number, divisor)
-    begin
-      answer = number / divisor
-    rescue ZeroDivisionError => e
-      puts e.message
-    end
+```ruby
+def divide(number, divisor)
+  begin
+    answer = number / divisor
+  rescue ZeroDivisionError => e
+    puts e.message
   end
-  ```
+end
+```
 
 ## Exceptions and Stack Traces
 
@@ -108,32 +107,32 @@ Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introductio
 - Ruby has built-in exceptions
 - Some common exceptions are:
 
-  ```ruby
-  StandardError
-  TypeError
-  ArgumentError
-  NoMethodError
-  RuntimeError
-  SystemCallError
-  ZeroDivisionError
-  RegexpError
-  IOError
-  EOFError
-  ThreadError
-  ScriptError
-  SyntaxError
-  LoadError
-  NotImplementedError
-  SecurityError
-  ```
+```ruby
+StandardError
+TypeError
+ArgumentError
+NoMethodError
+RuntimeError
+SystemCallError
+ZeroDivisionError
+RegexpError
+IOError
+EOFError
+ThreadError
+ScriptError
+SyntaxError
+LoadError
+NotImplementedError
+SecurityError
+```
 
 - Stack trace relies on Ruby's call stack, which was discussed in the [Methods][methods] chapter
 
-  ```ruby
-  greeting.rb:2:in `space_out_letters': undefined method `split' for 1:Integer (NoMethodError)
-  from greeting.rb:6:in `greet' from greeting.rb:10:in `decorate_greeting'
-  from greeting.rb:14:in `<main>'
-  ```
+```ruby
+greeting.rb:2:in `space_out_letters': undefined method `split' for 1:Integer (NoMethodError)
+from greeting.rb:6:in `greet' from greeting.rb:10:in `decorate_greeting'
+from greeting.rb:14:in `<main>'
+```
 
 ## Exercises
 

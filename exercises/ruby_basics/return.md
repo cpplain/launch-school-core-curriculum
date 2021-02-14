@@ -6,80 +6,80 @@ Return
 
 Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
 
-1.  --
+1. --
 
-    ```
-    Breakfast
-    ```
+```text
+Breakfast
+```
 
-2.  --
+2. --
 
-    ```
-    Evening
-    ```
+```text
+Evening
+```
 
-3.  --
+3. --
 
-    ```
-    Breakfast
-    ```
+```text
+Breakfast
+```
 
-4.  --
+4. --
 
-    ```
-    Dinner
-    Breakfast
-    ```
+```text
+Dinner
+Breakfast
+```
 
-5.  --
+5. --
 
-    ```
-    Dinner
-    nil
-    ```
+```text
+Dinner
+nil
+```
 
-6.  --
+6. --
 
-    ```
-    Breakfast
-    ```
+```text
+Breakfast
+```
 
-7.  --
+7. --
 
-    ```
-    0
-    1
-    2
-    3
-    4
-    5
-    ```
+```text
+0
+1
+2
+3
+4
+5
+```
 
-8.  --
+8. --
 
-    ```
-    0
-    1
-    2
-    3
-    4
-    10
-    ```
+```text
+0
+1
+2
+3
+4
+10
+```
 
-9.  --
+9. --
 
-    ```
-    0
-    1
-    2
-    nil
-    ```
+```text
+0
+1
+2
+nil
+```
 
 10. --
 
-    ```
-    1
-    ```
+```text
+1
+```
 
 [readme]: /README.md
 [ruby-basics]: ruby-basics-contents.md

@@ -13,18 +13,18 @@ Notes for Flow Control chapter of [Launch School’s][launch-school] [Introducti
 - Comparison and logical operators are `<`, `>`, `<=`, `>=`, `==`, `!=`, `&&`, `||`
 - [conditional.rb](conditional.rb)
 
-  <!-- prettier-ignore -->
-  ```ruby
-  if x == 3
-    puts "x is 3"
-  end
+<!-- prettier-ignore -->
+```ruby
+if x == 3
+  puts "x is 3"
+end
 
-  if x == 3 then puts "x is 3" end
+if x == 3 then puts "x is 3" end
 
-  puts "x is 3" if x == 3
+puts "x is 3" if x == 3
 
-  puts "x is NOT 3" unless x == 33
-  ```
+puts "x is NOT 3" unless x == 33
+```
 
 ## Comparisons
 
@@ -42,21 +42,21 @@ Notes for Flow Control chapter of [Launch School’s][launch-school] [Introducti
 - It is possible to combine multiple conditional expressions
 - `&&` and
 
-  ```ruby
-  (4 == 4) && (5 == 5)
-  ```
+```ruby
+(4 == 4) && (5 == 5)
+```
 
 - `||` or
 
-  ```ruby
-  (4 == 4) || (5 == 5)
-  ```
+```ruby
+(4 == 4) || (5 == 5)
+```
 
 - `!` not
 
-  ```ruby
-  !(4 == 4) # => false
-  ```
+```ruby
+!(4 == 4) # => false
+```
 
 - Order of precedence
   1. `<=`, `<`, `>`, `>=` (comparison)
@@ -70,13 +70,13 @@ Notes for Flow Control chapter of [Launch School’s][launch-school] [Introducti
 
 - Ternary operator is a Ruby idiom that makes a quick `if/else` statement on one line
 
-  ```ruby
-  irb :001 > true ? "this is true" : "this is not true"
-  => "this is true"
+```ruby
+irb :001 > true ? "this is true" : "this is not true"
+=> "this is true"
 
-  irb :001 > false ? "this is true" : "this is not true"
-  => "this is not true"
-  ```
+irb :001 > false ? "this is true" : "this is not true"
+=> "this is not true"
+```
 
 ## Case Statement
 

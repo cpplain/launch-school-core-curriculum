@@ -11,19 +11,19 @@ Notes for Variables chapter of [Launch School’s][launch-school] [Introduction 
 
 - `gets`
 
-  ```ruby
-  irb :001 > name = gets
-  Bob
-  => "Bob\n"
-  ```
+```ruby
+irb :001 > name = gets
+Bob
+=> "Bob\n"
+```
 
 - Remove newline with `.chomp`
 
-  ```ruby
-  irb :001 > name = gets.chomp
-  Bob
-  => "Bob"
-  ```
+```ruby
+irb :001 > name = gets.chomp
+Bob
+=> "Bob"
+```
 
 ## Variable Scope
 

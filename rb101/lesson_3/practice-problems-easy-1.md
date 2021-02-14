@@ -9,16 +9,16 @@ Exercises for Lesson 3 of [Launch School’s][launch-school] RB101 course.
 
 1. Expected output:
 
-   ```text
-   1
-   2
-   2
-   3
-   ```
+```text
+1
+2
+2
+3
+```
 
 2. When part of a method name, `!` and `?` are part of the method name and not part of Ruby syntax. In other uses:
    1. `!=` is a conditional operator meaning not equal
-   2. `!` before an object converts the boolean value of thie object to its oposite, ex: `!true == false`
+   2. `!` before an object converts the boolean value of the object to its opposite, ex: `!true == false`
    3. A trailing `!` is part of a method name
    4. `? :` is the ternary operator and can be used in place of an `if/else` statement
    5. A trailing `?` is part of a method name

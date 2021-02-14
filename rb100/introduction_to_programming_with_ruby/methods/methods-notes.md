@@ -15,11 +15,11 @@ Notes for Methods chapter of [Launch School’s][launch-school] [Introduction to
   - Argument is passed to a method when called
 - Default parameters used if no argument passed
 
-  ```ruby
-  def say(words = 'hello')
-    puts words + '.'
-  end
-  ```
+```ruby
+def say(words = 'hello')
+  puts words + '.'
+end
+```
 
 ## obj.method or method(obj)
 
@@ -44,9 +44,9 @@ Notes for Methods chapter of [Launch School’s][launch-school] [Introduction to
 
 - Chaining is possible because every method call returns something
 
-  ```ruby
-  'hi there'.length.to_s # returns "8" - a String
-  ```
+```ruby
+'hi there'.length.to_s # returns "8" - a String
+```
 
 - If anywhere along the chain there is a `nil` or an exception is thrown, the entire chained call will break
 
@@ -55,34 +55,34 @@ Notes for Methods chapter of [Launch School’s][launch-school] [Introduction to
 - Ruby allows passing method calls as arguments to other methods
 - Use of parentheses in nested method calls is important to prevent confusion
 
-  ```ruby
-  multiply(add(20, 45), subtract(80, 10))
-  ```
+```ruby
+multiply(add(20, 45), subtract(80, 10))
+```
 
 ## The Call Stack
 
 - Blocks, procs, and lambdas use the call stack in Ruby in addition to methods
 
-  ```ruby
-  def first
-    puts 'first method'
-  end
+```ruby
+def first
+  puts 'first method'
+end
 
-  def second
-    first
-    puts 'second method'
-  end
+def second
+  first
+  puts 'second method'
+end
 
-  second
-  puts 'main method'
-  ```
+second
+puts 'main method'
+```
 
-  | Call Stack     |
-  | -------------- |
-  | puts           |
-  | first: line 2  |
-  | second: line 6 |
-  | main: line 10  |
+| Call Stack     |
+| -------------- |
+| puts           |
+| first: line 2  |
+| second: line 6 |
+| main: line 10  |
 
 - If the stack runs out of room, a `SystemStackError` exception is thrown
 

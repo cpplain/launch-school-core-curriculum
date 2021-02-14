@@ -6,89 +6,89 @@ Hashes
 
 Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
 
-1.  --
+1. --
 
-    ```ruby
-    car = { type: 'sedan', color: 'blue', mileage: 80_000 }
-    ```
+```ruby
+car = { type: 'sedan', color: 'blue', mileage: 80_000 }
+```
 
-2.  --
+2. --
 
-    ```ruby
-    car = { type: 'sedan', color: 'blue', mileage: 80_000 }
-    car[:year] = 2003
-    ```
+```ruby
+car = { type: 'sedan', color: 'blue', mileage: 80_000 }
+car[:year] = 2003
+```
 
-3.  --
+3. --
 
-    ```ruby
-    car = { type: 'sedan', color: 'blue', mileage: 80_000, year: 2003 }
-    car.delete :mileage
-    ```
+```ruby
+car = { type: 'sedan', color: 'blue', mileage: 80_000, year: 2003 }
+car.delete :mileage
+```
 
-4.  --
+4. --
 
-    ```ruby
-    car = { type: 'sedan', color: 'blue', year: 2003 }
-    puts car[:color]
-    ```
+```ruby
+car = { type: 'sedan', color: 'blue', year: 2003 }
+puts car[:color]
+```
 
-5.  --
+5. --
 
-    ```ruby
-    numbers = { high: 100, medium: 50, low: 10 }
-    numbers.each { |key, value| puts "A #{key} number is #{value}." }
-    ```
+```ruby
+numbers = { high: 100, medium: 50, low: 10 }
+numbers.each { |key, value| puts "A #{key} number is #{value}." }
+```
 
-6.  --
+6. --
 
-    ```ruby
-    numbers = { high: 100, medium: 50, low: 10 }
-    half_numbers = numbers.map { |key, value| value / 2 }
-    p half_numbers
-    ```
+```ruby
+numbers = { high: 100, medium: 50, low: 10 }
+half_numbers = numbers.map { |key, value| value / 2 }
+p half_numbers
+```
 
-7.  --
+7. --
 
-    ```ruby
-    numbers = { high: 100, medium: 50, low: 10 }
-    low_numbers = numbers.select { |key, value| value < 25 }
-    p low_numbers
-    ```
+```ruby
+numbers = { high: 100, medium: 50, low: 10 }
+low_numbers = numbers.select { |key, value| value < 25 }
+p low_numbers
+```
 
-8.  --
+8. --
 
-    ```ruby
-    numbers = { high: 100, medium: 50, low: 10 }
+```ruby
+numbers = { high: 100, medium: 50, low: 10 }
 
-    low_numbers = numbers.select! { |key, value| value < 25 }
+low_numbers = numbers.select! { |key, value| value < 25 }
 
-    p low_numbers
-    p numbers
-    ```
+p low_numbers
+p numbers
+```
 
-9.  --
+9. --
 
-    ```ruby
-    nested_hash = {
-      car: {
-        type: 'sedan',
-        color: 'blue',
-        year: 2003,
-      },
-      truck: {
-        type: 'pickup',
-        color: 'red',
-        year: 1998,
-      },
-    }
-    ```
+```ruby
+nested_hash = {
+  car: {
+    type: 'sedan',
+    color: 'blue',
+    year: 2003,
+  },
+  truck: {
+    type: 'pickup',
+    color: 'red',
+    year: 1998,
+  },
+}
+```
 
 10. --
 
-    ```ruby
-    car = [[:type, 'sedan'], [:color, 'blue'], [:year, 2003]]
-    ```
+```ruby
+car = [[:type, 'sedan'], [:color, 'blue'], [:year, 2003]]
+```
 
 [readme]: /README.md
 [ruby-basics]: ruby-basics-contents.md

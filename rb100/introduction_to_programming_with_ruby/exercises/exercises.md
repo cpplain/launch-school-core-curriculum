@@ -7,15 +7,15 @@ Exercises
 
 Notes for Exercises chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
-1.  [exercise_1.rb](exercise_1.rb)
-2.  [exercise_2.rb](exercise_2.rb)
-3.  [exercise_3.rb](exercise_3.rb)
-4.  [exercise_4.rb](exercise_4.rb)
-5.  [exercise_5.rb](exercise_5.rb)
-6.  [exercise_6.rb](exercise_6.rb)
-7.  The major difference between an `Array` and a `Hash` is a `Hash` stores key-value pairs accessed by the key
-8.  Old: `hash = { :key => 'value' }`, new: `hash = { key: 'value' }`
-9.  [exercise_9.rb](exercise_9.rb)
+1. [exercise_1.rb](exercise_1.rb)
+2. [exercise_2.rb](exercise_2.rb)
+3. [exercise_3.rb](exercise_3.rb)
+4. [exercise_4.rb](exercise_4.rb)
+5. [exercise_5.rb](exercise_5.rb)
+6. [exercise_6.rb](exercise_6.rb)
+7. The major difference between an `Array` and a `Hash` is a `Hash` stores key-value pairs accessed by the key
+8. Old: `hash = { :key => 'value' }`, new: `hash = { key: 'value' }`
+9. [exercise_9.rb](exercise_9.rb)
 10. Hash values can be arrays and an array can be an array of hashes
     1. `{ key: [value1, value2] }`
     2. `[{ key1: value1 }, { key2: value2 }]`

@@ -38,40 +38,40 @@ Notes for [Launch School’s][launch-school] RB100 course.
 2. `#` sign at the beginning of a line signifies everything on the same line is a comment
 3. Always use snake_case formatting to define or initialize a method, variable, or file
 
-   ```ruby
-   # Naming a file
-   this_is_a_snake_cased_file.rb
+```ruby
+# Naming a file
+this_is_a_snake_cased_file.rb
 
-   # Assigning a variable
-   forty_two = 42
+# Assigning a variable
+forty_two = 42
 
-   # Defining a method
-   def this_is_a_great_method
-     do_some_stuff
-   end
-   ```
+# Defining a method
+def this_is_a_great_method
+  do_some_stuff
+end
+```
 
 4. Define a constant variable (all uppercase) when value will not change
 
-   ```ruby
-   FOUR = 'four'
-   FIVE = 5
-   ```
+```ruby
+FOUR = 'four'
+FIVE = 5
+```
 
 5. Prefer `{}` when the entire code expression fits on one line
 
-   ```ruby
-   [1, 2, 3].each { |i| do_some_stuff }
+```ruby
+[1, 2, 3].each { |i| do_some_stuff }
 
-   [1, 2, 3].each { |i| do_some_stuff }
-   ```
+[1, 2, 3].each { |i| do_some_stuff }
+```
 
 6. Use **PascalCase** when naming classes
 
-   ```ruby
-   class MyFirstClass
-   end
-   ```
+```ruby
+class MyFirstClass
+end
+```
 
 - Further research: [Ruby Style Guide][style-guide]
 

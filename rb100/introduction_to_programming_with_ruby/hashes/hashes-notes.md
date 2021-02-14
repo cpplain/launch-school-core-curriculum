@@ -12,40 +12,41 @@ Notes for Hashes chapter of [Launch School’s][launch-school] [Introduction to 
 - A **hash** is a data structure that stores elements as key-value pairs
 - Most commonly, a hash is created using symbols as _keys_ and any data type as _values_
 - Old syntax:
-  <!-- prettier-ignore -->
-  ```ruby
-  { :key => 'value' }
-  ```
+
+<!-- prettier-ignore -->
+```ruby
+{ :key => 'value' }
+```
 
 - New syntax:
 
-  ```ruby
-  { key: 'value' }
-  ```
+```ruby
+{ key: 'value' }
+```
 
 - Add to hash:
 
-  ```ruby
-  hash[:key] = 'value'
-  ```
+```ruby
+hash[:key] = 'value'
+```
 
 - Remove value:
 
-  ```ruby
-  hash.delete(:key)
-  ```
+```ruby
+hash.delete(:key)
+```
 
 - Return value:
 
-  ```ruby
-  hash[:key]
-  ```
+```ruby
+hash[:key]
+```
 
 - Merge two hashes:
 
-  ```ruby
-  hash.merge!(new_hash)
-  ```
+```ruby
+hash.merge!(new_hash)
+```
 
 ## Iterating Over Hashes
 
@@ -57,23 +58,23 @@ Notes for Hashes chapter of [Launch School’s][launch-school] [Introduction to 
 
 - Can use a hash to accept optional parameters when creating a method
 
-  ```ruby
-  def greeting(name, options = {})
-    if options.empty?
-      puts "Hi, my name is #{name}"
-    else
-      puts "Hi, my name is #{name} and I'm #{options[:age]}."
-    end
+```ruby
+def greeting(name, options = {})
+  if options.empty?
+    puts "Hi, my name is #{name}"
+  else
+    puts "Hi, my name is #{name} and I'm #{options[:age]}."
   end
+end
 
-  greeting('Bob', { age: 62 })
-  ```
+greeting('Bob', { age: 62 })
+```
 
 - Curly braces are not required when a hash is the last argument
 
-  ```ruby
-  greeting('Bob', age: 62)
-  ```
+```ruby
+greeting('Bob', age: 62)
+```
 
 - This is common among Rails developers
 
@@ -81,10 +82,10 @@ Notes for Hashes chapter of [Launch School’s][launch-school] [Introduction to 
 
 - It is possible to use different data types as keys
 
-  ```ruby
-  { 'height' => '6 ft' } # string as key
-  { 1 => 'one' } # integer as key
-  ```
+```ruby
+{ 'height' => '6 ft' } # string as key
+{ 1 => 'one' } # integer as key
+```
 
 - Old style syntax (`=>`) is required when not using symbols as keys
 
@@ -94,16 +95,16 @@ Notes for Hashes chapter of [Launch School’s][launch-school] [Introduction to 
 - `.select` returns key-value pairs that evaluate to true in passed block
 - `.fetch()` returns value for given key or optional return value
 
-  ```ruby
-  name_and_age.fetch('Larry', "Larry isn't in this hash")
-  ```
+```ruby
+name_and_age.fetch('Larry', "Larry isn't in this hash")
+```
 
 - `.to_a` returns array version of the hash
 
-  ```ruby
-  irb :009 > name_and_age.to_a
-  => [["Bob", 42], ["Steve", 31], ["Joe", 19]]
-  ```
+```ruby
+irb :009 > name_and_age.to_a
+=> [["Bob", 42], ["Steve", 31], ["Joe", 19]]
+```
 
 - `.keys` and `.values` returns array of all keys or values
 

@@ -103,30 +103,30 @@ Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 - `break` will exit the nearest loop
 - If loop needs to execute more than once, use a conditional statement to call `break` when the condition is met
 
-  ```ruby
-  loop do
-    number = rand(1..10) # a random number between 1 and 10
-    puts 'Hello!'
-    if number == 5
-      puts 'Exiting...'
-      break
-    end
+```ruby
+loop do
+  number = rand(1..10) # a random number between 1 and 10
+  puts 'Hello!'
+  if number == 5
+    puts 'Exiting...'
+    break
   end
-  ```
+end
+```
 
 #### Iteration
 
 - To iterate a specific number of times, can use a counter variable to track iteration number
 
-  ```ruby
-  counter = 0
+```ruby
+counter = 0
 
-  loop do
-    puts 'Hello!'
-    counter += 1
-    break if counter == 5
-  end
-  ```
+loop do
+  puts 'Hello!'
+  counter += 1
+  break if counter == 5
+end
+```
 
 - Counter needs to be incremented every loop to track number of iterations
 - Counter must be initialized before the loop, otherwise it will be reset each iteration and `break` condition won’t be met
@@ -142,16 +142,16 @@ Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 
 - `next` skips the rest of the code within the block and starts the next loop iteration
 
-  ```ruby
-  counter = 0
+```ruby
+counter = 0
 
-  loop do
-    counter += 1
-    next if counter.odd?
-    puts counter
-    break if counter > 5
-  end
-  ```
+loop do
+  counter += 1
+  next if counter.odd?
+  puts counter
+  break if counter > 5
+end
+```
 
 ### Iterating Over Collections
 
@@ -159,49 +159,49 @@ Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 
 - Reference each character via its index in the string
 
-  ```ruby
-  alphabet = 'abcdefghijklmnopqrstuvwxyz'
-  counter = 0
+```ruby
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+counter = 0
 
-  loop do
-    break if counter == alphabet.size
-    puts alphabet[counter]
-    counter += 1
-  end
-  ```
+loop do
+  break if counter == alphabet.size
+  puts alphabet[counter]
+  counter += 1
+end
+```
 
 #### Array
 
 - Reference each element via its index in the array
 
-  ```ruby
-  colors = %w[green blue purple orange]
-  counter = 0
+```ruby
+colors = %w[green blue purple orange]
+counter = 0
 
-  loop do
-    break if counter == colors.size
-    puts "I'm the color #{colors[counter]}!"
-    counter += 1
-  end
-  ```
+loop do
+  break if counter == colors.size
+  puts "I'm the color #{colors[counter]}!"
+  counter += 1
+end
+```
 
 #### Hash
 
 - Multi step process: create array of keys, iterate over each key in the array, get value using the key
 
-  ```ruby
-  number_of_pets = { 'dogs' => 2, 'cats' => 4, 'fish' => 1 }
-  pets = number_of_pets.keys # => ['dogs', 'cats', 'fish']
-  counter = 0
+```ruby
+number_of_pets = { 'dogs' => 2, 'cats' => 4, 'fish' => 1 }
+pets = number_of_pets.keys # => ['dogs', 'cats', 'fish']
+counter = 0
 
-  loop do
-    break if counter == number_of_pets.size
-    current_pet = pets[counter]
-    current_pet_number = number_of_pets[current_pet]
-    puts "I have #{current_pet_number} #{current_pet}!"
-    counter += 1
-  end
-  ```
+loop do
+  break if counter == number_of_pets.size
+  current_pet = pets[counter]
+  current_pet_number = number_of_pets[current_pet]
+  puts "I have #{current_pet_number} #{current_pet}!"
+  counter += 1
+end
+```
 
 ### Summary
 
@@ -237,22 +237,22 @@ Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 - Always verify your assumptions either by looking at the test cases or by asking the interviewer
 - Conclude this part of the PEDAC process by writing down the inputs, outputs, and rules (explicit and implicit requirements)
 
-  ```ruby
-  # input: string
-  # output: string (not the same object)
-  # rules:
-  #      Explicit requirements:
-  #        - every palindrome in the string must be converted to uppercase.
-  #          (Reminder: a palindrome is a word that reads the same forwards and
-  #          backward).
-  #        - Palindromes are case sensitive ("Dad" is not a palindrome, but
-  #          "dad" is.)
+```text
+# input: string
+# output: string (not the same object)
+# rules:
+#      Explicit requirements:
+#        - every palindrome in the string must be converted to uppercase.
+#          (Reminder: a palindrome is a word that reads the same forwards and
+#          backward).
+#        - Palindromes are case sensitive ("Dad" is not a palindrome, but
+#          "dad" is.)
 
-  #      Implicit requirements:
-  #        - the returned string shouldn't be the same string object.
-  #        - if the string is an empty string, the result should be an empty
-  #          array
-  ```
+#      Implicit requirements:
+#        - the returned string shouldn't be the same string object.
+#        - if the string is an empty string, the result should be an empty
+#          array
+```
 
 ### Data Structure / Algorithm
 
@@ -260,49 +260,49 @@ Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 - Biggest problem students have when writing algorithms is providing sufficient detail
 - Formal pseudocode is an intermediary step between informal pseudocode and final code
 
-  ```ruby
-  # input: a string
-  # output: an array of substrings
-  # rules: palindrome words should be case sensitive, meaning "abBA" is not a
-  #        palindrome
+```text
+# input: a string
+# output: an array of substrings
+# rules: palindrome words should be case sensitive, meaning "abBA" is not a
+#        palindrome
 
-  # Algorithm:
-  #  substrings method
-  #  =================
-  #  - create an empty array called `result` that will contain all required
-  #    substrings
-  #  - create a `starting_index` variable (value `0`) for the starting index of
-  #    a substring
-  #  - start a loop that iterates over `starting_index` from `0` to the length
-  #    of the string minus 2
-  #    - create a `num_chars` variable (value `2`) for the length of a substring
-  #    - start an inner loop that iterates over `num_chars` from `2` to `string.
-  #      length - starting_index`
-  #      - extract a substring of length `num_chars` from `string` starting at
-  #        `starting_index`
-  #      - append the extracted substring to the `result` array
-  #      - increment the `num_chars` variable by `1`
-  #    - end the inner loop
-  #    - increment the `starting_index` variable by `1`
-  #  - end the outer loop
-  #  - return the `result` array
+# Algorithm:
+#  substrings method
+#  =================
+#  - create an empty array called `result` that will contain all required
+#    substrings
+#  - create a `starting_index` variable (value `0`) for the starting index of
+#    a substring
+#  - start a loop that iterates over `starting_index` from `0` to the length
+#    of the string minus 2
+#    - create a `num_chars` variable (value `2`) for the length of a substring
+#    - start an inner loop that iterates over `num_chars` from `2` to `string.
+#      length - starting_index`
+#      - extract a substring of length `num_chars` from `string` starting at
+#        `starting_index`
+#      - append the extracted substring to the `result` array
+#      - increment the `num_chars` variable by `1`
+#    - end the inner loop
+#    - increment the `starting_index` variable by `1`
+#  - end the outer loop
+#  - return the `result` array
 
-  #  is_palindrome? method
-  #  =====================
-  #  - Inside the `is_palindrome?` method, check whether the string
-  #    value is equal to its reversed value. You can use the
-  #    String#reverse method.
+#  is_palindrome? method
+#  =====================
+#  - Inside the `is_palindrome?` method, check whether the string
+#    value is equal to its reversed value. You can use the
+#    String#reverse method.
 
-  #  palindrome_substrings method
-  #  ============================
-  #  - initialize a result variable to an empty array
-  #  - create an array named substring_arr that contains all of the
-  #    substrings of the input string that are at least 2 characters long.
-  #  - loop through the words in the substring_arr array.
-  #  - if the word is a palindrome, append it to the result
-  #    array
-  #  - return the result array
-  ```
+#  palindrome_substrings method
+#  ============================
+#  - initialize a result variable to an empty array
+#  - create an array named substring_arr that contains all of the
+#    substrings of the input string that are at least 2 characters long.
+#  - loop through the words in the substring_arr array.
+#  - if the word is a palindrome, append it to the result
+#    array
+#  - return the result array
+```
 
 - It isn’t needed but can be helpful
 - Example of complete informal pseudocode:
@@ -327,20 +327,20 @@ Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 input: input 1, ...
 output: output
 rules:
-  Explicit requirements:
-  - Req 1
-  ...
-  Implicit requirements:
-  - Req 1
-  ...
+Explicit requirements:
+- Req 1
+...
+Implicit requirements:
+- Req 1
+...
 
 Algorithm:
-  First method:
-  - Step 1
-  ...
-  Second method:
-  - Step 1
-  ...
+First method:
+- Step 1
+...
+Second method:
+- Step 1
+...
 ```
 
 ## The PEDAC Problem Solving Process
@@ -409,60 +409,60 @@ Algorithm:
 - [select_fruit.rb](select_fruit.rb)
 - Mutate argument instead of returning new array
 
-  ```ruby
-  def double_numbers(numbers)
-    counter = 0
+```ruby
+def double_numbers(numbers)
+  counter = 0
 
-    loop do
-      break if counter == numbers.size
+  loop do
+    break if counter == numbers.size
 
-      numbers[counter] = numbers[counter] * 2
+    numbers[counter] = numbers[counter] * 2
 
-      counter += 1
-    end
-
-    numbers
+    counter += 1
   end
-  ```
+
+  numbers
+end
+```
 
 - Transform the numbers based on their position in the array rather than their value
 
-  ```ruby
-  def double_odd_numbers(numbers)
-    doubled_numbers = []
-    counter = 0
+```ruby
+def double_odd_numbers(numbers)
+  doubled_numbers = []
+  counter = 0
 
-    loop do
-      break if counter == numbers.size
+  loop do
+    break if counter == numbers.size
 
-      current_number = numbers[counter]
-      current_number *= 2 if counter.odd?
-      doubled_numbers << current_number
+    current_number = numbers[counter]
+    current_number *= 2 if counter.odd?
+    doubled_numbers << current_number
 
-      counter += 1
-    end
-
-    doubled_numbers
+    counter += 1
   end
-  ```
+
+  doubled_numbers
+end
+```
 
 - Multiply every array item by a specified value
 
-  ```ruby
-  def multiply(numbers, multiplier)
-    multiplied_numbers = []
-    counter = 0
+```ruby
+def multiply(numbers, multiplier)
+  multiplied_numbers = []
+  counter = 0
 
-    loop do
-      break if counter == numbers.size
+  loop do
+    break if counter == numbers.size
 
-      multiplied_numbers << numbers[counter] * multiplier
-      counter += 1
-    end
-
-    multiplied_numbers
+    multiplied_numbers << numbers[counter] * multiplier
+    counter += 1
   end
-  ```
+
+  multiplied_numbers
+end
+```
 
 - It’s common to chain actions on on collections but attentions must be paid to the return value, especially if the return value is an empty collection or `nil`
 

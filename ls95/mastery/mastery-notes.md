@@ -143,16 +143,16 @@ Notes for [Mastery][mastery-amazon] by George Leonard (Amazon).
 ### Pitfalls Along the Path
 
 - It’s not likely to avoid pitfalls, but it helps to know they are there.
-  1.  Conflicting way of life
-  2.  Obsessive goal orientation
-  3.  Poor instruction
-  4.  Lack of competitiveness
-  5.  Over competitiveness
-  6.  Laziness
-      - The path is the best possible cure for laziness
-  7.  Injuries
-  8.  Drugs
-  9.  Prizes and medals
+  1. Conflicting way of life
+  2. Obsessive goal orientation
+  3. Poor instruction
+  4. Lack of competitiveness
+  5. Over competitiveness
+  6. Laziness
+     - The path is the best possible cure for laziness
+  7. Injuries
+  8. Drugs
+  9. Prizes and medals
   10. Vanity
   11. Dead seriousness
   12. Inconsistency

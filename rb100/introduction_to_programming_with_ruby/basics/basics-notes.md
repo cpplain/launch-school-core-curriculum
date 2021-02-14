@@ -17,11 +17,11 @@ Notes for The Basics chapter of [Launch School’s][launch-school] [Introduction
 
 - Created by placing a colon (`:`) before a word
 
-  ```ruby
-  :name
-  :a_symbol
-  :"surprisingly, this is also a symbol"
-  ```
+```ruby
+:name
+:a_symbol
+:"surprisingly, this is also a symbol"
+```
 
 ## Numbers
 
@@ -33,33 +33,33 @@ Notes for The Basics chapter of [Launch School’s][launch-school] [Introduction
 - `.nil?` check if `nil`
 - `nil` evaluates to `false` in conditional expressions
 
-  ```ruby
-  irb :001 > if nil
-  irb :002 > puts "Hello, World!"
-  irb :003 > end
-  => nil
-  ```
+```ruby
+irb :001 > if nil
+irb :002 > puts "Hello, World!"
+irb :003 > end
+=> nil
+```
 
 - `nil` is not equivalent to `false`
 
-  ```ruby
-  irb :001 > false == nil
-  => false
-  ```
+```ruby
+irb :001 > false == nil
+=> false
+```
 
 ## Modulo vs Remainder
 
 - Effect summarized:
 
-  |   a |   b | a % b (modulo) | a.remainder(b) | a.divmod(b) |
-  | --: | --: | -------------: | -------------: | :---------- |
-  |  17 |   5 |              2 |              2 | [3, 2]      |
-  |  17 |  -5 |             -3 |              2 | [-4, -3]    |
-  | -17 |   5 |              3 |             -2 | [-4, 3]     |
-  | -17 |  -5 |             -2 |             -2 | [3, -2]     |
+|   a |   b | a % b (modulo) | a.remainder(b) | a.divmod(b) |
+| --: | --: | -------------: | -------------: | :---------- |
+|  17 |   5 |              2 |              2 | [3, 2]      |
+|  17 |  -5 |             -3 |              2 | [-4, -3]    |
+| -17 |   5 |              3 |             -2 | [-4, 3]     |
+| -17 |  -5 |             -2 |             -2 | [3, -2]     |
 
-  - Modulo returns a positive integer when the divisor is positive and a negative integer when the divisor is negative
-  - Remainder returns a positive integer when the dividnd is positive and a negative integer when the dividend is negative
+- Modulo returns a positive integer when the divisor is positive and a negative integer when the divisor is negative
+- Remainder returns a positive integer when the dividend is positive and a negative integer when the dividend is negative
 
 - Further study:
   - https://en.wikipedia.org/wiki/Modulo_operation

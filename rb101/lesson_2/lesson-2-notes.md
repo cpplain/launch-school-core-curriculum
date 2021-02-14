@@ -32,41 +32,42 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 2. `#` sign at the beginning of a line signifies everything on the same line is a comment
 3. Always use snake_case formatting to define or initialize a method, variable, or file
 
-   ```ruby
-   # Naming a file
-   this_is_a_snake_cased_file.rb
+```ruby
+# Naming a file
+this_is_a_snake_cased_file.rb
 
-   # Assigning a variable
-   forty_two = 42
+# Assigning a variable
+forty_two = 42
 
-   # Defining a method
-   def this_is_a_great_method
-     do_some_stuff
-   end
-   ```
+# Defining a method
+def this_is_a_great_method
+  do_some_stuff
+end
+```
 
 4. Define a constant variable (all uppercase) when value will not change
 
-   ```ruby
-   # Constant declaration
-   FOUR = 'four'
-   FIVE = 5
-   ```
+```ruby
+# Constant declaration
+FOUR = 'four'
+FIVE = 5
+```
 
 5. Prefer `{}` when the entire code expression fits on one line
 
-   ```ruby
-   # Multi-line vs single line
-   [1, 2, 3].each { |i| do_some_stuff }
+```ruby
+# Multi-line vs single line
+[1, 2, 3].each { |i| do_some_stuff }
 
-   [1, 2, 3].each { |i| do_some_stuff }
-   ```
+[1, 2, 3].each { |i| do_some_stuff }
+```
 
 6. Use **PascalCase** when naming classes
-   ```ruby
-   class MyFirstClass
-   end
-   ```
+
+```ruby
+class MyFirstClass
+end
+```
 
 ## Lecture: Kickoff
 
@@ -108,17 +109,17 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 - **Boolean** is an object whose purpose is to express “true” or “false”
 - Booleans are classes with associated methods
 
-  ```ruby
-  true.class # => TrueClass
-  true.nil? # => false
-  true.to_s # => "true"
-  true.methods # => list of methods you can call on the true object
+```ruby
+true.class # => TrueClass
+true.nil? # => false
+true.to_s # => "true"
+true.methods # => list of methods you can call on the true object
 
-  false.class # => FalseClass
-  false.nil? # => false
-  false.to_s # => "false"
-  false.methods # => list of methods you can call on the false object
-  ```
+false.class # => FalseClass
+false.nil? # => false
+false.to_s # => "false"
+false.methods # => list of methods you can call on the false object
+```
 
 - `&&` is the “and” operator and will return `true` only if both expressions evaluated are `true`
 - `||` is the “or” operator and will return `true` if either of the expressions evaluated are `true`
@@ -127,15 +128,15 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 - Ruby considers everything to be “truthy” other than `false` and `nil`
 - An expression Ruby considers true is not the same as the `true` object
 
-  ```ruby
-  name = find_name
+```ruby
+name = find_name
 
-  if name && name.valid?
-    puts 'great name!'
-  else
-    puts "either couldn't find name or it's invalid"
-  end
-  ```
+if name && name.valid?
+  puts 'great name!'
+else
+  puts "either couldn't find name or it's invalid"
+end
+```
 
 ## Walk-through: Calculator
 
@@ -143,10 +144,10 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 - Local variables initialized within an `if` statement can be accessed outside of the statement
 - Ruby `if` statements can return a value
 
-  ```ruby
-  answer = true ? 'yes' : 'no'
-  puts answer # => yes
-  ```
+```ruby
+answer = true ? 'yes' : 'no'
+puts answer # => yes
+```
 
 ## Pseudocode
 
@@ -155,59 +156,59 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 - Helps focus on the logical problem and not the programming language
 - Formalizing pseudocode helps make translation to programming code easier
 
-  | keyword             | meaning                              |
-  | :------------------ | :----------------------------------- |
-  | START               | start of the program                 |
-  | SET                 | sets a variable we can use for later |
-  | GET                 | retrieve input from user             |
-  | PRINT               | displays output to user              |
-  | READ                | retrieve value from variable         |
-  | IF / ELSE IF / ELSE | show conditional branches in logic   |
-  | WHILE               | show looping logic                   |
-  | END                 | end of the program                   |
+| keyword             | meaning                              |
+| :------------------ | :----------------------------------- |
+| START               | start of the program                 |
+| SET                 | sets a variable we can use for later |
+| GET                 | retrieve input from user             |
+| PRINT               | displays output to user              |
+| READ                | retrieve value from variable         |
+| IF / ELSE IF / ELSE | show conditional branches in logic   |
+| WHILE               | show looping logic                   |
+| END                 | end of the program                   |
 
 - Pseudocode example
 
-  ```text
-  START
+```text
+START
 
-  # Given a collection of integers called "numbers"
+# Given a collection of integers called "numbers"
 
-  SET iterator = 1
-  SET saved_number = value within numbers collection at space 1
+SET iterator = 1
+SET saved_number = value within numbers collection at space 1
 
-  WHILE iterator <= length of numbers
-    SET current_number = value within numbers collection at space "iterator"
-    IF saved_number >= current_number
-      go to the next iteration
-    ELSE
-      saved_number = current_number
+WHILE iterator <= length of numbers
+  SET current_number = value within numbers collection at space "iterator"
+  IF saved_number >= current_number
+    go to the next iteration
+  ELSE
+    saved_number = current_number
 
-    iterator = iterator + 1
+  iterator = iterator + 1
 
-  PRINT saved_number
+PRINT saved_number
 
-  END
-  ```
+END
+```
 
 - Translation of pseudocode to Ruby
 
-  ```ruby
-  def find_greatest(numbers)
-    saved_number = nil
+```ruby
+def find_greatest(numbers)
+  saved_number = nil
 
-    numbers.each do |num|
-      saved_number ||= num # assign to first value
-      if saved_number >= num
-        next
-      else
-        saved_number = num
-      end
+  numbers.each do |num|
+    saved_number ||= num # assign to first value
+    if saved_number >= num
+      next
+    else
+      saved_number = num
     end
-
-    saved_number
   end
-  ```
+
+  saved_number
+end
+```
 
 - For more sophisticated problems, apply pseudocode to smaller parts of the problem then translate that to Ruby code to verify the logic before moving on to the next piece in the problem
 - [pseudocode-practice.md](pseudocode-practice.md)
@@ -244,15 +245,15 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 
 - Multiline string using **heredoc**:
 
-  ```ruby
-  operator_prompt = <<-MSG
-    What operation would you like to perform?
-    1) add
-    2) subtract
-    3) multiply
-    4) divide
-  MSG
-  ```
+```ruby
+operator_prompt = <<-MSG
+  What operation would you like to perform?
+  1) add
+  2) subtract
+  3) multiply
+  4) divide
+MSG
+```
 
 - The `Kernel` module is included by class `Object`, so its methods are available in every Ruby object
 
@@ -296,25 +297,25 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 - A `{}` block has higher priority than a `do...end` block
 - The following shows how operator precedence can affect outcome (parentheses added to visualize order)
 
-  ```ruby
-  array = [1, 2, 3]
+```ruby
+array = [1, 2, 3]
 
-  p(array.map) do |num|
-    num + 1                           #  <Enumerator: [1, 2, 3]:map>
-  end                                 #  => <Enumerator: [1, 2, 3]:map>
+p(array.map) do |num|
+  num + 1                           #  <Enumerator: [1, 2, 3]:map>
+end                                 #  => <Enumerator: [1, 2, 3]:map>
 
-  p(array.map { |num| num + 1 })   r  # [2, 3, 4]
-                                      # => [2, 3, 4]
-  ```
+p(array.map { |num| num + 1 })   r  # [2, 3, 4]
+                                    # => [2, 3, 4]
+```
 
 - Object’s `tap` method extremely useful for debugging
 
-  ```ruby
-  (1..10).tap { |x| p x }.to_a.tap { |x| p x }.select do |x|
-    # 1..10 # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    x.even?
-  end.tap { |x| p x }.map { |x| x * x }.tap { |x| p x } # [2, 4, 6, 8, 10] # [4, 16, 36, 64, 100]
-  ```
+```ruby
+(1..10).tap { |x| p x }.to_a.tap { |x| p x }.select do |x|
+  # 1..10 # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  x.even?
+end.tap { |x| p x }.map { |x| x * x }.tap { |x| p x } # [2, 4, 6, 8, 10] # [4, 16, 36, 64, 100]
+```
 
 - Moral of the story: **Use Parentheses!**
 
@@ -368,26 +369,25 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 
 - Don’t prematurely exit a program; it should likely have a single exit point
 - Know when to use `do/while` vs `while`
-
   - Works:
 
-    ```ruby
-    answer = ''
-    while answer.downcase != 'n'
-      puts 'Continue? (y/n)'
-      answer = gets.chomp
-    end
-    ```
+```ruby
+answer = ''
+while answer.downcase != 'n'
+  puts 'Continue? (y/n)'
+  answer = gets.chomp
+end
+```
 
-  - Better:
+- Better:
 
-    ```ruby
-    loop do
-      puts 'Continue? (y/n)'
-      answer = gets.chomp
-      break if answer.downcase == 'n'
-    end
-    ```
+```ruby
+loop do
+  puts 'Continue? (y/n)'
+  answer = gets.chomp
+  break if answer.downcase == 'n'
+end
+```
 
 ### Approach to Learning
 
@@ -412,15 +412,15 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 - Nested blocks follow the same rules with "inner" and "outer" relative depending on the blocks being referenced
 - **Variable shadowing** happens when a block takes a parameter that is named identically to an outer scope variable
 
-  ```ruby
-  n = 10
+```ruby
+n = 10
 
-  1.times { |n| n = 11 }
+1.times { |n| n = 11 }
 
-  puts n # => 10
-  ```
+puts n # => 10
+```
 
-  - Variable shadowing should be avoided
+- Variable shadowing should be avoided
 
 ### Variables and Method Definitions
 
@@ -433,14 +433,14 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 - Scope for constant variables is not the same as for local variables
 - Constants behave like global variables and said to have **lexical scope**
 
-  ```ruby
-  loop do
-    MY_TEAM = 'Phoenix Suns'
-    break
-  end
+```ruby
+loop do
+  MY_TEAM = 'Phoenix Suns'
+  break
+end
 
-  puts MY_TEAM # => Phoenix Suns
-  ```
+puts MY_TEAM # => Phoenix Suns
+```
 
 ## More Variable Scope
 
@@ -448,32 +448,32 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 - A block is part of the method invocation
 - The block acts as an argument to the method
 
-  ```ruby
-  def greetings
-    yield
-    puts 'Goodbye'
-  end
+```ruby
+def greetings
+  yield
+  puts 'Goodbye'
+end
 
-  word = 'Hello'
+word = 'Hello'
 
-  greetings { puts word }
+greetings { puts word }
 
-  # Outputs 'Hello'
-  # Outputs 'Goodbye'
-  ```
+# Outputs 'Hello'
+# Outputs 'Goodbye'
+```
 
-  - `yield` executes the block
+- `yield` executes the block
 
 - The method can use the return value of the block
 - For example, `Array#map` is defined in such a way to use the return value of the block to transform the each element
 
-  ```ruby
-  a = 'hello'
+```ruby
+a = 'hello'
 
-  [1, 2, 3].map { |num| a } # => ["hello", "hello", "hello"]
-  ```
+[1, 2, 3].map { |num| a } # => ["hello", "hello", "hello"]
+```
 
-  - `#map` doesn’t have access to `a` but the block passed to `#map` does so the return value of the block can be used
+- `#map` doesn’t have access to `a` but the block passed to `#map` does so the return value of the block can be used
 
 - Method definition sets the scope of any local variables defined in terms of parameters and if/how it interacts with blocks
 - Method invocation uses the scope set by the method definition
@@ -508,9 +508,9 @@ Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
   - Hard to determine if `=` or `==` was intended
 - Use an underscore for unused parameters
 
-  ```ruby
-  names.each_with_index { |_, idx| puts "#{idx + 1}. got a name!" }
-  ```
+```ruby
+names.each_with_index { |_, idx| puts "#{idx + 1}. got a name!" }
+```
 
 - Gain experience through struggle
   - Don’t memorize best practices but spend enough time programming to understand the context of the practices
