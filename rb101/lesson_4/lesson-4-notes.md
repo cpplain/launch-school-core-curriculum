@@ -13,6 +13,7 @@ Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 - [Looping](#looping)
 - [Introduction to PEDAC Process](#introduction-to-pedac-process)
 - [The PEDAC Problem Solving Process](#the-pedac-problem-solving-process)
+- [Selection and Transformation](#selection-and-transformation)
 
 ## Introduction
 
@@ -393,6 +394,77 @@ Algorithm:
 - Move back and forth between the steps
 - Switch from implementation to abstract problem solving mode when necessary
 - Don’t try to problem solve at the code level
+
+## Selection and Transformation
+
+- Selection and transformation utilize the basics of looping
+  1. a loop
+  2. a counter
+  3. a way to retrieve the current value
+  4. a way to exit the loop
+- Selection and transformation require additional criteria
+  - Selection uses the criteria to determine which elements to select
+  - Transformation uses the criteria to determine how to transform the elements
+- When performing transformations, it’s important to pay attention to whether the original collection is mutated or a new collection is returned
+- [select_fruit.rb](select_fruit.rb)
+- Mutate argument instead of returning new array
+
+  ```ruby
+  def double_numbers(numbers)
+    counter = 0
+
+    loop do
+      break if counter == numbers.size
+
+      numbers[counter] = numbers[counter] * 2
+
+      counter += 1
+    end
+
+    numbers
+  end
+  ```
+
+- Transform the numbers based on their position in the array rather than their value
+
+  ```ruby
+  def double_odd_numbers(numbers)
+    doubled_numbers = []
+    counter = 0
+
+    loop do
+      break if counter == numbers.size
+
+      current_number = numbers[counter]
+      current_number *= 2 if counter.odd?
+      doubled_numbers << current_number
+
+      counter += 1
+    end
+
+    doubled_numbers
+  end
+  ```
+
+- Multiply every array item by a specified value
+
+  ```ruby
+  def multiply(numbers, multiplier)
+    multiplied_numbers = []
+    counter = 0
+
+    loop do
+      break if counter == numbers.size
+
+      multiplied_numbers << numbers[counter] * multiplier
+      counter += 1
+    end
+
+    multiplied_numbers
+  end
+  ```
+
+- It’s common to chain actions on on collections but attentions must be paid to the return value, especially if the return value is an empty collection or `nil`
 
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
