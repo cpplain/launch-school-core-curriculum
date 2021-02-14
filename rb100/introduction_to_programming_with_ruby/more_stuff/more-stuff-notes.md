@@ -84,13 +84,10 @@ Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introductio
 
 - `rescue` can be used inline as well
 
+  <!-- prettier-ignore -->
   ```ruby
   zero = 0
-  begin
-    zero.each { |element| puts element }
-  rescue StandardError
-    puts "Can't do that!"
-  end
+  zero.each { |element| puts element } rescue puts "Can't do that!"
   ```
 
 - Can also rescue pre-existing errors
