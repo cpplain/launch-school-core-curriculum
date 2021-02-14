@@ -14,6 +14,7 @@ Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 - [Introduction to PEDAC Process](#introduction-to-pedac-process)
 - [The PEDAC Problem Solving Process](#the-pedac-problem-solving-process)
 - [Selection and Transformation](#selection-and-transformation)
+- [Methods](#methods)
 
 ## Introduction
 
@@ -465,6 +466,92 @@ end
 ```
 
 - It’s common to chain actions on on collections but attentions must be paid to the return value, especially if the return value is an empty collection or `nil`
+
+## Methods
+
+- Built-in Ruby methods provide an easier way to work with collections than `loop` and `for`
+- This section specifically looks at `each`, `select`, `map`
+
+### `each`
+
+- `each` method is functionally equivalent to using `loop` but provides a simpler way of accomplishing the same task
+- For an **array**, `each` requires a single argument and assigns the current element to the argument for each iteration
+
+<!-- prettier-ignore -->
+```ruby
+[1, 2, 3].each do |num|
+  puts num
+end
+```
+
+- For a **hash**, `each` requires two arguments and assigns the current element’s key to the first argument and the value to the second argument for each iteration
+
+<!-- prettier-ignore -->
+```ruby
+hash.each do |key, value|
+  puts "The key is #{key} and the value is #{value}"
+end
+```
+
+- A significant difference between `each` and `loop` is the return value:
+  - `loop` returns `nil`
+  - `each` returns the original collection
+
+### `select`
+
+- `select` performs iteration and selection over a collection
+
+<!-- prettier-ignore -->
+```ruby
+[1, 2, 3].select do |num|
+  num.odd?
+end
+```
+
+- `select` evaluates the return value of the block at each iteration
+  - If the return value is "truthy," the element is selected
+  - if the return value is "falsey," the element is not selected
+- The return value of `select` is a new collection containing all the selected elements
+- When working with `select` it’s important to always be aware of the return value of the block
+  - For example: the following will always return an empty array because puts returns `nil`
+
+```ruby
+[1, 2, 3].select do |num|
+  num + 1
+  puts num
+end
+```
+
+### `map`
+
+- `map` iterate over a collection and performs transformation on the elements
+- `map` uses the return value of the block to populate a new collection
+
+<!-- prettier-ignore -->
+```ruby
+[1, 2, 3].map do |num|
+  num * 2
+end
+```
+
+- Key takeaway: `map` **always** performs transformation based on the return value of the block
+
+### Side Note
+
+- `Array` and `Hash` both have an `each` method
+- `select` and `map` are are defined in **Enumerable** and are made available to `Array` and `Hash`
+- The important thing to understand at this stage is that certain collection types have access to specific methods for a reason
+
+### Summary
+
+- Methods like `each`, `select`, and `map` are provided by Ruby to allow for simpler implementations of common collection manipulation tasks
+- Using these methods is preferred over manually looping
+
+| Method | Action         | Considers block return value? | Returns new collection?  | Returned collection length |
+| ------ | -------------- | ----------------------------- | ------------------------ | -------------------------- |
+| each   | Iteration      | No                            | No, returns the original | Length of original         |
+| select | Selection      | Yes, its truthiness           | Yes                      | Length of original or less |
+| map    | Transformation | Yes                           | Yes                      | Length of original         |
 
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
