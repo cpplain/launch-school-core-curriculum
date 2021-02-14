@@ -127,7 +127,7 @@ Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introductio
   SecurityError
   ```
 
-- Stack trace relies on Ruby's call stack, which was discussed in the [Methods][methods](/rb101/methods/notes.md) chapter
+- Stack trace relies on Ruby's call stack, which was discussed in the [Methods][methods] chapter
 
   ```ruby
   greeting.rb:2:in `space_out_letters': undefined method `split' for 1:Integer (NoMethodError)
