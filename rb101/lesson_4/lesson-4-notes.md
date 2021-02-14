@@ -553,6 +553,80 @@ end
 | select | Selection      | Yes, its truthiness           | Yes                      | Length of original or less |
 | map    | Transformation | Yes                           | Yes                      | Length of original         |
 
+## More Methods
+
+- `Enumerable#any?` returns `true` if the block’s return value is "truthy" for any element in the collection
+
+<!-- prettier-ignore -->
+```ruby
+[1, 2, 3].any? do |num|
+  num > 2
+end
+# => true
+```
+
+- `Enumerable#all?` returns `true` if the block’s return value is "truthy" for every element in the collection
+
+<!-- prettier-ignore -->
+```ruby
+[1, 2, 3].all? do |num|
+  num > 2
+end
+# => false
+```
+
+- `Enumerable#each_with_index` is identical to `each` but takes a second argument that represents the index of the element
+
+<!-- prettier-ignore -->
+```ruby
+[1, 2, 3].each_with_index do |num, index|
+  puts "The index of #{num} is #{index}."
+end
+# => [1, 2, 3]
+```
+
+- `Enumerable#each_with_object` is like `each` but takes a method argument that is a collection object that will be returned by the method
+- The block also takes a second argument that represents the collection object
+
+<!-- prettier-ignore -->
+```ruby
+[1, 2, 3].each_with_object([]) do |num, array|
+  array << num if num.odd?
+end
+# => [1, 3]
+```
+
+- `Enumerable#first` doesn’t take a block but does take an optional argument that represents the number of elements to return, which defaults to one if no argument give
+
+```ruby
+[1, 2, 3].first(2)
+# => [1, 2]
+```
+
+- `Enumerable#include?` returns `true` if the argument exists in the collection
+
+```ruby
+[1, 2, 3].include?(1)
+# => true
+```
+
+- When called on a hash, `include?` only checks the keys
+- Rubyists would usually prefer to use `Hash#key?` or `Hash#has_key?` for hashes as the intention is more explicit
+- To find values the `Hash#value?` or `Hash#has_value?` methods could be used
+
+- `Enumerable#partition` divides elements in a collection into two collections
+- The most idiomatic way to use `partition` is to parallel assign variables to capture the inner arrays
+
+<!-- prettier-ignore -->
+```ruby
+odd, even = [1, 2, 3].partition do |num|
+  num.odd?
+end
+
+odd  # => [1, 3]
+even # => [2]
+```
+
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
 [launch-school]: https://launchschool.com
