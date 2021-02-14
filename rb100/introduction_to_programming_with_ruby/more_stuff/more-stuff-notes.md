@@ -127,7 +127,7 @@ Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introductio
   SecurityError
   ```
 
-- Stack trace relies on Ruby's call stack, which was discussed in the [Methods](methods/notes.md) chapter
+- Stack trace relies on Ruby's call stack, which was discussed in the [Methods][methods](/rb101/methods/notes.md) chapter
 
   ```ruby
   greeting.rb:2:in `space_out_letters': undefined method `split' for 1:Integer (NoMethodError)
@@ -143,6 +143,7 @@ Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introductio
 4. [exercise_4.rb](exercise_4.rb)
 5. The method definition is missing the `&` before the `block` parameter
 
+[methods]: /rb100/introduction_to_programming_with_ruby/methods/methods-notes.md
 [rb100-notes]: /rb100/rb100-notes.md
 [readme]: /README.md
 [ruby-intro-notes]: /rb100/introduction_to_programming_with_ruby/introduction-to-programming-with-ruby-notes.md
