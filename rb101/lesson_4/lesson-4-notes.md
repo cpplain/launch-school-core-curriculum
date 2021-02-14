@@ -555,7 +555,9 @@ end
 
 ## More Methods
 
-- `Enumerable#any?` returns `true` if the block’s return value is "truthy" for any element in the collection
+### `Enumerable#any?`
+
+- Returns `true` if the block’s return value is "truthy" for any element in the collection
 
 <!-- prettier-ignore -->
 ```ruby
@@ -565,7 +567,9 @@ end
 # => true
 ```
 
-- `Enumerable#all?` returns `true` if the block’s return value is "truthy" for every element in the collection
+### `Enumerable#all?`
+
+- returns `true` if the block’s return value is "truthy" for every element in the collection
 
 <!-- prettier-ignore -->
 ```ruby
@@ -575,7 +579,9 @@ end
 # => false
 ```
 
-- `Enumerable#each_with_index` is identical to `each` but takes a second argument that represents the index of the element
+### `Enumerable#each_with_index`
+
+- Is identical to `each` but takes a second argument that represents the index of the element
 
 <!-- prettier-ignore -->
 ```ruby
@@ -585,7 +591,9 @@ end
 # => [1, 2, 3]
 ```
 
-- `Enumerable#each_with_object` is like `each` but takes a method argument that is a collection object that will be returned by the method
+### `Enumerable#each_with_object`
+
+- Is like `each` but takes a method argument that is a collection object that will be returned by the method
 - The block also takes a second argument that represents the collection object
 
 <!-- prettier-ignore -->
@@ -596,14 +604,18 @@ end
 # => [1, 3]
 ```
 
-- `Enumerable#first` doesn’t take a block but does take an optional argument that represents the number of elements to return, which defaults to one if no argument give
+### `Enumerable#first`
+
+- Doesn’t take a block but does take an optional argument that represents the number of elements to return, which defaults to one if no argument give
 
 ```ruby
 [1, 2, 3].first(2)
 # => [1, 2]
 ```
 
-- `Enumerable#include?` returns `true` if the argument exists in the collection
+### `Enumerable#include?`
+
+- Returns `true` if the argument exists in the collection
 
 ```ruby
 [1, 2, 3].include?(1)
@@ -614,7 +626,9 @@ end
 - Rubyists would usually prefer to use `Hash#key?` or `Hash#has_key?` for hashes as the intention is more explicit
 - To find values the `Hash#value?` or `Hash#has_value?` methods could be used
 
-- `Enumerable#partition` divides elements in a collection into two collections
+### `Enumerable#partition`
+
+- Divides elements in a collection into two collections
 - The most idiomatic way to use `partition` is to parallel assign variables to capture the inner arrays
 
 <!-- prettier-ignore -->
