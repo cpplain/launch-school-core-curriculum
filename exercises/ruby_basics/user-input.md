@@ -1,85 +1,98 @@
-[Launch School Core Curriculum](/README.md) >
-[Exercises: Ruby Basics](/exercises/ruby_basics/ruby_basics_contents.md) >
+[Launch School Core Curriculum][readme] >
+[Exercises: Ruby Basics][ruby-basics] >
 User Input
 
 # User Input
 
-Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
+Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
 
 1.  --
+
     ```ruby
-    puts ">> Type anything you want:"
+    puts '>> Type anything you want:'
     input = gets.chomp
     puts input
     ```
+
 2.  --
+
     ```ruby
-    puts ">> What is your age in years?"
+    puts '>> What is your age in years?'
     age = gets.chomp.to_i
     puts "You are #{age * 12} months old."
     ```
+
 3.  --
+
     ```ruby
-    puts ">> Do you want me to print something? (y/n)"
+    puts '>> Do you want me to print something? (y/n)'
     answer = gets.chomp
-    puts "something" if answer == "y"
+    puts 'something' if answer == 'y'
     ```
+
 4.  --
+
     ```ruby
     answer = nil
     loop do
-      puts ">> Do you want me to print something? (y/n)"
+      puts '>> Do you want me to print something? (y/n)'
       answer = gets.chomp.downcase
-      break if %(y, n).include?(answer)
-      puts ">> Invalid input! Please enter y or n"
+      break if 'y, n'.include?(answer)
+      puts '>> Invalid input! Please enter y or n'
     end
-    puts "something" if answer == "y"
+    puts 'something' if answer == 'y'
     ```
+
 5.  --
+
     ```ruby
     num = 0
 
     loop do
-      puts ">> How many output lines do you want? Enter a number >= 3:"
+      puts '>> How many output lines do you want? Enter a number >= 3:'
       num = gets.chomp.to_i
       break if num >= 3
       puts ">> That's not enough lines."
     end
 
-    num.times do
-      puts "Launch School is the best!"
-    end
+    num.times { puts 'Launch School is the best!' }
     ```
+
 6.  --
+
     ```ruby
-    PASSWORD = "NotAGoodPassword"
+    PASSWORD = 'NotAGoodPassword'
 
     loop do
-      puts ">> Please enter your password:"
+      puts '>> Please enter your password:'
       user_password = gets.chomp
       break if user_password == PASSWORD
-      puts ">> Invalid password!"
+      puts '>> Invalid password!'
     end
 
-    puts "Welcome!"
+    puts 'Welcome!'
     ```
+
 7.  --
+
     ```ruby
-    USERNAME = "christopher"
-    PASSWORD = "NotAGoodPassword"
+    USERNAME = 'christopher'
+    PASSWORD = 'NotAGoodPassword'
 
     loop do
-      puts ">> Please enter user name:"
+      puts '>> Please enter user name:'
       username_try = gets.chomp
-      puts ">> Please enter your password:"
+      puts '>> Please enter your password:'
       password_try = gets.chomp
       break if username_try == USERNAME && password_try == PASSWORD
-      puts ">> Authorization failed!"
+      puts '>> Authorization failed!'
     end
 
-    puts "Welcome!"
+    puts 'Welcome!'
     ```
+
 8.  --
+
     ```ruby
     def valid_number?(number_string)
       number_string.to_i.to_s == number_string
@@ -87,20 +100,20 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
 
     numberator = nil
     loop do
-      puts ">> Please enter the numerator:"
+      puts '>> Please enter the numerator:'
       numerator = gets.chomp
       break if valid_number?(numerator)
-      puts ">> Invalid input. Only integers are allowed."
+      puts '>> Invalid input. Only integers are allowed.'
     end
 
     denominator = nil
     loop do
-      puts ">> Please enter the denominator:"
+      puts '>> Please enter the denominator:'
       denominator = gets.chomp
       if !valid_number?(denominator)
-        puts ">> Invalid input. Only integers are allowed."
-      elsif denominator == "0"
-        puts ">> Invalid input. A denominator of 0 is not allowed."
+        puts '>> Invalid input. Only integers are allowed.'
+      elsif denominator == '0'
+        puts '>> Invalid input. A denominator of 0 is not allowed.'
       else
         break
       end
@@ -110,7 +123,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     denominator = denominator.to_i
     puts "#{numerator} / #{denominator} is #{numerator / denominator}"
     ```
+
 9.  --
+
     ```ruby
     loop do
       input = nil
@@ -136,7 +151,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       end
     end
     ```
+
 10. --
+
     ```ruby
     def valid_number?(number_string)
       number_string.to_i.to_s == number_string && number_string.to_i != 0
@@ -144,10 +161,10 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
 
     def get_number
       loop do
-        puts ">> Please enter a positive or negative integer:"
+        puts '>> Please enter a positive or negative integer:'
         number = gets.chomp
         return number.to_i if valid_number?(number)
-        puts ">> Invalid input. Only non-zero integers are allowed."
+        puts '>> Invalid input. Only non-zero integers are allowed.'
       end
     end
 
@@ -158,10 +175,15 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       first_number = get_number
       second_number = get_number
       break if first_number * second_number < 0
-      puts ">> Sorry. One integer must be positive, one must be negative."
-      puts ">> Please start over."
+      puts '>> Sorry. One integer must be positive, one must be negative.'
+      puts '>> Please start over.'
     end
 
     sum = first_number + second_number
     puts "#{first_number} + #{second_number} = #{sum}"
     ```
+
+[readme]: /README.md
+[ruby-basics]: ruby-basics-contents.md
+[core-curriculum]: https://launchschool.com/courses
+[launch-school]: https://launchschool.com

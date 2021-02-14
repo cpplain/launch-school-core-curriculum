@@ -1,39 +1,50 @@
-[Launch School Core Curriculum](/README.md) >
-[Exercises: Ruby Basics](/exercises/ruby_basics/ruby_basics_contents.md) >
+[Launch School Core Curriculum][readme] >
+[Exercises: Ruby Basics][ruby-basics] >
 Conditionals
 
 # Conditionals
 
-Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
+Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
 
 1.  --
+
     ```ruby
-    sun = ['visible', 'hidden'].sample
+    sun = %w[visible hidden].sample
     puts 'The sun is so bright!' if sun == 'visible'
     ```
+
 2.  --
+
     ```ruby
-    sun = ['visible', 'hidden'].sample
+    sun = %w[visible hidden].sample
     puts 'The clouds are blocking the sun!' unless sun == 'visible'
     ```
+
 3.  --
+
     ```ruby
-    sun = ['visible', 'hidden'].sample
+    sun = %w[visible hidden].sample
     puts 'The sun is so bright!' if sun == 'visible'
     puts 'The clouds are blocking the sun!' unless sun == 'visible'
     ```
+
 4.  --
+
     ```ruby
     boolean = [true, false].sample
     boolean ? puts("I'm true!") : puts("I'm false!")
     ```
+
 5.  --
+
     ```
     My favorite number is 7.
     ```
+
 6.  --
+
     ```ruby
-    stoplight = ['green', 'yellow', 'red'].sample
+    stoplight = %w[green yellow red].sample
     case stoplight
     when 'green'
       puts 'Go!'
@@ -43,9 +54,11 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts 'Stop!'
     end
     ```
+
 7.  --
+
     ```ruby
-    stoplight = ['green', 'yellow', 'red'].sample
+    stoplight = %w[green yellow red].sample
 
     if stoplight == 'green'
       puts 'Go!'
@@ -55,18 +68,18 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts 'Stop!'
     end
     ```
-8.  --
-    ```ruby
-    status = ['awake', 'tired'].sample
 
-    action = if status == 'awake'
-              'Be productive!'
-            else
-              'Go to sleep!'
-            end
+8.  --
+
+    ```ruby
+    status = %w[awake tired].sample
+
+    action = status == 'awake' ? 'Be productive!' : 'Go to sleep!'
     puts action
     ```
+
 9.  --
+
     ```ruby
     number = rand(10)
 
@@ -76,13 +89,23 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       puts 'Other numbers are cool too!'
     end
     ```
+
 10. --
+
     ```ruby
-    stoplight = ['green', 'yellow', 'red'].sample
+    stoplight = %w[green yellow red].sample
 
     case stoplight
-    when 'green'  then puts 'Go!'
-    when 'yellow' then puts 'Slow down!'
-    else               puts 'Stop!'
+    when 'green'
+      puts 'Go!'
+    when 'yellow'
+      puts 'Slow down!'
+    else
+      puts 'Stop!'
     end
     ```
+
+[readme]: /README.md
+[ruby-basics]: ruby-basics-contents.md
+[core-curriculum]: https://launchschool.com/courses
+[launch-school]: https://launchschool.com

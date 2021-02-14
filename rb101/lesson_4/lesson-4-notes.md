@@ -1,10 +1,10 @@
-[Launch School Core Curriculum](/README.md) >
-[RB101 Programming Foundations](/rb101/rb101_notes.md) >
+[Launch School Core Curriculum][readme] >
+[RB101 Programming Foundations][rb101-notes] >
 Lesson 4: Ruby Collections
 
 # Lesson 4: Ruby Collections
 
-Notes for Lesson 4 of [Launch School’s](https://launchschool.com) RB101 course.
+Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 
 ## Contents
 
@@ -393,3 +393,7 @@ Algorithm:
 - Move back and forth between the steps
 - Switch from implementation to abstract problem solving mode when necessary
 - Don’t try to problem solve at the code level
+
+[rb101-notes]: /rb101/rb101-notes.md
+[readme]: /README.md
+[launch-school]: https://launchschool.com

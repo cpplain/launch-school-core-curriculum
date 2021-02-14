@@ -1,19 +1,22 @@
-[Launch School Core Curriculum](/README.md) >
-[Exercises: Ruby Basics](/exercises/ruby_basics/ruby_basics_contents.md) >
+[Launch School Core Curriculum][readme] >
+[Exercises: Ruby Basics][ruby-basics] >
 Loops 1
 
 # Loops 1
 
-Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
+Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
 
 1.  --
+
     ```ruby
     loop do
       puts 'Just keep printing...'
       break
     end
     ```
+
 2.  --
+
     ```ruby
     loop do
       puts 'This is the outer loop.'
@@ -28,7 +31,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
 
     puts 'This is outside all loops.'
     ```
+
 3.  --
+
     ```ruby
     iterations = 1
 
@@ -38,15 +43,19 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       break if iterations == 5
     end
     ```
+
 4.  --
+
     ```ruby
     loop do
       puts 'Should I stop looping?'
       answer = gets.chomp
-      break if answer == "yes"
+      break if answer == 'yes'
     end
     ```
+
 5.  --
+
     ```ruby
     say_hello = true
     count = 0
@@ -57,7 +66,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       say_hello = false if count == 5
     end
     ```
+
 6.  --
+
     ```ruby
     count = 0
 
@@ -66,7 +77,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       count += 1
     end
     ```
+
 7.  --
+
     ```ruby
     count = 1
 
@@ -75,7 +88,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       count += 1
     end
     ```
+
 8.  --
+
     ```ruby
     numbers = [7, 9, 13, 25, 18]
     count = 0
@@ -85,17 +100,26 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       count += 1
     end
     ```
+
 9.  --
+
     ```ruby
     for i in 1..100
       puts i if i.odd?
     end
     ```
+
 10. --
+
     ```ruby
-    friends = ['Sarah', 'John', 'Hannah', 'Dave']
+    friends = %w[Sarah John Hannah Dave]
 
     for friend in friends
       puts "Hello, #{friend}!"
     end
     ```
+
+[readme]: /README.md
+[ruby-basics]: ruby-basics-contents.md
+[core-curriculum]: https://launchschool.com/courses
+[launch-school]: https://launchschool.com

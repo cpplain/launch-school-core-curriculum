@@ -1,10 +1,10 @@
-[Launch School Core Curriculum](/README.md) >
-[RB101 Programming Foundations](/rb101/rb101_notes.md) >
+[Launch School Core Curriculum][readme] >
+[RB101 Programming Foundations][rb101-notes] >
 Lesson 2: Small Programs
 
 # Lesson 2: Small Programs
 
-Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course.
+Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
 
 ## Contents
 
@@ -210,7 +210,7 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
   ```
 
 - For more sophisticated problems, apply pseudocode to smaller parts of the problem then translate that to Ruby code to verify the logic before moving on to the next piece in the problem
-- [pseudocode_practice.md](pseudocode_practice.md)
+- [pseudocode-practice.md](pseudocode-practice.md)
 
 ## Flowchart
 
@@ -263,27 +263,27 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 
 ### Online Resources
 
-1.  Search engine
-2.  Stack Overflow
-3.  Documentation
+1. Search engine
+2. Stack Overflow
+3. Documentation
 
 ### Steps to Debugging
 
-1.  Reproduce the error
-2.  Determine the boundaries of the error
-3.  Trace the code
-4.  Understand the problem well
-5.  Implement a fix
-    - Important: fix one problem at a time
-6.  Test the fix
+1. Reproduce the error
+2. Determine the boundaries of the error
+3. Trace the code
+4. Understand the problem well
+5. Implement a fix
+   - Important: fix one problem at a time
+6. Test the fix
 
 ### Techniques for Debugging
 
-1.  Line by line (patient, systematic)
-2.  Rubber duck
-3.  Walk away
-4.  Use Pry
-5.  Use a debugger
+1. Line by line (patient, systematic)
+2. Rubber duck
+3. Walk away
+4. Use Pry
+5. Use a debugger
 
 ## Precedence
 
@@ -485,13 +485,13 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 - Ruby exhibits a combination of both behaviors
 - Sometimes referred to as **call by sharing**
 - Most important thing to remember: when an operation within a method mutates the caller, it will affect the original object
-- [Variable References and Mutability of Ruby Objects](https://launchschool.com/blog/references-and-mutability-in-ruby)
+- [Variable References and Mutability of Ruby Objects][references-and-mutability]
   - Variable can be said to be **bound** to the object
   - Ruby behavior is similar to pass by value when dealing with immutable objects
   - Ruby behavior is similar to pass by reference when dealing with mutable objects
-- [Mutating and Non-Mutating Methods in Ruby](https://launchschool.com/blog/mutating-and-non-mutating-methods)
+- [Mutating and Non-Mutating Methods in Ruby][methods-in-ruby]
   - Most methods do not mutate their arguments or caller, some mutate the caller, few mutate the arguments
-- [Object Passing in Ruby - Pass by Reference or Pass by Value](https://launchschool.com/blog/object-passing-in-ruby)
+- [Object Passing in Ruby - Pass by Reference or Pass by Value][object-passing]
   - With **strict evaluation**, every expression is evaluated and converted to an object before being passed to a method
   - Ruby uses strict evaluation
   - Pass by object_id?
@@ -507,9 +507,18 @@ Notes for Lesson 2 of [Launch School’s](https://launchschool.com) RB101 course
 - Don’t use assignment in the argument of a conditional
   - Hard to determine if `=` or `==` was intended
 - Use an underscore for unused parameters
+
   ```ruby
   names.each_with_index { |_, idx| puts "#{idx + 1}. got a name!" }
   ```
+
 - Gain experience through struggle
   - Don’t memorize best practices but spend enough time programming to understand the context of the practices
   - Don’t be afraid to make mistakes
+
+[rb101-notes]: /rb101/rb101-notes.md
+[readme]: /README.md
+[launch-school]: https://launchschool.com
+[methods-in-ruby]: https://launchschool.com/blog/mutating-and-non-mutating-methods
+[object-passing]: https://launchschool.com/blog/object-passing-in-ruby
+[references-and-mutability]: https://launchschool.com/blog/references-and-mutability-in-ruby

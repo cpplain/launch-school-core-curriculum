@@ -1,33 +1,33 @@
-[Launch School Core Curriculum](/README.md) >
-[Exercises: Ruby Basics](/exercises/ruby_basics/ruby_basics_contents.md) >
+[Launch School Core Curriculum][readme] >
+[Exercises: Ruby Basics][ruby-basics] >
 Arrays
 
 # Arrays
 
-Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
+Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
 
 1.  --
     ```ruby
-    pets = ['cat', 'dog', 'fish', 'lizard']
+    pets = %w[cat dog fish lizard]
     my_pet = pets[2]
     puts "I have a pet #{my_pet}!"
     ```
 2.  --
     ```ruby
-    pets = ['cat', 'dog', 'fish', 'lizard']
+    pets = %w[cat dog fish lizard]
     my_pets = pets[2, 3]
     puts "I have a pet #{my_pets[0]} and a pet #{my_pets[1]}!"
     ```
 3.  --
     ```ruby
-    pets = ['cat', 'dog', 'fish', 'lizard']
+    pets = %w[cat dog fish lizard]
     my_pets = pets[2..3]
     my_pets.pop
     puts "I have a pet #{my_pets[0]}!"
     ```
 4.  --
     ```ruby
-    pets = ['cat', 'dog', 'fish', 'lizard']
+    pets = %w[cat dog fish lizard]
     my_pets = pets[2..3]
     my_pets.pop
     my_pets.push pets[1]
@@ -35,7 +35,7 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     ```
 5.  --
     ```ruby
-    colors = ['red', 'yellow', 'purple', 'green']
+    colors = %w[red yellow purple green]
     colors.each { |color| puts "I'm the color #{color}!" }
     ```
 6.  --
@@ -66,3 +66,8 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     array2 = [1, 9, 5]
     puts array1 == array2
     ```
+
+[readme]: /README.md
+[ruby-basics]: ruby-basics-contents.md
+[core-curriculum]: https://launchschool.com/courses
+[launch-school]: https://launchschool.com

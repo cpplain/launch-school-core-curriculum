@@ -1,27 +1,33 @@
-[Launch School Core Curriculum](/README.md) >
-[RB100 Programming and Back-end Prep](/rb100/rb100_notes.md) >
-[Introduction to Programming with Ruby](/rb100/introduction_to_programming_with_ruby/introduction_to_programming_with_ruby_notes.md) >
+[Launch School Core Curriculum][readme] >
+[RB100 Programming and Back-end Prep][rb100-notes] >
+[Introduction to Programming with Ruby][ruby-intro-notes] >
 Exercises
 
 # Exercises
 
-Notes for [Exercises](https://launchschool.com/books/ruby/read/intro_exercises) chapter of [Launch School’s](https://launchschool.com) [Introduction to Programming with Ruby](https://launchschool.com/books/ruby).
+Notes for Exercises chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 1.  [exercise_1.rb](exercise_1.rb)
-1.  [exercise_2.rb](exercise_2.rb)
-1.  [exercise_3.rb](exercise_3.rb)
-1.  [exercise_4.rb](exercise_4.rb)
-1.  [exercise_5.rb](exercise_5.rb)
-1.  [exercise_6.rb](exercise_6.rb)
-1.  The major difference between an `Array` and a `Hash` is a `Hash` stores key-value pairs accessed by the key
-1.  Old: `hash = { :key => 'value' }`, new: `hash = { key: 'value' }`
-1.  [exercise_9.rb](exercise_9.rb)
-1.  Hash values can be arrays and an array can be an array of hashes
-    1.  `{ key: [value1, value2] }`
-    1.  `[{ key1: value1 }, { key2: value2 }]`
-1.  [exercise_11.rb](exercise_11.rb)
-1.  [exercise_12.rb](exercise_12.rb)
-1.  [exercise_13.rb](exercise_13.rb)
-1.  [exercise_14.rb](exercise_14.rb)
-1.  `These hashes are the same!`
-1.  [exercise_11.rb](exercise_11.rb)
+2.  [exercise_2.rb](exercise_2.rb)
+3.  [exercise_3.rb](exercise_3.rb)
+4.  [exercise_4.rb](exercise_4.rb)
+5.  [exercise_5.rb](exercise_5.rb)
+6.  [exercise_6.rb](exercise_6.rb)
+7.  The major difference between an `Array` and a `Hash` is a `Hash` stores key-value pairs accessed by the key
+8.  Old: `hash = { :key => 'value' }`, new: `hash = { key: 'value' }`
+9.  [exercise_9.rb](exercise_9.rb)
+10. Hash values can be arrays and an array can be an array of hashes
+    1. `{ key: [value1, value2] }`
+    2. `[{ key1: value1 }, { key2: value2 }]`
+11. [exercise_11.rb](exercise_11.rb)
+12. [exercise_12.rb](exercise_12.rb)
+13. [exercise_13.rb](exercise_13.rb)
+14. [exercise_14.rb](exercise_14.rb)
+15. `These hashes are the same!`
+16. [exercise_11.rb](exercise_11.rb)
+
+[rb100-notes]: /rb100/rb100-notes.md
+[readme]: /README.md
+[ruby-intro-notes]: /rb100/introduction_to_programming_with_ruby/introduction-to-programming-with-ruby-notes.md
+[launch-school]: https://launchschool.com
+[ruby-intro-book]: https://launchschool.com/books/ruby

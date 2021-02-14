@@ -1,12 +1,13 @@
-[Launch School Core Curriculum](/README.md) >
-[Exercises: Ruby Basics](/exercises/ruby_basics/ruby_basics_contents.md) >
+[Launch School Core Curriculum][readme] >
+[Exercises: Ruby Basics][ruby-basics] >
 Methods
 
 # Methods
 
-Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core Curriculum](https://launchschool.com/courses).
+Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
 
 1.  --
+
     ```ruby
     def print_me
       puts "I'm printing within the method!"
@@ -14,7 +15,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
 
     print_me
     ```
+
 2.  --
+
     ```ruby
     def print_me
       "I'm printing the return value!"
@@ -22,26 +25,30 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
 
     puts print_me
     ```
+
 3.  --
+
     ```ruby
     def hello
-      "Hello"
+      'Hello'
     end
 
     def world
-      "World"
+      'World'
     end
 
     puts "#{hello} #{world}"
     ```
+
 4.  --
+
     ```ruby
     def hello
-      "Hello"
+      'Hello'
     end
 
     def world
-      "World"
+      'World'
     end
 
     def greet
@@ -50,15 +57,19 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
 
     puts greet
     ```
+
 5.  --
+
     ```ruby
     def car(make, model)
       puts "#{make} #{model}"
     end
 
-    car("Toyota", "Corolla")
+    car('Toyota', 'Corolla')
     ```
+
 6.  --
+
     ```ruby
     def time_of_day(daylight)
       if daylight
@@ -71,7 +82,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     daylight = [true, false].sample
     time_of_day(daylight)
     ```
+
 7.  --
+
     ```ruby
     def dog(name)
       return name
@@ -84,7 +97,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     puts "The dog's name is #{dog('Spot')}."
     puts "The cat's name is #{cat('Ginger')}."
     ```
+
 8.  --
+
     ```ruby
     def assign_name(name = 'Bob')
       name
@@ -93,7 +108,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     puts assign_name('Kevin') == 'Kevin'
     puts assign_name == 'Bob'
     ```
+
 9.  --
+
     ```ruby
     def add(num1, num2)
       num1 + num2
@@ -107,7 +124,9 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
     puts add(5, 4) == 9
     puts multiply(add(2, 2), add(5, 4)) == 36
     ```
+
 10. --
+
     ```ruby
     def name(names)
       names.sample
@@ -121,8 +140,13 @@ Ruby Basics exercises from [Launch School’s](https://launchschool.com) [Core C
       "#{name} went #{activity} today!"
     end
 
-    names = ['Dave', 'Sally', 'George', 'Jessica']
-    activities = ['walking', 'running', 'cycling']
+    names = %w[Dave Sally George Jessica]
+    activities = %w[walking running cycling]
 
     puts sentence(name(names), activity(activities))
     ```
+
+[readme]: /README.md
+[ruby-basics]: ruby-basics-contents.md
+[core-curriculum]: https://launchschool.com/courses
+[launch-school]: https://launchschool.com
