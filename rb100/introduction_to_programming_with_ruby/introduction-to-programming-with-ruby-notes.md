@@ -30,6 +30,6 @@ Notes for [Launch School’s][launch-school] [Introduction to Programming with R
 [more-stuff]: more_stuff/more-stuff-notes.md
 [rb100-notes]: /rb100/rb100-notes.md
 [readme]: /README.md
-[variables]: variables/variables-notes.m)
+[variables]: variables/variables-notes.md
 [launch-school]: https://launchschool.com
 [ruby-intro-book]: https://launchschool.com/books/ruby

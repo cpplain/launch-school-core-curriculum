@@ -77,7 +77,7 @@ Notes for [Launch School’s][launch-school] RB100 course.
 
 ## Book: Introduction to Programming with Ruby
 
-- [Notes][ruby-intro-notes]) for [Introduction to Programming with Ruby][ruby-intro-book]
+- [Notes][ruby-intro-notes] for [Introduction to Programming with Ruby][ruby-intro-book]
 - Spend as much time as needed to go through this book carefully; it’s the most important part of the prep course
 - It’s vital to be comfortable reading and writing basic Ruby syntax and understanding fundamental programming constructs such as loops, variables, and conditionals
 - Push code for exercises to a GitHub repo
