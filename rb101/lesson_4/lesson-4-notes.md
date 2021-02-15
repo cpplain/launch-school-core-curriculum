@@ -16,6 +16,7 @@ Notes for Lesson 4 of [Launch School's][launch-school] RB101 course.
 - [Selection and Transformation](#selection-and-transformation)
 - [Methods](#methods)
 - [Practice Problems](#practice-problems)
+- [Lesson Summary](#lesson-summary)
 
 ## Introduction
 
@@ -646,6 +647,19 @@ even # => [2]
 
 - [practice-problems-methods.md](practice-problems-methods.md)
 - [practice-problems-additional.md](practice-problems-additional.md)
+
+## Lesson Summary
+
+- Some of the most commonly used iterative methods are `each`, `select`, and `map`.
+- It's important to understand the differences between these methods.
+- When using a method with a block, it's important to be aware of:
+  - what the method does with the block's return value.
+  - what the method's return value is.
+  - any side-effects the code in the block has.
+- Ruby provides many useful methods for working with collections.
+- It's not necessary to memorize them all at this stage but:
+  - be aware they exist and how to find them.
+  - know how to read the documentation to understand how the method uses the block's return value, what the method's return value is, and whether the method is destructive.
 
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
