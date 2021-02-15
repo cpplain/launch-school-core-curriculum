@@ -5,13 +5,13 @@ Practice Problems: Medium 1
 
 # Practice Problems: Medium 1
 
-Exercises for Lesson 3 of [Launch School’s][launch-school] RB101 course.
+Exercises for Lesson 3 of [Launch School's][launch-school] RB101 course.
 
 1. `10.times { |num| puts " " * num + "The Flintstones Rock!" }`
 2. Statement returns a `TypeError` and can be fixed with either of the following:
 
 ```ruby
-puts 'the value of 40 + 2 is ' + (40 + 2).to_s
+puts "the value of 40 + 2 is " + (40 + 2).to_s
 puts "the value of 40 + 2 is #{40 + 2}"
 ```
 

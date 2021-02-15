@@ -4,7 +4,7 @@ Introduction to Programming with Ruby
 
 # Introduction to Programming with Ruby
 
-Notes for [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 ## Contents
 

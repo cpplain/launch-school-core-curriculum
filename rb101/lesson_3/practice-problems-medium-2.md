@@ -5,7 +5,7 @@ Practice Problems: Medium 2
 
 # Practice Problems: Medium 2
 
-Exercises for Lesson 3 of [Launch School’s][launch-school] RB101 course.
+Exercises for Lesson 3 of [Launch School's][launch-school] RB101 course.
 
 1. Prediction of values and object ids (ids simulated):
 
@@ -105,13 +105,13 @@ My array looks like this now: ["pumpkins"]
 
 ```ruby
 def tricky_method(a_string_param, an_array_param)
-  a_string_param += 'rutabaga'
-  an_array_param += ['rutabaga']
+  a_string_param += "rutabaga"
+  an_array_param += ["rutabaga"]
   return a_string_param, an_array_param
 end
 
-my_string = 'pumpkins'
-my_array = ['pumpkins']
+my_string = "pumpkins"
+my_array = ["pumpkins"]
 my_string, my_array = tricky_method(my_string, my_array)
 ```
 
@@ -119,7 +119,7 @@ my_string, my_array = tricky_method(my_string, my_array)
 
 ```ruby
 def color_valid(color)
-  color == 'blue' || color == 'green'
+  color == "blue" || color == "green"
 end
 ```
 

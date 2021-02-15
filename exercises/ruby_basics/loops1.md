@@ -4,13 +4,13 @@ Loops 1
 
 # Loops 1
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. --
 
 ```ruby
 loop do
-  puts 'Just keep printing...'
+  puts "Just keep printing..."
   break
 end
 ```
@@ -19,17 +19,17 @@ end
 
 ```ruby
 loop do
-  puts 'This is the outer loop.'
+  puts "This is the outer loop."
 
   loop do
-    puts 'This is the inner loop.'
+    puts "This is the inner loop."
     break
   end
 
   break
 end
 
-puts 'This is outside all loops.'
+puts "This is outside all loops."
 ```
 
 3. --
@@ -48,9 +48,9 @@ end
 
 ```ruby
 loop do
-  puts 'Should I stop looping?'
+  puts "Should I stop looping?"
   answer = gets.chomp
-  break if answer == 'yes'
+  break if answer == "yes"
 end
 ```
 
@@ -61,7 +61,7 @@ say_hello = true
 count = 0
 
 while say_hello
-  puts 'Hello!'
+  puts "Hello!"
   count += 1
   say_hello = false if count == 5
 end

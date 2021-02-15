@@ -5,7 +5,7 @@ Practice Problems: Methods and More Methods
 
 # Practice Problems: Methods and More Methods
 
-Exercises for Lesson 4 of [Launch School’s][launch-school] RB101 course.
+Exercises for Lesson 4 of [Launch School's][launch-school] RB101 course.
 
 1. The return value is `[1, 2, 3]` because `select` performs the selection based on the truthiness of the block return, which in this case is `"hi"`, a "truthy" value
 2. Counts the number of elements for which the block returns a true value

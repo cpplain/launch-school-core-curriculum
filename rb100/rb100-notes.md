@@ -3,7 +3,7 @@ RB100 Programming and Back-end Prep
 
 # RB100 Programming and Back-end Prep
 
-Notes for [Launch School’s][launch-school] RB100 course.
+Notes for [Launch School's][launch-school] RB100 course.
 
 ## Introduction
 
@@ -12,9 +12,9 @@ Notes for [Launch School’s][launch-school] RB100 course.
 
 ### How carefully should I go through this Prep course?
 
-- An experienced programmer can likely get through this Prep course quickly, however don’t skip it
+- An experienced programmer can likely get through this Prep course quickly, however don't skip it
 - Need to develop muscle memory to type out Ruby code quickly; the practice problems are an excellent way to do that
-- The goal in the Launch School program should not be to “get through it” but to learn the knowledge in it
+- The goal in the Launch School program should not be to "get through it" but to learn the knowledge in it
 
 ### How is this different from the real course?
 
@@ -24,7 +24,7 @@ Notes for [Launch School’s][launch-school] RB100 course.
 
 - Learning to program in the early stages is a two-step process:
   1. Learn programming constructs and grammar and syntax
-  2. Learn to build a functioning application with knowledge from above; the “putting it together” stage
+  2. Learn to build a functioning application with knowledge from above; the "putting it together" stage
 - Programmers get paid to do #2
 - Launch School courses are focused on #2, however, to teach higher-level concepts, knowledge of basic grammar and syntax is assumed
 
@@ -54,7 +54,7 @@ end
 4. Define a constant variable (all uppercase) when value will not change
 
 ```ruby
-FOUR = 'four'
+FOUR = "four"
 FIVE = 5
 ```
 
@@ -78,8 +78,8 @@ end
 ## Book: Introduction to Programming with Ruby
 
 - [Notes][ruby-intro-notes] for [Introduction to Programming with Ruby][ruby-intro-book]
-- Spend as much time as needed to go through this book carefully; it’s the most important part of the prep course
-- It’s vital to be comfortable reading and writing basic Ruby syntax and understanding fundamental programming constructs such as loops, variables, and conditionals
+- Spend as much time as needed to go through this book carefully; it's the most important part of the prep course
+- It's vital to be comfortable reading and writing basic Ruby syntax and understanding fundamental programming constructs such as loops, variables, and conditionals
 - Push code for exercises to a GitHub repo
 
 ## Exercises: Ruby Basics

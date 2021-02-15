@@ -3,7 +3,7 @@ RB101 Programming Foundations
 
 # RB101 Programming Foundations
 
-Notes for [Launch School’s][launch-school] RB101 course.
+Notes for [Launch School's][launch-school] RB101 course.
 
 ## Contents
 

@@ -4,7 +4,7 @@ Lesson 1: Preparations
 
 # Lesson 1: Preparations
 
-Notes for Lesson 1 of [Launch School’s][launch-school] RB101 course.
+Notes for Lesson 1 of [Launch School's][launch-school] RB101 course.
 
 ## Contents
 
@@ -63,11 +63,11 @@ Notes for Lesson 1 of [Launch School’s][launch-school] RB101 course.
 
 ## Good vs Bad Questions
 
-- A “bad” question asks what is easily observable
+- A "bad" question asks what is easily observable
 - A better question asks why after noting observed behavior
 - The trick to remembering all the syntax rules in Ruby is to not remember them
 - Develop the habit early on to refresh memory by experimenting with code (e.g., `irb`, `.rb`)
-- Don’t be offended if someone suggests to try it in `irb`; this is meant to help in the long run
+- Don't be offended if someone suggests to try it in `irb`; this is meant to help in the long run
 
 ## Lesson Discussion Forums
 
@@ -79,7 +79,7 @@ Notes for Lesson 1 of [Launch School’s][launch-school] RB101 course.
 ## Exercises: Small Problems
 
 - [Small Problem Exercises][small-problem]
-- Concurrently work through the “Small Problems” exercises from the Exercises tab
+- Concurrently work through the "Small Problems" exercises from the Exercises tab
 - Complete all easy and medium exercises as preparation for first interview
 - Recommend 20 exercises after each lesson to spread work out
 - May want to spread exercises out over several days

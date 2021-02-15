@@ -5,7 +5,7 @@ Variables
 
 # Variables
 
-Notes for Variables chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Variables chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 ## Getting Data from a User
 
@@ -28,7 +28,7 @@ Bob
 ## Variable Scope
 
 - Scope determines where a variable is available for use
-- A variable’s scope is determined by where the variable is initialized or created
+- A variable's scope is determined by where the variable is initialized or created
 - In Ruby, scope is defined by a block (a piece of code following a method invocation, usually delimited by `{}` or `do/end`
 - Inner scopes can access variables in an outer scope but not vice versa
 

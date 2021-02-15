@@ -5,7 +5,7 @@ Hashes
 
 # Hashes
 
-Notes for Hashes chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Hashes chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 ## What is a Hash?
 
@@ -21,13 +21,13 @@ Notes for Hashes chapter of [Launch School’s][launch-school] [Introduction to 
 - New syntax:
 
 ```ruby
-{ key: 'value' }
+{ key: "value" }
 ```
 
 - Add to hash:
 
 ```ruby
-hash[:key] = 'value'
+hash[:key] = "value"
 ```
 
 - Remove value:
@@ -67,13 +67,13 @@ def greeting(name, options = {})
   end
 end
 
-greeting('Bob', { age: 62 })
+greeting("Bob", { age: 62 })
 ```
 
 - Curly braces are not required when a hash is the last argument
 
 ```ruby
-greeting('Bob', age: 62)
+greeting("Bob", age: 62)
 ```
 
 - This is common among Rails developers
@@ -83,8 +83,8 @@ greeting('Bob', age: 62)
 - It is possible to use different data types as keys
 
 ```ruby
-{ 'height' => '6 ft' } # string as key
-{ 1 => 'one' } # integer as key
+{ "height" => "6 ft" } # string as key
+{ 1 => "one" } # integer as key
 ```
 
 - Old style syntax (`=>`) is required when not using symbols as keys
@@ -96,7 +96,7 @@ greeting('Bob', age: 62)
 - `.fetch()` returns value for given key or optional return value
 
 ```ruby
-name_and_age.fetch('Larry', "Larry isn't in this hash")
+name_and_age.fetch("Larry", "Larry isn't in this hash")
 ```
 
 - `.to_a` returns array version of the hash

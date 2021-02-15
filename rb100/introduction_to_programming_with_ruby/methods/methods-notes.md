@@ -5,7 +5,7 @@ Methods
 
 # Methods
 
-Notes for Methods chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Methods chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 ## What Are Methods?
 
@@ -16,8 +16,8 @@ Notes for Methods chapter of [Launch School’s][launch-school] [Introduction to
 - Default parameters used if no argument passed
 
 ```ruby
-def say(words = 'hello')
-  puts words + '.'
+def say(words = "hello")
+  puts words + "."
 end
 ```
 
@@ -45,7 +45,7 @@ end
 - Chaining is possible because every method call returns something
 
 ```ruby
-'hi there'.length.to_s # returns "8" - a String
+"hi there".length.to_s # returns "8" - a String
 ```
 
 - If anywhere along the chain there is a `nil` or an exception is thrown, the entire chained call will break
@@ -65,16 +65,16 @@ multiply(add(20, 45), subtract(80, 10))
 
 ```ruby
 def first
-  puts 'first method'
+  puts "first method"
 end
 
 def second
   first
-  puts 'second method'
+  puts "second method"
 end
 
 second
-puts 'main method'
+puts "main method"
 ```
 
 | Call Stack     |

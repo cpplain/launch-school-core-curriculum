@@ -3,7 +3,7 @@ LS95 Orientation
 
 # LS95 Orientation
 
-Notes for [Launch School’s][launch-school] LS95 course.
+Notes for [Launch School's][launch-school] LS95 course.
 
 ## Start Here
 
@@ -25,8 +25,8 @@ Notes for [Launch School’s][launch-school] LS95 course.
 - Web application developer
   - Back-end Developer
   - Front-end Developer
-- Learning the topics in Launch School’s program will even assist pursuing other development roles outside of web development
-  - For example: it’s impossible to become a great mobile developer without knowing everything taught in Launch School’s curriculum
+- Learning the topics in Launch School's program will even assist pursuing other development roles outside of web development
+  - For example: it's impossible to become a great mobile developer without knowing everything taught in Launch School's curriculum
 
 ### Our Learning Goals
 
@@ -38,9 +38,9 @@ Notes for [Launch School’s][launch-school] LS95 course.
 
 ### Mastery Based Learning
 
-- Launch School’s core attribute is their 100% commitment to Master Based Learning
+- Launch School's core attribute is their 100% commitment to Master Based Learning
   - [Mastery Based Learning][mastery-based-learning]
-- Master Based Learning is the most significant influence on the school’s pedagogy
+- Master Based Learning is the most significant influence on the school's pedagogy
   - [Pedagogy][pedagogy]
 
 ### Read: Mastery
@@ -68,7 +68,7 @@ Notes for [Launch School’s][launch-school] LS95 course.
 - `less` one page at a time, forward and backward navigation
 - `man` uses less, allowing forward and backward navigation
 - `ls` `-h` option when used with `-l` will add unit suffixes
-- `which` locate an executable in the user’s path
+- `which` locate an executable in the user's path
 - `source ~/.zshrc`
 - `COMMAND="echo"` variable can be used as command
 - `export PATH="/path/to/my/executables-directory:$PATH"`

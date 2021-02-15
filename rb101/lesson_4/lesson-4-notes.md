@@ -4,7 +4,7 @@ Lesson 4: Ruby Collections
 
 # Lesson 4: Ruby Collections
 
-Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
+Notes for Lesson 4 of [Launch School's][launch-school] RB101 course.
 
 ## Contents
 
@@ -131,7 +131,7 @@ end
 ```
 
 - Counter needs to be incremented every loop to track number of iterations.
-- Counter must be initialized before the loop, otherwise it will be reset each iteration and `break` condition won’t be met.
+- Counter must be initialized before the loop, otherwise it will be reset each iteration and `break` condition won't be met.
 
 #### Break Placement
 
@@ -213,7 +213,7 @@ end
   3. a way to retrieve the current value,
   4. a way to exit the loop.
 - It is important to understand how to manually loop over collections with nothing more than these four tools.
-- Methods can be useful, but they shouldn’t be used as a crutch.
+- Methods can be useful, but they shouldn't be used as a crutch.
 
 ## Introduction to PEDAC Process
 
@@ -261,7 +261,7 @@ end
 - Data structures influence the algorithm, thus the two steps are often paired.
 - Biggest problem students have when writing algorithms is providing sufficient detail.
 - Formal pseudocode is an intermediary step between informal pseudocode and final code.
-- It isn’t needed but can be helpful.
+- It isn't needed but can be helpful.
 - Example of complete informal pseudocode:
 
 ```text
@@ -309,14 +309,14 @@ end
 ```
 
 - Main takeaway: should be able to write a plain English solution to the problem.
-- Also, don’t need “fancy” methods to solve the problems.
+- Also, don't need "fancy" methods to solve the problems.
 
 ### Testing Frequently
 
-- Testing isn’t properly part of PEDAC but it is important and shouldn’t be skipped.
+- Testing isn't properly part of PEDAC but it is important and shouldn't be skipped.
 - Test code early and often while writing.
 - Test code as soon as it can be tested.
-- The sooner a bug is identified the easier it is to identify what’s wrong.
+- The sooner a bug is identified the easier it is to identify what's wrong.
 
 ### Summary
 
@@ -353,7 +353,7 @@ Second method:
   - Assess available information.
   - Restate explicit requirements.
   - Identify implicit requirements.
-- Spend enough time: don’t rush this step!
+- Spend enough time: don't rush this step!
 
 ### E: Examples and Test Cases
 
@@ -377,7 +377,7 @@ Second method:
   - Series of steps to structure data and produce the required output.
 - Stay abstract and high-level.
   - Avoid implementation details.
-  - Don’t worry about efficiency for now.
+  - Don't worry about efficiency for now.
 
 ### C: Implementing a Solution in Code
 
@@ -395,7 +395,7 @@ Second method:
 - Not a completely linear process.
 - Move back and forth between the steps.
 - Switch from implementation to abstract problem solving mode when necessary.
-- Don’t try to problem solve at the code level.
+- Don't try to problem solve at the code level.
 
 ## Selection and Transformation
 
@@ -407,7 +407,7 @@ Second method:
 - Selection and transformation require additional criteria.
   - Selection uses the criteria to determine which elements to select.
   - Transformation uses the criteria to determine how to transform the elements.
-- When performing transformations, it’s important to pay attention to whether the original collection is mutated or a new collection is returned.
+- When performing transformations, it's important to pay attention to whether the original collection is mutated or a new collection is returned.
 - [select_fruit.rb](select_fruit.rb)
 - Mutate argument instead of returning new array.
 
@@ -466,7 +466,7 @@ def multiply(numbers, multiplier)
 end
 ```
 
-- It’s common to chain actions on on collections but attentions must be paid to the return value, especially if the return value is an empty collection or `nil`.
+- It's common to chain actions on on collections but attentions must be paid to the return value, especially if the return value is an empty collection or `nil`.
 
 ## Methods
 
@@ -485,7 +485,7 @@ end
 end
 ```
 
-- For a **hash**, `each` requires two arguments and assigns the current element’s key to the first argument and the value to the second argument for each iteration.
+- For a **hash**, `each` requires two arguments and assigns the current element's key to the first argument and the value to the second argument for each iteration.
 
 <!-- prettier-ignore -->
 ```ruby
@@ -513,7 +513,7 @@ end
   - If the return value is "truthy," the element is selected.
   - if the return value is "falsey," the element is not selected.
 - The return value of `select` is a new collection containing all the selected elements.
-- When working with `select` it’s important to always be aware of the return value of the block.
+- When working with `select` it's important to always be aware of the return value of the block.
   - For example: the following will always return an empty array because puts returns `nil`.
 
 ```ruby
@@ -558,7 +558,7 @@ end
 
 ### `Enumerable#any?`
 
-- Returns `true` if the block’s return value is "truthy" for any element in the collection.
+- Returns `true` if the block's return value is "truthy" for any element in the collection.
 
 <!-- prettier-ignore -->
 ```ruby
@@ -570,7 +570,7 @@ end
 
 ### `Enumerable#all?`
 
-- returns `true` if the block’s return value is "truthy" for every element in the collection.
+- returns `true` if the block's return value is "truthy" for every element in the collection.
 
 <!-- prettier-ignore -->
 ```ruby
@@ -607,7 +607,7 @@ end
 
 ### `Enumerable#first`
 
-- Doesn’t take a block but does take an optional argument that represents the number of elements to return, which defaults to one if no argument give.
+- Doesn't take a block but does take an optional argument that represents the number of elements to return, which defaults to one if no argument give.
 
 ```ruby
 [1, 2, 3].first(2)

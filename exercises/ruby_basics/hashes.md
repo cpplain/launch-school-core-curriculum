@@ -4,32 +4,32 @@ Hashes
 
 # Hashes
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. --
 
 ```ruby
-car = { type: 'sedan', color: 'blue', mileage: 80_000 }
+car = { type: "sedan", color: "blue", mileage: 80_000 }
 ```
 
 2. --
 
 ```ruby
-car = { type: 'sedan', color: 'blue', mileage: 80_000 }
+car = { type: "sedan", color: "blue", mileage: 80_000 }
 car[:year] = 2003
 ```
 
 3. --
 
 ```ruby
-car = { type: 'sedan', color: 'blue', mileage: 80_000, year: 2003 }
+car = { type: "sedan", color: "blue", mileage: 80_000, year: 2003 }
 car.delete :mileage
 ```
 
 4. --
 
 ```ruby
-car = { type: 'sedan', color: 'blue', year: 2003 }
+car = { type: "sedan", color: "blue", year: 2003 }
 puts car[:color]
 ```
 
@@ -72,13 +72,13 @@ p numbers
 ```ruby
 nested_hash = {
   car: {
-    type: 'sedan',
-    color: 'blue',
+    type: "sedan",
+    color: "blue",
     year: 2003,
   },
   truck: {
-    type: 'pickup',
-    color: 'red',
+    type: "pickup",
+    color: "red",
     year: 1998,
   },
 }
@@ -87,7 +87,7 @@ nested_hash = {
 10. --
 
 ```ruby
-car = [[:type, 'sedan'], [:color, 'blue'], [:year, 2003]]
+car = [[:type, "sedan"], [:color, "blue"], [:year, 2003]]
 ```
 
 [readme]: /README.md

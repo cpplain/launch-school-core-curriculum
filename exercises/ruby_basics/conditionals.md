@@ -4,28 +4,28 @@ Conditionals
 
 # Conditionals
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. --
 
 ```ruby
 sun = %w[visible hidden].sample
-puts 'The sun is so bright!' if sun == 'visible'
+puts "The sun is so bright!" if sun == "visible"
 ```
 
 2. --
 
 ```ruby
 sun = %w[visible hidden].sample
-puts 'The clouds are blocking the sun!' unless sun == 'visible'
+puts "The clouds are blocking the sun!" unless sun == "visible"
 ```
 
 3. --
 
 ```ruby
 sun = %w[visible hidden].sample
-puts 'The sun is so bright!' if sun == 'visible'
-puts 'The clouds are blocking the sun!' unless sun == 'visible'
+puts "The sun is so bright!" if sun == "visible"
+puts "The clouds are blocking the sun!" unless sun == "visible"
 ```
 
 4. --
@@ -46,12 +46,12 @@ My favorite number is 7.
 ```ruby
 stoplight = %w[green yellow red].sample
 case stoplight
-when 'green'
-  puts 'Go!'
-when 'yellow'
-  puts 'Slow down!'
-when 'red'
-  puts 'Stop!'
+when "green"
+  puts "Go!"
+when "yellow"
+  puts "Slow down!"
+when "red"
+  puts "Stop!"
 end
 ```
 
@@ -60,12 +60,12 @@ end
 ```ruby
 stoplight = %w[green yellow red].sample
 
-if stoplight == 'green'
-  puts 'Go!'
-elsif stoplight == 'yellow'
-  puts 'Slow down!'
+if stoplight == "green"
+  puts "Go!"
+elsif stoplight == "yellow"
+  puts "Slow down!"
 else
-  puts 'Stop!'
+  puts "Stop!"
 end
 ```
 
@@ -74,7 +74,7 @@ end
 ```ruby
 status = %w[awake tired].sample
 
-action = status == 'awake' ? 'Be productive!' : 'Go to sleep!'
+action = status == "awake" ? "Be productive!" : "Go to sleep!"
 puts action
 ```
 
@@ -84,9 +84,9 @@ puts action
 number = rand(10)
 
 if number == 5
-  puts '5 is a cool number!'
+  puts "5 is a cool number!"
 else
-  puts 'Other numbers are cool too!'
+  puts "Other numbers are cool too!"
 end
 ```
 
@@ -96,12 +96,12 @@ end
 stoplight = %w[green yellow red].sample
 
 case stoplight
-when 'green'
-  puts 'Go!'
-when 'yellow'
-  puts 'Slow down!'
+when "green"
+  puts "Go!"
+when "yellow"
+  puts "Slow down!"
 else
-  puts 'Stop!'
+  puts "Stop!"
 end
 ```
 

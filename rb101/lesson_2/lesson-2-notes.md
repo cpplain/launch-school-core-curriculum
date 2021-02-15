@@ -4,7 +4,7 @@ Lesson 2: Small Programs
 
 # Lesson 2: Small Programs
 
-Notes for Lesson 2 of [Launch School’s][launch-school] RB101 course.
+Notes for Lesson 2 of [Launch School's][launch-school] RB101 course.
 
 ## Contents
 
@@ -49,7 +49,7 @@ end
 
 ```ruby
 # Constant declaration
-FOUR = 'four'
+FOUR = "four"
 FIVE = 5
 ```
 
@@ -89,7 +89,7 @@ end
   - Jumping between the two is frustrating
   - Tools like pseudocode used to keep this from happening
 - Looking for help
-  - Search using the “right” phrases
+  - Search using the "right" phrases
     - Takes time and familiarity
   - Stack Overflow
   - Ruby Docs
@@ -104,9 +104,9 @@ end
 
 ## Truthiness
 
-- Ability to express “true” or “false” in any language is important
+- Ability to express "true" or "false" in any language is important
 - Helps build conditional logic and understand state of object or expression
-- **Boolean** is an object whose purpose is to express “true” or “false”
+- **Boolean** is an object whose purpose is to express "true" or "false"
 - Booleans are classes with associated methods
 
 ```ruby
@@ -121,18 +121,18 @@ false.to_s # => "false"
 false.methods # => list of methods you can call on the false object
 ```
 
-- `&&` is the “and” operator and will return `true` only if both expressions evaluated are `true`
-- `||` is the “or” operator and will return `true` if either of the expressions evaluated are `true`
+- `&&` is the "and" operator and will return `true` only if both expressions evaluated are `true`
+- `||` is the "or" operator and will return `true` if either of the expressions evaluated are `true`
 - Operators stop evaluating expressions once they can guarantee the return value, this is called **short circuiting**
-- **Truthiness** differs from `true` in that Ruby considers more than the `true` object to be “truthy”
-- Ruby considers everything to be “truthy” other than `false` and `nil`
+- **Truthiness** differs from `true` in that Ruby considers more than the `true` object to be "truthy"
+- Ruby considers everything to be "truthy" other than `false` and `nil`
 - An expression Ruby considers true is not the same as the `true` object
 
 ```ruby
 name = find_name
 
 if name && name.valid?
-  puts 'great name!'
+  puts "great name!"
 else
   puts "either couldn't find name or it's invalid"
 end
@@ -145,14 +145,14 @@ end
 - Ruby `if` statements can return a value
 
 ```ruby
-answer = true ? 'yes' : 'no'
+answer = true ? "yes" : "no"
 puts answer # => yes
 ```
 
 ## Pseudocode
 
 - Pseudocode is used to load the problem into our brain
-- It’s used to try to dissect, understand, and solve a problem
+- It's used to try to dissect, understand, and solve a problem
 - Helps focus on the logical problem and not the programming language
 - Formalizing pseudocode helps make translation to programming code easier
 
@@ -290,9 +290,9 @@ MSG
 
 - **Operator precedence** is a set of rules that determine the order operators are evaluated
 - Parentheses override the default evaluation order
-- Don’t rely too much on precedence, use parentheses to explicitly define the meaning
+- Don't rely too much on precedence, use parentheses to explicitly define the meaning
 - Operator with a higher precedence is said to **bind** tighter to its operands than those with lower priority
-- Ruby doesn’t evaluate `?:`, `&&`, and `||` subexpressions unless it needs them
+- Ruby doesn't evaluate `?:`, `&&`, and `||` subexpressions unless it needs them
 - Blocks have the lowest precedence of all operators
 - A `{}` block has higher priority than a `do...end` block
 - The following shows how operator precedence can affect outcome (parentheses added to visualize order)
@@ -308,7 +308,7 @@ p(array.map { |num| num + 1 })   r  # [2, 3, 4]
                                     # => [2, 3, 4]
 ```
 
-- Object’s `tap` method extremely useful for debugging
+- Object's `tap` method extremely useful for debugging
 
 ```ruby
 (1..10).tap { |x| p x }.to_a.tap { |x| p x }.select do |x|
@@ -332,7 +332,7 @@ end.tap { |x| p x }.map { |x| x * x }.tap { |x| p x } # [2, 4, 6, 8, 10] # [4, 1
 
 ### Naming Things
 
-- Don’t save characters; choose descriptive variable and method names
+- Don't save characters; choose descriptive variable and method names
 - Try to capture the intent of the variable in the name
 - One small exception to descriptive variable names is for very small blocks of code
 
@@ -367,14 +367,14 @@ end.tap { |x| p x }.map { |x| x * x }.tap { |x| p x } # [2, 4, 6, 8, 10] # [4, 1
 
 ### Miscellaneous Tips
 
-- Don’t prematurely exit a program; it should likely have a single exit point
+- Don't prematurely exit a program; it should likely have a single exit point
 - Know when to use `do/while` vs `while`
   - Works:
 
 ```ruby
-answer = ''
-while answer.downcase != 'n'
-  puts 'Continue? (y/n)'
+answer = ""
+while answer.downcase != "n"
+  puts "Continue? (y/n)"
   answer = gets.chomp
 end
 ```
@@ -383,16 +383,16 @@ end
 
 ```ruby
 loop do
-  puts 'Continue? (y/n)'
+  puts "Continue? (y/n)"
   answer = gets.chomp
-  break if answer.downcase == 'n'
+  break if answer.downcase == "n"
 end
 ```
 
 ### Approach to Learning
 
 - Learning to program takes focus, attention, and repetition
-- It’s normal not to remember most of what is done the first time around
+- It's normal not to remember most of what is done the first time around
 - Keep moving forward
 
 ## Variable Scope
@@ -424,7 +424,7 @@ puts n # => 10
 
 ### Variables and Method Definitions
 
-- A method’s scope is entirely self-contained
+- A method's scope is entirely self-contained
 - Only variables that have been defined as parameters can be accessed within the method
 - Variables must be passed into the method as arguments
 
@@ -435,7 +435,7 @@ puts n # => 10
 
 ```ruby
 loop do
-  MY_TEAM = 'Phoenix Suns'
+  MY_TEAM = "Phoenix Suns"
   break
 end
 
@@ -451,10 +451,10 @@ puts MY_TEAM # => Phoenix Suns
 ```ruby
 def greetings
   yield
-  puts 'Goodbye'
+  puts "Goodbye"
 end
 
-word = 'Hello'
+word = "Hello"
 
 greetings { puts word }
 
@@ -468,19 +468,19 @@ greetings { puts word }
 - For example, `Array#map` is defined in such a way to use the return value of the block to transform the each element
 
 ```ruby
-a = 'hello'
+a = "hello"
 
 [1, 2, 3].map { |num| a } # => ["hello", "hello", "hello"]
 ```
 
-- `#map` doesn’t have access to `a` but the block passed to `#map` does so the return value of the block can be used
+- `#map` doesn't have access to `a` but the block passed to `#map` does so the return value of the block can be used
 
 - Method definition sets the scope of any local variables defined in terms of parameters and if/how it interacts with blocks
 - Method invocation uses the scope set by the method definition
 
 ## Pass by Reference vs Pass by Value
 
-- In **pass by value** the method is given a copy of the object and any changes to the method’s object do not affect the original
+- In **pass by value** the method is given a copy of the object and any changes to the method's object do not affect the original
 - In **pass by reference** the method is given a reference to the argument variable and any changes affect the original object
 - Ruby exhibits a combination of both behaviors
 - Sometimes referred to as **call by sharing**
@@ -502,9 +502,9 @@ a = 'hello'
 
 ## Coding Tips 2
 
-- Don’t mutate the caller during iteration
+- Don't mutate the caller during iteration
   - Mutating elements in a collection is acceptable but not the collection (e.g, deleting elements)
-- Don’t use assignment in the argument of a conditional
+- Don't use assignment in the argument of a conditional
   - Hard to determine if `=` or `==` was intended
 - Use an underscore for unused parameters
 
@@ -513,8 +513,8 @@ names.each_with_index { |_, idx| puts "#{idx + 1}. got a name!" }
 ```
 
 - Gain experience through struggle
-  - Don’t memorize best practices but spend enough time programming to understand the context of the practices
-  - Don’t be afraid to make mistakes
+  - Don't memorize best practices but spend enough time programming to understand the context of the practices
+  - Don't be afraid to make mistakes
 
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md

@@ -4,7 +4,7 @@ Reading Documentation
 
 # Reading Documentation
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. https://docs.ruby-lang.org/en/
 2. https://docs.ruby-lang.org/en/2.7.0/doc/syntax/control_expressions_rdoc.html#label-while+Loop

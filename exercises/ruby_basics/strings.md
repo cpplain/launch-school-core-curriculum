@@ -4,7 +4,7 @@ Strings
 
 # Strings
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. --
 
@@ -21,15 +21,15 @@ puts "It's now 12 o'clock."
 3. --
 
 ```ruby
-name = 'Roger'
-puts name.casecmp('RoGeR') == 0
-puts name.casecmp('DAVE') == 0
+name = "Roger"
+puts name.casecmp("RoGeR") == 0
+puts name.casecmp("DAVE") == 0
 ```
 
 4. --
 
 ```ruby
-name = 'Elizabeth'
+name = "Elizabeth"
 
 puts "Hello, #{name}!"
 ```
@@ -37,8 +37,8 @@ puts "Hello, #{name}!"
 5. --
 
 ```ruby
-first_name = 'John'
-last_name = 'Doe'
+first_name = "John"
+last_name = "Doe"
 full_name = "#{first_name} #{last_name}"
 puts full_name
 ```
@@ -46,7 +46,7 @@ puts full_name
 6. --
 
 ```ruby
-state = 'tExAs'
+state = "tExAs"
 state.capitalize!
 puts state
 ```
@@ -54,31 +54,31 @@ puts state
 7. --
 
 ```ruby
-greeting = 'Hello!'
-greeting.gsub!('Hello', 'Goodby')
+greeting = "Hello!"
+greeting.gsub!("Hello", "Goodby")
 puts greeting
 ```
 
 8. --
 
 ```ruby
-alphabet = 'abcdefghijklmnopqrstuvwxyz'
-puts alphabet.split('')
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+puts alphabet.split("")
 ```
 
 9. --
 
 ```ruby
-words = 'car human elephant airplane'
-words.split(' ').each { |word| puts word + 's' }
+words = "car human elephant airplane"
+words.split(" ").each { |word| puts word + "s" }
 ```
 
 10. --
 
 ```ruby
-colors = 'blue pink yellow orange'
-puts colors.include? 'yellow'
-puts colors.include? 'purple'
+colors = "blue pink yellow orange"
+puts colors.include? "yellow"
+puts colors.include? "purple"
 ```
 
 [readme]: /README.md

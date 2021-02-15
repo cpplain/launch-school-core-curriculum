@@ -4,7 +4,7 @@ Reading Documentation 2
 
 # Reading Documentation 2
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. `"xyx".upcase`
 2. `a.insert(3, 5, 6, 7)`

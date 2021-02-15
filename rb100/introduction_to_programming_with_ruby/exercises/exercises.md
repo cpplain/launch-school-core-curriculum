@@ -5,7 +5,7 @@ Exercises
 
 # Exercises
 
-Notes for Exercises chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Exercises chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 1. [exercise_1.rb](exercise_1.rb)
 2. [exercise_2.rb](exercise_2.rb)

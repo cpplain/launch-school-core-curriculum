@@ -5,7 +5,7 @@ Practice Problems: Easy 2
 
 # Practice Problems: Easy 2
 
-Exercises for Lesson 3 of [Launch School’s][launch-school] RB101 course.
+Exercises for Lesson 3 of [Launch School's][launch-school] RB101 course.
 
 1. `ages.include? "Spot"`, `Hash#key?`, `Hash#member?`
 2. Convert string in place:

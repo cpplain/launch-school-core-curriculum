@@ -4,7 +4,7 @@ Arrays
 
 # Arrays
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. --
 
@@ -67,13 +67,13 @@ p divisible_by_three
 8. --
 
 ```ruby
-[['Dave', 7], ['Miranda', 3], ['Jason', 11]]
+[["Dave", 7], ["Miranda", 3], ["Jason", 11]]
 ```
 
 9. --
 
 ```ruby
-favorites = [['Dave', 7], ['Miranda', 3], ['Jason', 11]]
+favorites = [["Dave", 7], ["Miranda", 3], ["Jason", 11]]
 favorites.flatten!
 p favorites
 ```

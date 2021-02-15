@@ -5,7 +5,7 @@ Practice Problems: Hard 1
 
 # Practice Problems: Hard 1
 
-Exercises for Lesson 3 of [Launch School’s][launch-school] RB101 course.
+Exercises for Lesson 3 of [Launch School's][launch-school] RB101 course.
 
 1. `greeting` will return `nil` even though the `if` block is not called the variable is initialized to `nil`
 2. Output is `{:a=>"hi there"}` because `informal_greeting` is a reference to the `"hi"` string which is then mutated
@@ -39,7 +39,7 @@ three is: one
 
 ```ruby
 def dot_separated_ip_address?(input_string)
-  dot_separated_words = input_string.split('.')
+  dot_separated_words = input_string.split(".")
   return false unless dot_separated_words.length == 4
 
   while dot_separated_words.size > 0

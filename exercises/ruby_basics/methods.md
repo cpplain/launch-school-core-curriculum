@@ -4,7 +4,7 @@ Methods
 
 # Methods
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. --
 
@@ -30,11 +30,11 @@ puts print_me
 
 ```ruby
 def hello
-  'Hello'
+  "Hello"
 end
 
 def world
-  'World'
+  "World"
 end
 
 puts "#{hello} #{world}"
@@ -44,11 +44,11 @@ puts "#{hello} #{world}"
 
 ```ruby
 def hello
-  'Hello'
+  "Hello"
 end
 
 def world
-  'World'
+  "World"
 end
 
 def greet
@@ -65,7 +65,7 @@ def car(make, model)
   puts "#{make} #{model}"
 end
 
-car('Toyota', 'Corolla')
+car("Toyota", "Corolla")
 ```
 
 6. --
@@ -94,19 +94,19 @@ def cat(name)
   return name
 end
 
-puts "The dog's name is #{dog('Spot')}."
-puts "The cat's name is #{cat('Ginger')}."
+puts "The dog's name is #{dog("Spot")}."
+puts "The cat's name is #{cat("Ginger")}."
 ```
 
 8. --
 
 ```ruby
-def assign_name(name = 'Bob')
+def assign_name(name = "Bob")
   name
 end
 
-puts assign_name('Kevin') == 'Kevin'
-puts assign_name == 'Bob'
+puts assign_name("Kevin") == "Kevin"
+puts assign_name == "Bob"
 ```
 
 9. --

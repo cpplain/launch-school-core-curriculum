@@ -4,7 +4,7 @@ Loops 2
 
 # Loops 2
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. --
 
@@ -40,7 +40,7 @@ process_the_loop = [true, false].sample
 
 if process_the_loop
   loop do
-    puts 'The loop was processed!'
+    puts "The loop was processed!"
     break
   end
 else
@@ -52,14 +52,14 @@ end
 
 ```ruby
 loop do
-  puts 'What does 2 + 2 equal?'
+  puts "What does 2 + 2 equal?"
   answer = gets.chomp.to_i
 
   if answer == 4
     puts "That's correct!"
     break
   else
-    puts 'Wrong answer. Try again!'
+    puts "Wrong answer. Try again!"
   end
 end
 ```
@@ -70,7 +70,7 @@ end
 numbers = []
 
 loop do
-  puts 'Enter any number:'
+  puts "Enter any number:"
   input = gets.chomp.to_i
 
   numbers.push(input)
@@ -123,7 +123,7 @@ loop do
   number_b += rand(2)
   next unless number_a == 5 || number_b == 5
 
-  puts '5 was reached!'
+  puts "5 was reached!"
   break
 end
 ```
@@ -132,7 +132,7 @@ end
 
 ```ruby
 def greeting
-  puts 'Hello!'
+  puts "Hello!"
 end
 
 number_of_greetings = 2

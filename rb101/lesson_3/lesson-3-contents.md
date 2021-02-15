@@ -4,7 +4,7 @@ Lesson 3: Practice Problems
 
 # Lesson 3: Practice Problems
 
-Exercises for Lesson 3 of [Launch School’s][launch-school] RB101 course.
+Exercises for Lesson 3 of [Launch School's][launch-school] RB101 course.
 
 ## Contents
 

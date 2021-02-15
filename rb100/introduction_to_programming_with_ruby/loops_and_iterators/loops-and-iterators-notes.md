@@ -5,7 +5,7 @@ Loops and Iterators
 
 # Loops and Iterators
 
-Notes for Loops and Iterators chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Loops and Iterators chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 ## A Simple Loop
 
@@ -34,9 +34,9 @@ Notes for Loops and Iterators chapter of [Launch School’s][launch-school] [Int
 
 ```ruby
 loop do
-  puts 'Do you want to do that again?'
+  puts "Do you want to do that again?"
   answer = gets.chomp
-  break if answer != 'Y'
+  break if answer != "Y"
 end
 ```
 
@@ -44,9 +44,9 @@ end
 
 ```ruby
 begin
-  puts 'Do you want to do that again?'
+  puts "Do you want to do that again?"
   answer = gets.chomp
-end while answer == 'Y'
+end while answer == "Y"
 ```
 
 ## For Loops
@@ -61,7 +61,7 @@ for i in 1..x
   puts i
 end
 
-puts 'Done!'
+puts "Done!"
 ```
 
 - Range (`..`) used in example above

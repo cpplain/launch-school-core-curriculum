@@ -5,7 +5,7 @@ Flow Control
 
 # Flow Control
 
-Notes for Flow Control chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Flow Control chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 ## Conditionals
 

@@ -5,7 +5,7 @@ Introduction and Preparations
 
 # Introduction and Preparations
 
-Notes for Introduction and Preparations chapters of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Introduction and Preparations chapters of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Notes for Introduction and Preparations chapters of [Launch School’s][launch-s
 
 ```ruby
 # preparation.rb
-require 'pry'
+require "pry"
 
 a = [1, 2, 3]
 a << 4

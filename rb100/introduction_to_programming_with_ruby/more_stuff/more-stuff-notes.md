@@ -5,7 +5,7 @@ More Stuff!
 
 # More Stuff!
 
-Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for More Stuff! chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 ## Regex
 
@@ -13,8 +13,8 @@ Notes for More Stuff! chapter of [Launch School’s][launch-school] [Introductio
 - `=~` or `.match()` to check for a match
 
 ```ruby
-'powerball' =~ /b/
-/b/.match('powerball')
+"powerball" =~ /b/
+/b/.match("powerball")
 ```
 
 ## Ruby Standard Classes
@@ -51,7 +51,7 @@ take_block(number) { |num| puts "Block being called in the method! #{num}" }
 ```ruby
 talk = Proc.new { |name| puts "I am talking to #{name}" }
 
-talk.call 'Bob'
+talk.call "Bob"
 ```
 
 - Procs can be passed into methods

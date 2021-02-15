@@ -5,7 +5,7 @@ Arrays
 
 # Arrays
 
-Notes for Arrays chapter of [Launch School’s][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Arrays chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
 
 ## What is an Array?
 
@@ -19,8 +19,8 @@ Notes for Arrays chapter of [Launch School’s][launch-school] [Introduction to 
 - `.push()` or `<<` to add element to the end of the array
 
 ```ruby
-array.push('another string')
-array << 'another string'
+array.push("another string")
+array << "another string"
 ```
 
 - `.map` iterate over the array applying a block to each element and return new array

@@ -3,7 +3,7 @@ Exercises: Ruby Basics
 
 # Ruby Basics
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 ## Contents
 

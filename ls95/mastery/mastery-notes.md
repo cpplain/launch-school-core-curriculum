@@ -8,22 +8,22 @@ Notes for [Mastery][mastery-amazon] by George Leonard (Amazon).
 
 ## Contents
 
-- [The Master’s Journey](#the-masters-journey)
+- [The Master's Journey](#the-masters-journey)
 - [The Five Master Keys](#the-five-master-keys)
 - [Tools for Mastery](#tools-for-mastery)
 
-## The Master’s Journey
+## The Master's Journey
 
 ### What is Mastery?
 
 - It brings rich rewards, yet is not really a goal or a destination but rather a process, a journey
-- It’s available to anyone who is willing to get on the path and stay on it
-- The master’s journey can begin whenever you decide to learn any new skill
+- It's available to anyone who is willing to get on the path and stay on it
+- The master's journey can begin whenever you decide to learn any new skill
 
 #### The Mastery Curve
 
 - Learning any new skill involves relatively brief spurs of progress, followed by slight decline to a plateau
-- To tak the master’s journey, you have to be willing to spend most of your time on a plateau
+- To tak the master's journey, you have to be willing to spend most of your time on a plateau
 - Practice diligently and primarily for the sake of the practice itself
 - Learn to appreciate and enjoy the plateau as much as the upward surges
 
@@ -47,24 +47,24 @@ Notes for [Mastery][mastery-amazon] by George Leonard (Amazon).
 #### The Hacker
 
 - The Hacker, after soft of getting the hang of things, he is willing to stay on the plateau indefinitely
-- He doesn’t mind skipping stages essential to development of mastery if he can go out and hang with fellow hackers
+- He doesn't mind skipping stages essential to development of mastery if he can go out and hang with fellow hackers
 - He does only enough to get by
 
 #### Summary
 
 - The catagories are no quite this neat
-- It’s possible to be a Master, a Dabbler, an Obsessive, or a Hacker in different areas of one’s life
-- These characters help us see why we’re not on the path of mastery
+- It's possible to be a Master, a Dabbler, an Obsessive, or a Hacker in different areas of one's life
+- These characters help us see why we're not on the path of mastery
 
-### America’s War Against Mastery
+### America's War Against Mastery
 
 - Advertisement and entertainment teach that life is an endless series of climactic moments
 - One epiphany follows another, one fantasy is crowded out by the next, climax is piled upon climax
 - There is no plateau
 
-#### A War That Can’t Be Won
+#### A War That Can't Be Won
 
-- “In the long run, the war against mastery, the path of patient, dedicated effort without attachment to immediate results, is a war that can’t be won.”
+- "In the long run, the war against mastery, the path of patient, dedicated effort without attachment to immediate results, is a war that can't be won."
   - This quote is extremely poignant and prescient given current times
 
 ### Loving the Plateau
@@ -85,7 +85,7 @@ Notes for [Mastery][mastery-amazon] by George Leonard (Amazon).
 ### Key 2: Practice
 
 - Practice as a verb is clear to all of us
-- For someone on the master’s journey, the word is best conceived as a noun, something you have
+- For someone on the master's journey, the word is best conceived as a noun, something you have
 - Practice is the path on which you travel
 - A practice can be anything practiced on a regular basis as an integral part of life
   - A doctor practices medicine and has a practice
@@ -132,17 +132,17 @@ Notes for [Mastery][mastery-amazon] by George Leonard (Amazon).
   1. Maintain physical fitness
   2. Acknowledge the negative and accentuate the positive
   3. Try telling the truth
-  4. Honor but don’t indulge your own dark side
+  4. Honor but don't indulge your own dark side
      - The author uses anger as an example, but anger is not necessarily, in itself, dark
-     - This is one point where I amy disagree with the author, there is never a time to “honor” that which is truly dark
-     - I’ll have to revisit this topic at a later date to see if I see something different in the author’s argument
+     - This is one point where I amy disagree with the author, there is never a time to "honor" that which is truly dark
+     - I'll have to revisit this topic at a later date to see if I see something different in the author's argument
   5. Set ones priorities
   6. Make commitments, take action
   7. Get on the path of mastery and stay on it
 
 ### Pitfalls Along the Path
 
-- It’s not likely to avoid pitfalls, but it helps to know they are there.
+- It's not likely to avoid pitfalls, but it helps to know they are there.
   1. Conflicting way of life
   2. Obsessive goal orientation
   3. Poor instruction
@@ -160,9 +160,9 @@ Notes for [Mastery][mastery-amazon] by George Leonard (Amazon).
 
 ### Mastering the Commonplace
 
-- Most of life is the supposedly “in between”
+- Most of life is the supposedly "in between"
 - Life is filled with opportunities for practicing mastery, which focuses on process rather than product
-- Ultimately, nothing in this life is “commonplace” or “in between”
+- Ultimately, nothing in this life is "commonplace" or "in between"
 
 [ls95-notes]: /ls95/ls95-notes.md
 [readme]: /README.md

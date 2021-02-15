@@ -5,7 +5,7 @@ Practice Problems: Easy 1
 
 # Practice Problems: Easy 1
 
-Exercises for Lesson 3 of [Launch School’s][launch-school] RB101 course.
+Exercises for Lesson 3 of [Launch School's][launch-school] RB101 course.
 
 1. Expected output:
 

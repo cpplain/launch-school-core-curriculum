@@ -4,7 +4,7 @@ Debugging
 
 # Debugging
 
-Ruby Basics exercises from [Launch School’s][launch-school] [Core Curriculum][core-curriculum].
+Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][core-curriculum].
 
 1. The method is expecting a single argument, an array of integers
 
@@ -38,7 +38,7 @@ def multiply_by_five(n)
   n * 5
 end
 
-puts 'Hello! Which number would you like to multiply by 5?'
+puts "Hello! Which number would you like to multiply by 5?"
 number = gets.chomp.to_i
 
 puts "The result is #{multiply_by_five(number)}!"
@@ -47,9 +47,9 @@ puts "The result is #{multiply_by_five(number)}!"
 4. --
 
 ```ruby
-pets = { cat: 'fluffy', dog: %w[sparky fido], fish: 'oscar' }
+pets = { cat: "fluffy", dog: %w[sparky fido], fish: "oscar" }
 
-pets[:dog].push 'bowser'
+pets[:dog].push "bowser"
 
 p pets
 ```
@@ -68,17 +68,17 @@ p even_numbers
 
 ```ruby
 def get_quote(person)
-  if person == 'Yoda'
-    'Do. Or do not. There is no try.'
-  elsif person == 'Confucius'
-    'I hear and I forget. I see and I remember. I do and I understand.'
-  elsif person == 'Einstein'
-    'Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.'
+  if person == "Yoda"
+    "Do. Or do not. There is no try."
+  elsif person == "Confucius"
+    "I hear and I forget. I see and I remember. I do and I understand."
+  elsif person == "Einstein"
+    "Do not worry about your difficulties in Mathematics. I can assure you mine are still greater."
   end
 end
 
-puts 'Confucius says:'
-puts '"' + get_quote('Confucius') + '"'
+puts "Confucius says:"
+puts "\"" + get_quote("Confucius") + "\""
 ```
 
 7. `balance` was assigned a new value during each iteration instead of incrementing with using the current and new values
@@ -114,23 +114,23 @@ puts balance
 
 ```ruby
 colors = [
-  'red',
-  'yellow',
-  'purple',
-  'green',
-  'dark blue',
-  'turquoise',
-  'silver',
-  'black',
+  "red",
+  "yellow",
+  "purple",
+  "green",
+  "dark blue",
+  "turquoise",
+  "silver",
+  "black",
 ]
 things = [
-  'pen',
-  'mouse pad',
-  'coffee mug',
-  'sofa',
-  'surf board',
-  'training mat',
-  'notebook',
+  "pen",
+  "mouse pad",
+  "coffee mug",
+  "sofa",
+  "surf board",
+  "training mat",
+  "notebook",
 ]
 
 colors.shuffle!
@@ -141,9 +141,9 @@ loop do
   break if i > things.length - 1
 
   if i == 0
-    puts 'I have a ' + colors[i] + ' ' + things[i] + '.'
+    puts "I have a " + colors[i] + " " + things[i] + "."
   else
-    puts 'And a ' + colors[i] + ' ' + things[i] + '.'
+    puts "And a " + colors[i] + " " + things[i] + "."
   end
 
   i += 1
@@ -162,7 +162,7 @@ def digit_product(str_num)
   product
 end
 
-p digit_product('12345')
+p digit_product("12345")
 ```
 
 10. Keys are using symbols but the program is tring to access the hash value using a string key and `#merge` does not mutate the caller
@@ -189,12 +189,12 @@ character_classes = {
   },
 }
 
-puts 'Please type your class (warrior, thief, scout, mage):'
+puts "Please type your class (warrior, thief, scout, mage):"
 input = gets.chomp.downcase
 
 player = player.merge(character_classes[input.to_sym])
 
-puts 'Your character stats:'
+puts "Your character stats:"
 puts player
 ```
 

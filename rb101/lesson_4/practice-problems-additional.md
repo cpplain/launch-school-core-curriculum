@@ -5,7 +5,7 @@ Practice Problems: Additional Practice
 
 # Practice Problems: Additional Practice
 
-Exercises for Lesson 4 of [Launch School’s][launch-school] RB101 course.
+Exercises for Lesson 4 of [Launch School's][launch-school] RB101 course.
 
 1. --
 
