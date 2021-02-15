@@ -15,7 +15,7 @@ Notes for Lesson 4 of [Launch School’s][launch-school] RB101 course.
 - [The PEDAC Problem Solving Process](#the-pedac-problem-solving-process)
 - [Selection and Transformation](#selection-and-transformation)
 - [Methods](#methods)
-- [Practice Problems: Methods and More Methods](#practice-problems-methods-and-more-methods)
+- [Practice Problems](#practice-problems)
 
 ## Introduction
 
@@ -642,9 +642,10 @@ odd  # => [1, 3]
 even # => [2]
 ```
 
-## Practice Problems: Methods and More Methods
+## Practice Problems
 
 - [practice-problems-methods.md](practice-problems-methods.md)
+- [practice-problems-additional.md](practice-problems-additional.md)
 
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
