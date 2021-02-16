@@ -9,6 +9,7 @@ Notes for Lesson 5 of [Launch School's][launch-school] RB101 course.
 ## Contents
 
 - [Sorting](#sorting)
+- [Nested Data Structures](#nested-data-structures)
 
 ## Sorting
 
