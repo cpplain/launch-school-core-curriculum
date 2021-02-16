@@ -10,6 +10,7 @@ Notes for Lesson 5 of [Launch School's][launch-school] RB101 course.
 
 - [Sorting](#sorting)
 - [Nested Data Structures](#nested-data-structures)
+- [Working with Blocks](#working-with-blocks)
 
 ## Sorting
 
@@ -199,6 +200,42 @@ arr # => [[1], [2], [3, 4]]
 ```
 
 - There is no built-in or easy way to create a deep copy or to deep freeze an object.
+
+## Working with Blocks
+
+- When evaluating code, it is helpful to ask the following questions:
+  - what is the action being performed (method call, block, conditional, etc.)?
+  - what is the object the action is being performed on?
+  - what is the side-effect of the action (e.g., output or mutation)?
+  - what is the return value of the action?
+  - is the return value used?
+- The information gained from these question set in tabular format.
+
+```ruby
+[[1, 2], [3, 4]].each { |arr| puts arr.first }
+# 1
+# 3
+# => [[1, 2], [3, 4]]
+```
+
+| Line | Action                | Object                            | Side Effect                              | Return Value                      | Return Value Used?         |
+| :--: | --------------------- | --------------------------------- | ---------------------------------------- | --------------------------------- | -------------------------- |
+|  1   | method call (`each`)  | outer array                       | none                                     | calling object                    | no, but shown on line 6    |
+| 1-3  | block execution       | each sub-array                    | none                                     | `nil`                             | no                         |
+|  2   | method call (`first`) | each sub-array                    | none                                     | element at index `0` of sub-array | yes, used by `puts`        |
+|  2   | method call (`puts`)  | element at index `0` of sub-array | outputs string representation of Integer | `nil`                             | yes, return value of block |
+
+- Do **not** mutate the collection being iterated upon.
+- Take the time to break down code step by step if it appears opaque or complex.
+- Use a systematic approach (like the tabular method) if necessary.
+- Identify what is happening at each step paying particular attention to:
+  - return value.
+  - side effects.
+- Pay attention to return values, especially where implicit returns are relied on.
+- Be clear about the implementation of the method(s) being used, especially:
+  - the values passed to the block.
+  - what the method does with the block return value.
+- Refer to the Ruby docs when unclear of a method implementation.
 
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
