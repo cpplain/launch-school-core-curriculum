@@ -209,7 +209,7 @@ arr # => [[1], [2], [3, 4]]
   - what is the side-effect of the action (e.g., output or mutation)?
   - what is the return value of the action?
   - is the return value used?
-- The information gained from these question set in tabular format.
+- The information gained from these question can be set in tabular format.
 
 ```ruby
 [[1, 2], [3, 4]].each { |arr| puts arr.first }
@@ -219,7 +219,7 @@ arr # => [[1], [2], [3, 4]]
 ```
 
 | Line | Action                | Object                            | Side Effect                              | Return Value                      | Return Value Used?         |
-| :--: | --------------------- | --------------------------------- | ---------------------------------------- | --------------------------------- | -------------------------- |
+| :--: | :-------------------- | :-------------------------------- | :--------------------------------------- | :-------------------------------- | :------------------------- |
 |  1   | method call (`each`)  | outer array                       | none                                     | calling object                    | no, but shown on line 6    |
 | 1-3  | block execution       | each sub-array                    | none                                     | `nil`                             | no                         |
 |  2   | method call (`first`) | each sub-array                    | none                                     | element at index `0` of sub-array | yes, used by `puts`        |
