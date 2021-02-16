@@ -125,6 +125,80 @@ people.sort_by { |_, age| age }
 - Objects must implement the `<=>` method to be sorted.
 - Methods other than `sort` and `sort_by` also use comparison.
 
+## Nested Data Structures
+
+- Accessing nested array items is done using indexes from the outside in.
+
+```ruby
+arr = [[1, 3], [2]]
+arr[0] # => [1, 3]
+arr[0][1] # => 3
+```
+
+- Modifying nested array elements is similar to accessing its elements.
+
+```ruby
+arr = [[1, 3], [2]]
+arr[0][1] = 5
+arr # => [[1, 5], [2]]
+```
+
+- Adding additional elements is also done in like manner.
+
+```ruby
+arr = [[1], [2]]
+arr[0] << 3
+arr # => [[1, 3], [2]]
+```
+
+- Hashes can be nested in arrays, as well.
+
+```ruby
+arr = [{ a: "ant" }, { b: "bear" }]
+arr[0][:c] = "cat"
+arr # => [{ :a => "ant", :c => "cat" }, { :b => "bear" }]
+```
+
+- Variables referencing inner or outer arrays will reflect any modifications to the arrays because the variables are pointers to the objects modified.
+
+```ruby
+a = [1, 3]
+b = [2]
+arr = [a, b]
+arr # => [[1, 3], [2]]
+
+a[1] = 5
+arr # => [[1, 5], [2]]
+
+arr[0][1] = 8
+arr # => [[1, 8], [2]]
+a # => [1, 8]
+```
+
+- `dup` and `clone` both make a shallow copy of an object.
+- A **shallow copy** only copies the object the method is called on, any nested objects are shared.
+- This means changes to nested objects are reflected in both the copy and the original.
+- Its important to always pay attention to the objects being modified (nested or outer).
+- In Ruby, objects can be frozen to prevent modification.
+- The main difference between `dup` and `clone` is that `clone` preserves the frozen state of an object.
+
+```ruby
+arr1 = %w[a b c].freeze
+arr2 = arr1.clone
+arr2 << "d"
+# => RuntimeError: can't modify frozen Array
+```
+
+- `freeze` only freezes the object it is called on.
+
+```ruby
+arr = [[1], [2], [3]].freeze
+arr[2] << 4
+arr # => [[1], [2], [3, 4]]
+```
+
+- There is no built-in or easy way to create a deep copy or to deep freeze an object.
+
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
 [launch-school]: https://launchschool.com

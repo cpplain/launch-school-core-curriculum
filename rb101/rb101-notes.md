@@ -11,7 +11,7 @@ Notes for [Launch School's][launch-school] RB101 course.
 - [Lesson 2: Small Programs][lesson2]
 - [Lesson 3: Practice Problems][lesson3]
 - [Lesson 4: Ruby Collections][lesson4]
-- [Lesson 5: Ruby Collections][lesson5]
+- [Lesson 5: Advanced Ruby Collections][lesson5]
 
 [lesson1]: lesson-1-notes.md
 [lesson2]: lesson_2/lesson-2-notes.md
