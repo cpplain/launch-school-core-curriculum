@@ -11,6 +11,7 @@ Notes for Lesson 5 of [Launch School's][launch-school] RB101 course.
 - [Sorting](#sorting)
 - [Nested Data Structures](#nested-data-structures)
 - [Working with Blocks](#working-with-blocks)
+- [Practice Problems](#practice-problems)
 
 ## Sorting
 
@@ -236,6 +237,10 @@ arr # => [[1], [2], [3, 4]]
   - the values passed to the block.
   - what the method does with the block return value.
 - Refer to the Ruby docs when unclear of a method implementation.
+
+## Practice Problems
+
+- [practice-problems.md](practice-problems.md)
 
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
