@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
 group :development do
+  gem 'pry', '~> 0.13.1'
+  gem 'pry-byebug'
   gem 'rubocop', '0.86.0'
 end
