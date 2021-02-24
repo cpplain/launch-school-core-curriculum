@@ -70,6 +70,9 @@ Tic Tac Toe is a 2 player game played on a 3x3 board. Each player takes a turn a
 
 ## Assignment: Twenty-One
 
+- [twenty-one-pedac.md](twenty-one-pedac.md)
+- [twenty_one.rb](twenty_one.rb)
+
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
 [launch-school]: https://launchschool.com
