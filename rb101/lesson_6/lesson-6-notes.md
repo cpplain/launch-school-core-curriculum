@@ -11,6 +11,7 @@ Notes for Lesson 6 of [Launch School's][launch-school] RB101 course.
 - [Debugging with Pry](#debugging-with-pry)
 - [Tic Tac Toe Problem Decomposition](#tic-tac-toe-problem-decomposition)
 - [Walk-through: Tic Tac Toe](#walk-through-tic-tac-toe)
+- [Assignment: Twenty-One](#assignment-twenty-one)
 
 ## Debugging with Pry
 
@@ -66,6 +67,8 @@ Tic Tac Toe is a 2 player game played on a 3x3 board. Each player takes a turn a
 ## Walk-through: Tic Tac Toe
 
 - [tic_tac_toe.rb](tic_tac_toe.rb)
+
+## Assignment: Twenty-One
 
 [rb101-notes]: /rb101/rb101-notes.md
 [readme]: /README.md
