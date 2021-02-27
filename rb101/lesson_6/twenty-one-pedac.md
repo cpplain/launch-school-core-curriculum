@@ -77,4 +77,4 @@ Twenty-one is a game similar to blackjack but significantly simpler.
 
 ## Code
 
-[twenty_one.rb](twenty_one.rb)
+- [twenty_one.rb](twenty_one.rb)
