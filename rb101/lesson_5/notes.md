@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[RB101 Programming Foundations][rb101-notes] >
+[RB101 Programming Foundations][rb101] >
 Lesson 5: Advanced Ruby Collections
 
 # Lesson 5: Advanced Ruby Collections
@@ -242,6 +242,11 @@ arr # => [[1], [2], [3, 4]]
 
 - [practice-problems.md](practice-problems.md)
 
-[rb101-notes]: /rb101/rb101-notes.md
+<!-- internal links -->
+
+[rb101]: /rb101/notes.md
 [readme]: /README.md
+
+<!-- external links -->
+
 [launch-school]: https://launchschool.com

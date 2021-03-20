@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[RB101 Programming Foundations][rb101-notes] >
+[RB101 Programming Foundations][rb101] >
 Lesson 6: Slightly Larger Programs
 
 # Lesson 6: Slightly Larger Programs
@@ -73,6 +73,11 @@ Tic Tac Toe is a 2 player game played on a 3x3 board. Each player takes a turn a
 - [twenty-one-pedac.md](twenty-one-pedac.md)
 - [twenty_one.rb](twenty_one.rb)
 
-[rb101-notes]: /rb101/rb101-notes.md
+<!-- internal links -->
+
+[rb101]: /rb101/notes.md
 [readme]: /README.md
+
+<!-- external links -->
+
 [launch-school]: https://launchschool.com

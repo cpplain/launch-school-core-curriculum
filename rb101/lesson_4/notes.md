@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[RB101 Programming Foundations][rb101-notes] >
+[RB101 Programming Foundations][rb101] >
 Lesson 4: Ruby Collections
 
 # Lesson 4: Ruby Collections
@@ -661,6 +661,11 @@ even # => [2]
   - be aware they exist and how to find them.
   - know how to read the documentation to understand how the method uses the block's return value, what the method's return value is, and whether the method is destructive.
 
-[rb101-notes]: /rb101/rb101-notes.md
+<!-- internal links -->
+
+[rb101]: /rb101/notes.md
 [readme]: /README.md
+
+<!-- external links -->
+
 [launch-school]: https://launchschool.com

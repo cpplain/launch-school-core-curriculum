@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[RB101 Programming Foundations][rb101-notes] >
+[RB101 Programming Foundations][rb101] >
 Lesson 1: Preparations
 
 # Lesson 1: Preparations
@@ -85,8 +85,13 @@ Notes for Lesson 1 of [Launch School's][launch-school] RB101 course.
 - May want to spread exercises out over several days
 - Before working on problems read blog article [The Two-Layer Problem][two-layer-problem]
 
-[rb101-notes]: /rb101/rb101-notes.md
+<!-- internal links -->
+
+[rb101]: /rb101/notes.md
 [readme]: /README.md
+
+<!-- external links -->
+
 [code-review]: https://launchschool.com/gists/8bbb0e2a
 [launch-school]: https://launchschool.com
 [rubber-duck]: https://en.wikipedia.org/wiki/Rubber_duck_debugging

@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[RB101 Programming Foundations][rb101-notes] >
+[RB101 Programming Foundations][rb101] >
 Lesson 2: Small Programs
 
 # Lesson 2: Small Programs
@@ -516,8 +516,13 @@ names.each_with_index { |_, idx| puts "#{idx + 1}. got a name!" }
   - Don't memorize best practices but spend enough time programming to understand the context of the practices
   - Don't be afraid to make mistakes
 
-[rb101-notes]: /rb101/rb101-notes.md
+<!-- internal links -->
+
+[rb101]: /rb101/notes.md
 [readme]: /README.md
+
+<!-- external links -->
+
 [launch-school]: https://launchschool.com
 [methods-in-ruby]: https://launchschool.com/blog/mutating-and-non-mutating-methods
 [object-passing]: https://launchschool.com/blog/object-passing-in-ruby

@@ -14,11 +14,16 @@ Notes for [Launch School's][launch-school] RB101 course.
 - [Lesson 5: Advanced Ruby Collections][lesson5]
 - [Lesson 6: Slightly Larger Programs][lesson6]
 
-[lesson1]: lesson-1-notes.md
-[lesson2]: lesson_2/lesson-2-notes.md
-[lesson3]: lesson_3/lesson-3-contents.md
-[lesson4]: lesson_4/lesson-4-notes.md
-[lesson5]: lesson_5/lesson-5-notes.md
-[lesson6]: lesson_6/lesson-6-notes.md
+<!-- internal links -->
+
+[lesson1]: lesson_1/notes.md
+[lesson2]: lesson_2/notes.md
+[lesson3]: lesson_3/contents.md
+[lesson4]: lesson_4/notes.md
+[lesson5]: lesson_5/notes.md
+[lesson6]: lesson_6/notes.md
 [readme]: /README.md
+
+<!-- external links -->
+
 [launch-school]: https://launchschool.com
