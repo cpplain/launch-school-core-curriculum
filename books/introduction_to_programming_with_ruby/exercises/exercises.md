@@ -1,11 +1,11 @@
 [Launch School Core Curriculum][readme] >
-[RB100 Programming and Back-end Prep][rb100-notes] >
-[Introduction to Programming with Ruby][ruby-intro-notes] >
+[RB100 Programming and Back-end Prep][rb100] >
+[Introduction to Programming with Ruby][intro-notes] >
 Exercises
 
 # Exercises
 
-Notes for Exercises chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Exercises chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][intro-to-ruby].
 
 1. [exercise_1.rb](exercise_1.rb)
 2. [exercise_2.rb](exercise_2.rb)
@@ -26,8 +26,13 @@ Notes for Exercises chapter of [Launch School's][launch-school] [Introduction to
 15. `These hashes are the same!`
 16. [exercise_11.rb](exercise_11.rb)
 
-[rb100-notes]: /rb100/rb100-notes.md
+<!-- internal links -->
+
+[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
+[rb100]: /rb100/notes.md
 [readme]: /README.md
-[ruby-intro-notes]: /rb100/introduction_to_programming_with_ruby/introduction-to-programming-with-ruby-notes.md
+
+<!-- external links -->
+
+[intro-to-ruby]: https://launchschool.com/books/ruby
 [launch-school]: https://launchschool.com
-[ruby-intro-book]: https://launchschool.com/books/ruby

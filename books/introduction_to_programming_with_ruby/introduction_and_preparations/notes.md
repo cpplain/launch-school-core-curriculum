@@ -1,11 +1,11 @@
 [Launch School Core Curriculum][readme] >
-[RB100 Programming and Back-end Prep][rb100-notes] >
-[Introduction to Programming with Ruby][ruby-intro-notes] >
+[RB100 Programming and Back-end Prep][rb100] >
+[Introduction to Programming with Ruby][intro-notes] >
 Introduction and Preparations
 
 # Introduction and Preparations
 
-Notes for Introduction and Preparations chapters of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Introduction and Preparations chapters of [Launch School's][launch-school] [Introduction to Programming with Ruby][intro-to-ruby].
 
 ## Introduction
 
@@ -46,8 +46,13 @@ binding.pry # execution will pause here, allowing you to inspect all objects
 puts a
 ```
 
-[rb100-notes]: /rb100/rb100-notes.md
+<!-- internal links -->
+
+[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
+[rb100]: /rb100/notes.md
 [readme]: /README.md
-[ruby-intro-notes]: /rb100/introduction_to_programming_with_ruby/introduction-to-programming-with-ruby-notes.md
+
+<!-- external links -->
+
+[intro-to-ruby]: https://launchschool.com/books/ruby
 [launch-school]: https://launchschool.com
-[ruby-intro-book]: https://launchschool.com/books/ruby

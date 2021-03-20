@@ -1,11 +1,11 @@
 [Launch School Core Curriculum][readme] >
-[RB100 Programming and Back-end Prep][rb100-notes] >
-[Introduction to Programming with Ruby][ruby-intro-notes] >
+[RB100 Programming and Back-end Prep][rb100] >
+[Introduction to Programming with Ruby][intro-notes] >
 Arrays
 
 # Arrays
 
-Notes for Arrays chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Arrays chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][intro-to-ruby].
 
 ## What is an Array?
 
@@ -118,8 +118,13 @@ end
 7. [exercise_7.rb](exercise_7.rb)
 8. [exercise_8.rb](exercise_8.rb)
 
-[rb100-notes]: /rb100/rb100-notes.md
+<!-- internal links -->
+
+[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
+[rb100]: /rb100/notes.md
 [readme]: /README.md
-[ruby-intro-notes]: /rb100/introduction_to_programming_with_ruby/introduction-to-programming-with-ruby-notes.md
+
+<!-- external links -->
+
+[intro-to-ruby]: https://launchschool.com/books/ruby
 [launch-school]: https://launchschool.com
-[ruby-intro-book]: https://launchschool.com/books/ruby

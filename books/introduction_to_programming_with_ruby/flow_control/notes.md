@@ -1,11 +1,11 @@
 [Launch School Core Curriculum][readme] >
-[RB100 Programming and Back-end Prep][rb100-notes] >
-[Introduction to Programming with Ruby][ruby-intro-notes] >
+[RB100 Programming and Back-end Prep][rb100] >
+[Introduction to Programming with Ruby][intro-notes] >
 Flow Control
 
 # Flow Control
 
-Notes for Flow Control chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Flow Control chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][intro-to-ruby].
 
 ## Conditionals
 
@@ -99,8 +99,13 @@ irb :001 > false ? "this is true" : "this is not true"
 5. The error is returned because the `if` statement is missing the `end` reserved word
 6. Raises error, raises error, `false`, `true`, `false`, `true`
 
-[rb100-notes]: /rb100/rb100-notes.md
+<!-- internal links -->
+
+[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
+[rb100]: /rb100/notes.md
 [readme]: /README.md
-[ruby-intro-notes]: /rb100/introduction_to_programming_with_ruby/introduction-to-programming-with-ruby-notes.md
+
+<!-- external links -->
+
+[intro-to-ruby]: https://launchschool.com/books/ruby
 [launch-school]: https://launchschool.com
-[ruby-intro-book]: https://launchschool.com/books/ruby

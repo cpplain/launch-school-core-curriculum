@@ -1,11 +1,11 @@
 [Launch School Core Curriculum][readme] >
-[RB100 Programming and Back-end Prep][rb100-notes] >
-[Introduction to Programming with Ruby][ruby-intro-notes] >
+[RB100 Programming and Back-end Prep][rb100] >
+[Introduction to Programming with Ruby][intro-notes] >
 The Basics
 
 # The Basics
 
-Notes for The Basics chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for The Basics chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][intro-to-ruby].
 
 ## String Interpolation
 
@@ -89,8 +89,13 @@ irb :001 > false == nil
 6. [exercise_6.rb](exercise_6.rb)
 7. The error indicates there is an opening bracket in the program without a matching closing bracket
 
-[rb100-notes]: /rb100/rb100-notes.md
+<!-- internal links -->
+
+[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
+[rb100]: /rb100/notes.md
 [readme]: /README.md
-[ruby-intro-notes]: /rb100/introduction_to_programming_with_ruby/introduction-to-programming-with-ruby-notes.md
+
+<!-- external links -->
+
+[intro-to-ruby]: https://launchschool.com/books/ruby
 [launch-school]: https://launchschool.com
-[ruby-intro-book]: https://launchschool.com/books/ruby

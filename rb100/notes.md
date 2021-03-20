@@ -77,7 +77,7 @@ end
 
 ## Book: Introduction to Programming with Ruby
 
-- [Notes][ruby-intro-notes] for [Introduction to Programming with Ruby][ruby-intro-book]
+- [Notes][intro-notes] for [Introduction to Programming with Ruby][intro-to-ruby]
 - Spend as much time as needed to go through this book carefully; it's the most important part of the prep course
 - It's vital to be comfortable reading and writing basic Ruby syntax and understanding fundamental programming constructs such as loops, variables, and conditionals
 - Push code for exercises to a GitHub repo
@@ -86,9 +86,14 @@ end
 
 - [Exercises][ruby-basics]
 
+<!-- internal links -->
+
+[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
 [readme]: /README.md
-[ruby-basics]: /exercises/ruby_basics/ruby-basics-contents.md
-[ruby-intro-notes]: introduction_to_programming_with_ruby/introduction-to-programming-with-ruby-notes.md
+[ruby-basics]: /exercises/ruby_basics/contents.md
+
+<!-- external links -->
+
+[intro-to-ruby]: https://launchschool.com/books/ruby
 [launch-school]: https://launchschool.com
-[ruby-intro-book]: https://launchschool.com/books/ruby
 [style-guide]: https://github.com/rubocop-hq/ruby-style-guide

@@ -1,11 +1,11 @@
 [Launch School Core Curriculum][readme] >
-[RB100 Programming and Back-end Prep][rb100-notes] >
-[Introduction to Programming with Ruby][ruby-intro-notes] >
+[RB100 Programming and Back-end Prep][rb100] >
+[Introduction to Programming with Ruby][intro-notes] >
 Loops and Iterators
 
 # Loops and Iterators
 
-Notes for Loops and Iterators chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][ruby-intro-book].
+Notes for Loops and Iterators chapter of [Launch School's][launch-school] [Introduction to Programming with Ruby][intro-to-ruby].
 
 ## A Simple Loop
 
@@ -145,8 +145,13 @@ puts fibonacci(6)
 2. [exercise_2.rb](exercise_2.rb)
 3. [exercise_3.rb](exercise_3.rb)
 
-[rb100-notes]: /rb100/rb100-notes.md
+<!-- internal links -->
+
+[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
+[rb100]: /rb100/notes.md
 [readme]: /README.md
-[ruby-intro-notes]: /rb100/introduction_to_programming_with_ruby/introduction-to-programming-with-ruby-notes.md
+
+<!-- external links -->
+
+[intro-to-ruby]: https://launchschool.com/books/ruby
 [launch-school]: https://launchschool.com
-[ruby-intro-book]: https://launchschool.com/books/ruby
