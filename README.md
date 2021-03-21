@@ -10,6 +10,7 @@ Notes and exercises for [Launch School's][launch-school] [Core Curriculum][core-
 ## Programming and Back-end Development
 
 - [RB101 Programming Foundations][rb101]
+- [RB109 Assessment: Ruby and General Programming][rb109]
 
 ## Exercises
 
@@ -28,6 +29,7 @@ Notes and exercises for [Launch School's][launch-school] [Core Curriculum][core-
 [mastery]: ls95/mastery/mastery-notes.md
 [rb100]: rb100/notes.md
 [rb101]: rb101/notes.md
+[rb109]: rb109/notes.md
 [ruby-basics]: exercises/ruby_basics/contents.md
 [small-problems]: exercises/small_problems/small-problems-contents.md
 
