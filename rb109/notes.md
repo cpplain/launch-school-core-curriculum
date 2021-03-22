@@ -103,12 +103,63 @@ puts greeting
 
 > - Answer 'D' goes a step further than 'C' by explaining why this is important and the underlying principle that it demonstrates; i.e. the fact that method invocations with blocks in Ruby have particular scoping rules which affect whether or not the local variable can be referenced or reassigned. Based on the way that this particular question is phrased, answer 'D' would be the only answer of the four to receive full points in an actual assessment.
 
+### Bullet Points
+
+- Many students attempt to use bullet points to answer questions on the exams; this works for lists but not when trying to convey connected thoughts or logical progression.
+- Do not leave it up to the grader to piece together the logic.
+- Paragraphs make it easier to think about the big picture since the object is to strive for clarity.
+- In general, a clearly written paragraph is easier to understand and grade than a list.
+
+### Precision of Language
+
+- It's important to be able to explain why something happens using precise vocabulary.
+- Do not be vague.
+
+#### Assignment
+
+- "variable assigned to value", "value assigned to variable"
+- Both are acceptable.
+- Pick one and be consistent.
+
+#### Truthiness
+
+- Be very clear about the distinction between truthy/falsey and `true`/`false`.
+- In Ruby, every value except `false` and `nil` evaluates to `true`.
+- Use "**evaluates** to `true`/`false` or "is truthy/falsey" in a boolean context.
+- Do not use "**is** `true`/`false`" or "**is equal** to `true`/`false`" unless discussing the boolean `true` or `false`.
+
+#### Method Definition and Method Invocation
+
+- Explain methods in terms of method definition and method invocation.
+
+### Assessment Prep Videos
+
+Beginning Ruby series serves as a great prep for the assessment.
+
+- [Part 1][part1]
+- [Part 2][part2]
+- [Part 3][part3]
+
+Pay particular attention to how the instructor uses vocabulary to explain concepts.
+
+### Additional Tips
+
+- Run code often; have a Ruby document or REPL ready to go beforehand.
+- Read a few student blogs about their experience:
+  - [Srđan][srdjan]
+  - [Callie][callie]
+
 <!-- internal links -->
 
 [readme]: /README.md
 
 <!-- external links -->
 
+[callie]: https://medium.com/launch-school/passing-launch-schools-first-assessments-rb109-4b2b047060dc
 [coderpad]: https://coderpad.io/
 [demo-pad]: https://coderpad.io/9WY3K69C
 [launch-school]: https://launchschool.com
+[part1]: https://launchschool.com/blog/live-session-beginning-ruby
+[part2]: https://launchschool.com/blog/live-session-beginning-ruby-part-2
+[part3]: https://launchschool.com/blog/live-session-beginning-ruby-part-3
+[srdjan]: https://medium.com/how-i-started-learning-coding-from-scratch/advices-for-109-written-assessment-part-1-6f7fa821cf84
