@@ -125,7 +125,7 @@ irb :009 > name_and_age.to_a
 
 <!-- internal links -->
 
-[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
+[intro-notes]: /books/introduction_to_programming_with_ruby/contents.md
 [rb100]: /rb100/notes.md
 [readme]: /README.md
 

@@ -18,10 +18,10 @@ Notes for Introduction and Preparations chapters of [Launch School's][launch-sch
 ### Documentation
 
 - https://docs.ruby-lang.org/en/
-- `::` denotes class methods
-- `#` denotes instance methods
-- `::` and `#` use in code is completely different from use in documentation
-- **Included Modules**: additional modules whose methods are available to the class
+- `::` denotes class methods.
+- `#` denotes instance methods.
+- `::` and `#` use in code is completely different from use in documentation.
+- **Included Modules** - additional modules whose methods are available to the class.
 
 ### Command Line and irb
 
@@ -48,7 +48,7 @@ puts a
 
 <!-- internal links -->
 
-[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
+[intro-notes]: /books/introduction_to_programming_with_ruby/contents.md
 [rb100]: /rb100/notes.md
 [readme]: /README.md
 

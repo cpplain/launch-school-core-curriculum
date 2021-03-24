@@ -15,7 +15,7 @@ Notes for The Basics chapter of [Launch School's][launch-school] [Introduction t
 
 ## Symbols
 
-- Created by placing a colon (`:`) before a word
+- Created by placing a colon (`:`) before a word.
 
 ```ruby
 :name
@@ -30,8 +30,8 @@ Notes for The Basics chapter of [Launch School's][launch-school] [Introduction t
 
 ## nil
 
-- `.nil?` check if `nil`
-- `nil` evaluates to `false` in conditional expressions
+- `.nil?` returns `true` if `nil`.
+- `nil` evaluates to `false` in conditional expressions.
 
 ```ruby
 irb :001 > if nil
@@ -40,7 +40,7 @@ irb :003 > end
 => nil
 ```
 
-- `nil` is not equivalent to `false`
+- `nil` is **not** equivalent to `false`.
 
 ```ruby
 irb :001 > false == nil
@@ -58,26 +58,25 @@ irb :001 > false == nil
 | -17 |   5 |              3 |             -2 | [-4, 3]     |
 | -17 |  -5 |             -2 |             -2 | [3, -2]     |
 
-- Modulo returns a positive integer when the divisor is positive and a negative integer when the divisor is negative
-- Remainder returns a positive integer when the dividend is positive and a negative integer when the dividend is negative
+- Modulo returns a positive integer when the divisor is positive and a negative integer when the divisor is negative.
+- Remainder returns a positive integer when the dividend is positive and a negative integer when the dividend is negative.
 
-- Further study:
-  - https://en.wikipedia.org/wiki/Modulo_operation
+- Further study: https://en.wikipedia.org/wiki/Modulo_operation
 
 ## Type Conversion
 
-- `.to_i` convert to `Integer`
-- `.to_f` convert to `Float`
-- `.to_s` convert to `String`
+- `.to_i` convert to **Integer**
+- `.to_f` convert to **Float**
+- `.to_s` convert to **String**
 
 ## Basic Data Structures
 
-- `Array` `[]`
-- `Hash` `{}`
+- **Array** `[]`
+- **Hash** `{}`
 
 ## Expressions and Return
 
-- Ruby expressions always return a value, even if the value is `nil` or an error
+- Ruby expressions always return a value, even if the value is `nil` or an error.
 
 ## Exercises
 
@@ -87,11 +86,11 @@ irb :001 > false == nil
 4. [exercise_4.rb](exercise_4.rb)
 5. [exercise_5.rb](exercise_5.rb)
 6. [exercise_6.rb](exercise_6.rb)
-7. The error indicates there is an opening bracket in the program without a matching closing bracket
+7. The error indicates there is an opening bracket in the program without a matching closing bracket.
 
 <!-- internal links -->
 
-[intro-notes]: /books/introduction_to_programming_with_ruby/notes.md
+[intro-notes]: /books/introduction_to_programming_with_ruby/contents.md
 [rb100]: /rb100/notes.md
 [readme]: /README.md
 
