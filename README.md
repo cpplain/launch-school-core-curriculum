@@ -17,10 +17,10 @@ Notes and exercises for [Launch School's][launch-school] [Core Curriculum][core-
 - [Ruby Basics][ruby-basics]
 - [Small Problems][small-problems]
 
-## Notes of Significance
+## Books
 
-- [Mastery][mastery] by George Leonard
 - [Learning How to Learn][how-to-learn] Coursera course
+- [Mastery][mastery] by George Leonard
 
 <!-- internal links -->
 
