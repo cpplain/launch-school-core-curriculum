@@ -9,28 +9,28 @@ Notes for Loops and Iterators chapter of [Launch School's][launch-school] [Intro
 
 ## A Simple Loop
 
-- `loop` the simplest way to create a loop in Ruby
+- `loop` is the simplest way to create a loop in Ruby.
 - [loop_example.rb](loop_example.rb)
-- Not likely to use in a real program as an infinite loop is not very useful and will result in a crash
+- Not likely to use an infinite loop as it is not very useful and will result in a crash.
 
 ## Controlling Loop Execution
 
-- More useful by using `break` to exit loop
+- More useful by using `break` to exit loop.
 - [useful_loop.rb](useful_loop.rb)
-- Can conditionally exit using an `if` statement
+- Can conditionally exit using an `if` statement.
 - [conditional_loop.rb](conditional_loop.rb)
-- Similar to `break`, use `next` to skip the rest of the current iteration and move to the next iteration
+- Use `next` to skip the rest of the current iteration and move to the next iteration.
 - [next_loop.rb](next_loop.rb)
 
 ## While and Until Loops
 
-- A **while loop** is given a parameter that evaluates to a boolean and executes until the boolean is `false`
+- A **while loop** is given a parameter that evaluates to a boolean and executes until the boolean is `false`.
 - [countdown.rb](countdown.rb)
 
 ## Do/While Loops
 
-- A **do/while loop** works in a similar way to a while loop but code within the loop gets executed at least once
-- The conditional check is placed at the end of the loop as opposed to the beginning
+- A **do/while loop** works in a similar way to a while loop but code within the loop gets executed at least once.
+- The conditional check is placed at the end of the loop as opposed to the beginning.
 
 ```ruby
 loop do
@@ -40,7 +40,7 @@ loop do
 end
 ```
 
-- The following works but is not recommended by Matz, the founder of Ruby
+- The following works but is not recommended by Matz, the founder of Ruby.
 
 ```ruby
 begin
@@ -51,8 +51,8 @@ end while answer == "Y"
 
 ## For Loops
 
-- Used to loop over a collection of elements
-- Not possible to create an infinite loop, loops over finite number of elements
+- Used to loop over a collection of elements.
+- Not possible to create an infinite loop, loops over finite number of elements.
 
 ```ruby
 x = gets.chomp.to_i
@@ -64,13 +64,13 @@ end
 puts "Done!"
 ```
 
-- Range (`..`) used in example above
-- For loop returns the collection of elements after it executes
+- Range (`..`) used in example above.
+- For loop returns the collection of elements after it executes.
 
 ## Conditionals Within Loops
 
-- The reserved words `next` and `break` are useful when looping
-- The `next` reserved word will jump from to the next loop iteration without executing the code beneath it
+- The reserved words `next` and `break` are useful when looping.
+- The `next` reserved word will jump to the next loop iteration without executing the code beneath it.
 
 ```ruby
 while x <= 10
@@ -84,7 +84,7 @@ while x <= 10
 end
 ```
 
-- The `break` reserved word will exit the loop immediately without executing any further code in the loop
+- The `break` reserved word will exit the loop immediately without executing any further code in the loop.
 
 ```ruby
 while x <= 10
@@ -97,14 +97,13 @@ while x <= 10
 end
 ```
 
-- Most Rubyists prefer iterators instead of loops where possible
+- Most Rubyists prefer iterators instead of loops where possible.
 
 ## Iterators
 
-- **Iterators** are methods that loop over a given set of data and allow operations on each element in the collection
+- **Iterators** are methods that loop over a given set of data and allow operations on each element in the collection.
 - Two styles of blocks:
-
-  - Use curly braces (`{}`) when everything can be contained in one line
+- Use curly braces (`{}`) when everything can be contained in one line
 
 ```ruby
 names = %w[Bob Joe Steve Janice Susan Helen]
@@ -112,7 +111,7 @@ names = %w[Bob Joe Steve Janice Susan Helen]
 names.each { |name| puts name }
 ```
 
-- Use reserved words `do` and `end` for multi-line operations
+- Use reserved words `do` and `end` for multi-line operations.
 
 ```ruby
 names = %w[Bob Joe Steve Janice Susan Helen]
@@ -126,8 +125,8 @@ end
 
 ## Recursion
 
-- **Recursion** is the act of calling a method from within itself
-- Example: calculate the nth number in the fibonacci sequence
+- **Recursion** is the act of calling a method from within itself.
+- Example: calculate the nth number in the fibonacci sequence.
 
 ```ruby
 def fibonacci(number)
@@ -137,7 +136,7 @@ end
 puts fibonacci(6)
 ```
 
-- The key concept with recursion is there is a baseline condition that returns a value that unwinds the recursive call
+- The key concept with recursion is there is a baseline condition that returns a value that unwinds the recursive call.
 
 ## Exercise
 
