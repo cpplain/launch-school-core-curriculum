@@ -1,4 +1,4 @@
-1. a method that returns the sum of two integers
+1. A method that returns the sum of two integers.
 
 ```text
 START
@@ -10,7 +10,7 @@ num1 + num2
 END
 ```
 
-2. a method that takes an array of strings and returns a string that is all those strings concatenated together
+2. A method that takes an array of strings and returns a string that is all those strings concatenated together.
 
 ```text
 START
@@ -28,7 +28,7 @@ concated_string
 END
 ```
 
-3. a method that takes an array of integers and returns a new array with every other element
+3. A method that takes an array of integers and returns a new array with every other element.
 
 ```text
 START

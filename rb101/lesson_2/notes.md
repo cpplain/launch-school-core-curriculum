@@ -28,9 +28,9 @@ Notes for Lesson 2 of [Launch School's][launch-school] RB101 course.
 
 ## Ruby Style
 
-1. Text editor should use two spaces for tabs and indenting should be set to use spaces
-2. `#` sign at the beginning of a line signifies everything on the same line is a comment
-3. Always use snake_case formatting to define or initialize a method, variable, or file
+1. Text editor should use two spaces for tabs and indenting should be set to use spaces.
+2. `#` sign at the beginning of a line signifies everything on the same line is a comment.
+3. Always use snake_case formatting to define or initialize a method, variable, or file.
 
 ```ruby
 # Naming a file
@@ -45,7 +45,7 @@ def this_is_a_great_method
 end
 ```
 
-4. Define a constant variable (all uppercase) when value will not change
+4. Define a constant variable (all uppercase) when value will not change.
 
 ```ruby
 # Constant declaration
@@ -53,7 +53,7 @@ FOUR = "four"
 FIVE = 5
 ```
 
-5. Prefer `{}` when the entire code expression fits on one line
+5. Prefer `{}` when the entire code expression fits on one line.
 
 ```ruby
 # Multi-line vs single line
@@ -62,7 +62,7 @@ FIVE = 5
 [1, 2, 3].each { |i| do_some_stuff }
 ```
 
-6. Use **PascalCase** when naming classes
+6. Use **PascalCase** when naming classes.
 
 ```ruby
 class MyFirstClass
@@ -104,10 +104,10 @@ end
 
 ## Truthiness
 
-- Ability to express "true" or "false" in any language is important
-- Helps build conditional logic and understand state of object or expression
-- **Boolean** is an object whose purpose is to express "true" or "false"
-- Booleans are classes with associated methods
+- Ability to express "true" or "false" in any language is important.
+- Helps build conditional logic and understand state of object or expression.
+- **Boolean** is an object whose purpose is to express "true" or "false".
+- Booleans are classes with associated methods.
 
 ```ruby
 true.class # => TrueClass
@@ -121,12 +121,12 @@ false.to_s # => "false"
 false.methods # => list of methods you can call on the false object
 ```
 
-- `&&` is the "and" operator and will return `true` only if both expressions evaluated are `true`
-- `||` is the "or" operator and will return `true` if either of the expressions evaluated are `true`
-- Operators stop evaluating expressions once they can guarantee the return value, this is called **short circuiting**
-- **Truthiness** differs from `true` in that Ruby considers more than the `true` object to be "truthy"
-- Ruby considers everything to be "truthy" other than `false` and `nil`
-- An expression Ruby considers true is not the same as the `true` object
+- `&&` is the "and" operator and will return `true` only if both expressions evaluated are `true`.
+- `||` is the "or" operator and will return `true` if either of the expressions evaluated are `true`.
+- Operators stop evaluating expressions once they can guarantee the return value; this is called **short circuiting**.
+- **Truthiness** differs from `true` in that Ruby considers more than the `true` object to be "truthy".
+- Ruby considers everything to be "truthy" other than `false` and `nil`.
+- An expression Ruby considers true is not the same as the `true` object.
 
 ```ruby
 name = find_name
@@ -141,8 +141,8 @@ end
 ## Walk-through: Calculator
 
 - [calculator.rb](calculator.rb)
-- Local variables initialized within an `if` statement can be accessed outside of the statement
-- Ruby `if` statements can return a value
+- Local variables initialized within an `if` statement can be accessed outside of the statement.
+- Ruby `if` statements can return a value.
 
 ```ruby
 answer = true ? "yes" : "no"
@@ -151,10 +151,10 @@ puts answer # => yes
 
 ## Pseudocode
 
-- Pseudocode is used to load the problem into our brain
-- It's used to try to dissect, understand, and solve a problem
-- Helps focus on the logical problem and not the programming language
-- Formalizing pseudocode helps make translation to programming code easier
+- Pseudocode is used to load the problem into our brain.
+- It's used to try to dissect, understand, and solve a problem.
+- Helps focus on the logical problem and not the programming language.
+- Formalizing pseudocode helps make translation to programming code easier.
 
 | keyword             | meaning                              |
 | :------------------ | :----------------------------------- |
@@ -167,7 +167,7 @@ puts answer # => yes
 | WHILE               | show looping logic                   |
 | END                 | end of the program                   |
 
-- Pseudocode example
+- Pseudocode example:
 
 ```text
 START
@@ -191,7 +191,7 @@ PRINT saved_number
 END
 ```
 
-- Translation of pseudocode to Ruby
+- Translation of pseudocode to Ruby:
 
 ```ruby
 def find_greatest(numbers)
@@ -210,32 +210,35 @@ def find_greatest(numbers)
 end
 ```
 
-- For more sophisticated problems, apply pseudocode to smaller parts of the problem then translate that to Ruby code to verify the logic before moving on to the next piece in the problem
+- For more sophisticated problems, apply pseudocode to smaller parts of the problem then translate that to Ruby code to verify the logic before moving on to the next piece in the problem.
 - [pseudocode-practice.md](pseudocode-practice.md)
 
 ## Flowchart
 
-- **Flowchart** helps map out the logical sequence of a possible solution in a visual way
+- **Flowchart** helps map out the logical sequence of a possible solution in a visual way.
 - Flowchart components:
   - **Oval** start/end
   - **Rectangle** processing step
   - **Parallelogram** input/output
   - **Diamond** decision (two branches per diamond)
   - **Circle** connector
-- Use an imperative approach when working with flowcharts
-  - **Imperative** or **procedural** is step-by-step way of solving a problem
-  - **Declarative** uses abstracted or encapsulated components of a language, such as `each`
-- Using pseudocode and flowcharts to help dissect the logic of a problem, requires trying to figure out how detailed to make the chart and pseudocode and what to extract to sub-processes
-- This is exactly what a programmer should be thinking about when designing a solution
-- Start at a high level, using declarative syntax, then drill down a level (sub-processes), using imperative pseudocode
+- Use an imperative approach when working with flowcharts.
+- **Imperative** or **procedural** is step-by-step way of solving a problem.
+- **Declarative** uses abstracted or encapsulated components of a language, such as `each`.
+- Using pseudocode and flowcharts to help dissect the logic of a problem, requires trying to figure out how detailed to make the chart and pseudocode and what to extract to sub-processes.
+- This is exactly what a programmer should be thinking about when designing a solution.
+- Start at a high level, using declarative syntax, then drill down a level (sub-processes), using imperative pseudocode.
 
 ## RuboCop
 
-- [RuboCop](https://rubocop.org) is a static code analyzer
-- Rules are **cops**
-- Cops are grouped into **departments**
-- The two departments we care about are style formatting and code linting (syntax and logic)
-- Recommend using `v0.86.0`
+- [RuboCop](https://rubocop.org) is a static code analyzer.
+- Rules are **cops**.
+- Cops are grouped into **departments**.
+- The two departments we care about are style formatting and code linting (syntax and logic).
+- Recommend using `v0.86.0`.
+
+### Installation and Usage
+
 - [Gemfile](Gemfile)
 - Install: `bundle install`
 - Usage: `bundle exec rubocop file.rb`
@@ -255,12 +258,12 @@ operator_prompt = <<-MSG
 MSG
 ```
 
-- The `Kernel` module is included by class `Object`, so its methods are available in every Ruby object
+- The **Kernel** module is included by class **Object**, so its methods are available in every Ruby object.
 
 ## Debugging
 
-- Debugging is arguably the most important skill a programmer needs to learn
-- Work to develop a systematic, patient temperament
+- Debugging is arguably the most important skill a programmer needs to learn.
+- Work to develop a systematic, patient temperament.
 
 ### Online Resources
 
@@ -270,13 +273,13 @@ MSG
 
 ### Steps to Debugging
 
-1. Reproduce the error
-2. Determine the boundaries of the error
-3. Trace the code
-4. Understand the problem well
-5. Implement a fix
-   - Important: fix one problem at a time
-6. Test the fix
+1. Reproduce the error.
+2. Determine the boundaries of the error.
+3. Trace the code.
+4. Understand the problem well.
+5. Implement a fix.
+   - Important: Fix one problem at a time.
+6. Test the fix.
 
 ### Techniques for Debugging
 
@@ -288,33 +291,35 @@ MSG
 
 ## Precedence
 
-- **Operator precedence** is a set of rules that determine the order operators are evaluated
-- Parentheses override the default evaluation order
-- Don't rely too much on precedence, use parentheses to explicitly define the meaning
-- Operator with a higher precedence is said to **bind** tighter to its operands than those with lower priority
-- Ruby doesn't evaluate `?:`, `&&`, and `||` subexpressions unless it needs them
-- Blocks have the lowest precedence of all operators
-- A `{}` block has higher priority than a `do...end` block
-- The following shows how operator precedence can affect outcome (parentheses added to visualize order)
+- **Operator precedence** is a set of rules that determine the order operators are evaluated.
+- Parentheses override the default evaluation order.
+- Don't rely too much on precedence, use parentheses to explicitly define the meaning.
+- Operator with a higher precedence is said to **bind** tighter to its operands than those with lower priority.
+- Ruby doesn't evaluate `?:`, `&&`, and `||` subexpressions unless it needs them.
+- Blocks have the lowest precedence of all operators.
+- A `{}` block has higher priority than a `do...end` block.
+- The following shows how operator precedence can affect outcome (parentheses added to visualize order).
 
+<!-- prettier-ignore -->
 ```ruby
 array = [1, 2, 3]
 
 p(array.map) do |num|
-  num + 1                           #  <Enumerator: [1, 2, 3]:map>
-end                                 #  => <Enumerator: [1, 2, 3]:map>
+  num + 1                       # <Enumerator: [1, 2, 3]:map>
+end                             # => <Enumerator: [1, 2, 3]:map>
 
-p(array.map { |num| num + 1 })   r  # [2, 3, 4]
-                                    # => [2, 3, 4]
+p(array.map { |num| num + 1 })  # [2, 3, 4]
+                                # => [2, 3, 4]
 ```
 
-- Object's `tap` method extremely useful for debugging
+- Object's `tap` method extremely useful for debugging.
 
+<!-- prettier-ignore -->
 ```ruby
-(1..10).tap { |x| p x }.to_a.tap { |x| p x }.select do |x|
-  # 1..10 # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  x.even?
-end.tap { |x| p x }.map { |x| x * x }.tap { |x| p x } # [2, 4, 6, 8, 10] # [4, 16, 36, 64, 100]
+(1..10)                   .tap { |x| p x }  # 1..10
+  .to_a                   .tap { |x| p x }  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  .select { |x| x.even? } .tap { |x| p x }  # [2, 4, 6, 8, 10]
+  .map { |x| x * x }      .tap { |x| p x }  # [4, 16, 36, 64, 100]
 ```
 
 - Moral of the story: **Use Parentheses!**
@@ -327,49 +332,49 @@ end.tap { |x| p x }.map { |x| x * x }.tap { |x| p x } # [2, 4, 6, 8, 10] # [4, 1
 
 ### Dramatic Experience and Retaining Knowledge
 
-- The only way to retain information is to pay with time or get burned
-- Better to pay with time
+- The only way to retain information is to pay with time or get burned.
+- Better to pay with time.
 
 ### Naming Things
 
-- Don't save characters; choose descriptive variable and method names
-- Try to capture the intent of the variable in the name
-- One small exception to descriptive variable names is for very small blocks of code
+- Don't save characters; choose descriptive variable and method names.
+- Try to capture the intent of the variable in the name.
+- One small exception to descriptive variable names is for very small blocks of code.
 
 ### Naming Conventions
 
-- Use `snake_case` for everything, except use `CamelCase` for classes and `UPPERCASE` for constants
+- Use `snake_case` for everything, except use `CamelCase` for classes and `UPPERCASE` for constants.
 
 ### Mutating Constants
 
-- Although Ruby allows it, constants should not be mutated
-- Constants should be immutable
+- Although Ruby allows it, constants should not be mutated.
+- Constants should be immutable.
 
 ### Methods
 
-- Methods should do one thing and be limited in scope
-- Length should be kept around 10 lines
-- Consider breaking methods of 15 lines or longer into multiple methods
-- Methods should return a value **OR** perform side effects **NOT** both
-- The method name should reflect whether it has side effects or not
+- Methods should do one thing and be limited in scope.
+- Length should be kept around 10 lines.
+- Consider breaking methods of 15 lines or longer into multiple methods.
+- Methods should return a value **OR** perform side effects **NOT** both.
+- The method name should reflect whether it has side effects or not.
 
 ### Method Abstraction
 
-- Methods should be at the same level of abstraction
-- Using the method should not require thinking about its implementation
-- Can a method be used without studying the implementation?
+- Methods should be at the same level of abstraction.
+- Using the method should not require thinking about its implementation.
+- Always ask: Can a method be used without studying the implementation?
 
 ### Method Names
 
-- Names should reflect if a method mutates a value
-- Names should reflect if a method displays output
-- What a method does should be obvious from the name
+- Names should reflect if a method mutates a value.
+- Names should reflect if a method displays output.
+- What a method does should be obvious from the name.
 
 ### Miscellaneous Tips
 
-- Don't prematurely exit a program; it should likely have a single exit point
-- Know when to use `do/while` vs `while`
-  - Works:
+- Don't prematurely exit a program; it should likely have a single exit point.
+- Know when to use `do/while` vs `while`.
+- This works:
 
 ```ruby
 answer = ""
@@ -379,7 +384,7 @@ while answer.downcase != "n"
 end
 ```
 
-- Better:
+- This is better:
 
 ```ruby
 loop do
@@ -391,26 +396,26 @@ end
 
 ### Approach to Learning
 
-- Learning to program takes focus, attention, and repetition
-- It's normal not to remember most of what is done the first time around
-- Keep moving forward
+- Learning to program takes focus, attention, and repetition.
+- It's normal not to remember most of what is done the first time around.
+- Keep moving forward.
 
 ## Variable Scope
 
-- This assignment deals only with **local variables**
-- Two major areas where local variable scoping rules are encountered are **method definition** and **method invocation with a block**
+- This assignment deals only with **local variables**.
+- Two major areas where local variable scoping rules are encountered are **method definition** and **method invocation with a block**.
 
 ### Variables and Blocks
 
-- In a method invocation with a block, the block is the `do...end` or `{...}` following the invocation
-- Block creates a new local scope
-- Nested blocks create nested scopes
-- A variables scope is determined by where it is initialized
-- Outer scope variables can be accessed from the inner scope
-- Inner scope variables cannot be access from the outer scope
-- Peer scopes do not conflict
-- Nested blocks follow the same rules with "inner" and "outer" relative depending on the blocks being referenced
-- **Variable shadowing** happens when a block takes a parameter that is named identically to an outer scope variable
+- In a method invocation with a block, the block is the `do...end` or `{...}` following the invocation.
+- Block creates a new local scope.
+- Nested blocks create nested scopes.
+- A variables scope is determined by where it is initialized.
+- Outer scope variables can be accessed from the inner scope.
+- Inner scope variables cannot be access from the outer scope.
+- Peer scopes do not conflict.
+- Nested blocks follow the same rules with "inner" and "outer" relative depending on the blocks being referenced.
+- **Variable shadowing** happens when a block takes a parameter that is named identically to an outer scope variable.
 
 ```ruby
 n = 10
@@ -420,18 +425,18 @@ n = 10
 puts n # => 10
 ```
 
-- Variable shadowing should be avoided
+- Variable shadowing should be avoided.
 
 ### Variables and Method Definitions
 
-- A method's scope is entirely self-contained
-- Only variables that have been defined as parameters can be accessed within the method
-- Variables must be passed into the method as arguments
+- A method's scope is entirely self-contained.
+- Only variables that have been defined as parameters can be accessed within the method.
+- Variables must be passed into the method as arguments.
 
 ### Constants
 
-- Scope for constant variables is not the same as for local variables
-- Constants behave like global variables and said to have **lexical scope**
+- Scope for constant variables is not the same as for local variables.
+- Constants behave like global variables and said to have **lexical scope**.
 
 ```ruby
 loop do
@@ -444,9 +449,9 @@ puts MY_TEAM # => Phoenix Suns
 
 ## More Variable Scope
 
-- Any method can be called with a block, but the block is only executed if the method is defined in a particular way
-- A block is part of the method invocation
-- The block acts as an argument to the method
+- Any method can be called with a block, but the block is only executed if the method is defined in a particular way.
+- A block is part of the method invocation.
+- The block acts as an argument to the method.
 
 ```ruby
 def greetings
@@ -462,10 +467,9 @@ greetings { puts word }
 # Outputs 'Goodbye'
 ```
 
-- `yield` executes the block
-
-- The method can use the return value of the block
-- For example, `Array#map` is defined in such a way to use the return value of the block to transform the each element
+- `yield` executes the block.
+- The method can use the return value of the block.
+- For example, `Array#map` is defined in such a way to use the return value of the block to transform the each element.
 
 ```ruby
 a = "hello"
@@ -473,27 +477,26 @@ a = "hello"
 [1, 2, 3].map { |num| a } # => ["hello", "hello", "hello"]
 ```
 
-- `#map` doesn't have access to `a` but the block passed to `#map` does so the return value of the block can be used
-
-- Method definition sets the scope of any local variables defined in terms of parameters and if/how it interacts with blocks
-- Method invocation uses the scope set by the method definition
+- `#map` doesn't have access to `a` but the block passed to `#map` does so the return value of the block can be used.
+- Method definition sets the scope of any local variables defined in terms of parameters and if/how it interacts with blocks.
+- Method invocation uses the scope set by the method definition.
 
 ## Pass by Reference vs Pass by Value
 
-- In **pass by value** the method is given a copy of the object and any changes to the method's object do not affect the original
-- In **pass by reference** the method is given a reference to the argument variable and any changes affect the original object
-- Ruby exhibits a combination of both behaviors
-- Sometimes referred to as **call by sharing**
-- Most important thing to remember: when an operation within a method mutates the caller, it will affect the original object
-- [Variable References and Mutability of Ruby Objects][references-and-mutability]
-  - Variable can be said to be **bound** to the object
-  - Ruby behavior is similar to pass by value when dealing with immutable objects
-  - Ruby behavior is similar to pass by reference when dealing with mutable objects
-- [Mutating and Non-Mutating Methods in Ruby][methods-in-ruby]
-  - Most methods do not mutate their arguments or caller, some mutate the caller, few mutate the arguments
-- [Object Passing in Ruby - Pass by Reference or Pass by Value][object-passing]
-  - With **strict evaluation**, every expression is evaluated and converted to an object before being passed to a method
-  - Ruby uses strict evaluation
+- In **pass by value** the method is given a copy of the object and any changes to the method's object do not affect the original.
+- In **pass by reference** the method is given a reference to the argument variable and any changes affect the original object.
+- Ruby exhibits a combination of both behaviors.
+- Sometimes referred to as **call by sharing**.
+- Most important thing to remember: when an operation within a method mutates the caller, it will affect the original object.
+- [Variable References and Mutability of Ruby Objects][references-and-mutability] (blog post)
+  - Variable can be said to be **bound** to the object.
+  - Ruby behavior is similar to pass by value when dealing with immutable objects.
+  - Ruby behavior is similar to pass by reference when dealing with mutable objects.
+- [Mutating and Non-Mutating Methods in Ruby][methods-in-ruby] (blog post)
+  - Most methods do not mutate their arguments or caller, some mutate the caller, few mutate the arguments.
+- [Object Passing in Ruby - Pass by Reference or Pass by Value][object-passing] (blog post)
+  - With **strict evaluation**, every expression is evaluated and converted to an object before being passed to a method.
+  - Ruby uses strict evaluation.
   - Pass by object_id?
 
 ## Walk-through: Rock Paper Scissors
@@ -502,19 +505,19 @@ a = "hello"
 
 ## Coding Tips 2
 
-- Don't mutate the caller during iteration
-  - Mutating elements in a collection is acceptable but not the collection (e.g, deleting elements)
-- Don't use assignment in the argument of a conditional
-  - Hard to determine if `=` or `==` was intended
-- Use an underscore for unused parameters
+- Don't mutate the caller during iteration.
+- Mutating elements in a collection is acceptable but not the collection (e.g., deleting elements).
+- Don't use assignment in the argument of a conditional.
+- Hard to determine if `=` or `==` was intended.
+- Use an underscore for unused parameters.
 
 ```ruby
 names.each_with_index { |_, idx| puts "#{idx + 1}. got a name!" }
 ```
 
-- Gain experience through struggle
-  - Don't memorize best practices but spend enough time programming to understand the context of the practices
-  - Don't be afraid to make mistakes
+- Gain experience through struggle.
+- Don't memorize best practices but spend enough time programming to understand the context of the practices.
+- Don't be afraid to make mistakes.
 
 <!-- internal links -->
 
