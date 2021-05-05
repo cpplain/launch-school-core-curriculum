@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[RB101 Programming Foundations][rb101-notes] >
+[RB101 Programming Foundations][rb101] >
 [Lesson 3: Practice Problems][lesson3] >
 Practice Problems: Hard 1
 
@@ -7,11 +7,11 @@ Practice Problems: Hard 1
 
 Exercises for Lesson 3 of [Launch School's][launch-school] RB101 course.
 
-1. `greeting` will return `nil` even though the `if` block is not called the variable is initialized to `nil`
-2. Output is `{:a=>"hi there"}` because `informal_greeting` is a reference to the `"hi"` string which is then mutated
+1. `greeting` will return `nil` even though the `if` block is not called the variable is initialized to `nil`.
+2. Output is `{:a=>"hi there"}` because `informal_greeting` is a reference to the `"hi"` string which is then mutated.
 3. --
 
-   1. 'A' prints:
+- 'A' prints:
 
 ```text
 one is: one
@@ -19,7 +19,7 @@ two is: two
 three is: three
 ```
 
-2. 'B' prints:
+- 'B' prints:
 
 ```text
 one is: one
@@ -27,7 +27,7 @@ two is: two
 three is: three
 ```
 
-3. 'C' prints:
+- 'C' prints:
 
 ```text
 one is: two
@@ -51,7 +51,7 @@ def dot_separated_ip_address?(input_string)
 end
 ```
 
-[lesson3]: lesson-3-contents.md
-[rb101-notes]: /rb101/rb101-notes.md
+[lesson3]: contents.md
+[rb101]: /rb101/notes.md
 [readme]: /README.md
 [launch-school]: https://launchschool.com

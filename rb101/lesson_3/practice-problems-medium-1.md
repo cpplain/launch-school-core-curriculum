@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[RB101 Programming Foundations][rb101-notes] >
+[RB101 Programming Foundations][rb101] >
 [Lesson 3: Practice Problems][lesson3] >
 Practice Problems: Medium 1
 
@@ -36,7 +36,7 @@ end
 8. `"paper"`
 9. `"no"`
 
-[lesson3]: lesson-3-contents.md
-[rb101-notes]: /rb101/rb101-notes.md
+[lesson3]: contents.md
+[rb101]: /rb101/notes.md
 [readme]: /README.md
 [launch-school]: https://launchschool.com
