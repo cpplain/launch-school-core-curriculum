@@ -25,7 +25,7 @@ Notes and exercises for [Launch School's][launch-school] [Core Curriculum][core-
 
 <!-- internal links -->
 
-[how-to-learn]: ls95/learning_how_to_learn/learning-how-to-learn-notes.md
+[how-to-learn]: books/learning_how_to_learn/notes.md
 [ls95]: ls95/ls95-notes.md
 [intro-notes]: /books/introduction_to_programming_with_ruby/contents.md
 [mastery]: ls95/mastery/mastery-notes.md

@@ -50,7 +50,7 @@ Notes for [Launch School's][launch-school] LS95 course.
 ### How Not To Learn (and How To Learn)
 
 - [Learning anti-patterns][anti-patterns]
-- [Notes][how-to-learn-notes] for Coursera course [Learning How to Learn][how-to-learn-course]
+- [Notes][how-to-learn] for Coursera course [Learning How to Learn][how-to-learn-course]
 
 ### Join Our Community
 
@@ -98,7 +98,7 @@ Notes for [Launch School's][launch-school] LS95 course.
 - `git pull` essentially combines `git fetch` and `git merge`
 
 [mastery-notes]: mastery/mastery-notes.md
-[how-to-learn-notes]: learning_how_to_learn/learning-how-to-learn-notes.md
+[how-to-learn]: /books/learning_how_to_learn/notes.md
 [readme]: /README.md
 [anti-patterns]: https://www.launchschool.com/blog/webinar-learning-to-code-anti-patterns
 [bootcamp-to-mastery]: https://medium.com/launch-school/from-bootcamp-to-mastery-a-five-year-journey-8b1bce8f2cd
