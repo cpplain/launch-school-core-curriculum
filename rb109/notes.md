@@ -125,7 +125,7 @@ puts greeting
 
 - Be very clear about the distinction between truthy/falsey and `true`/`false`.
 - In Ruby, every value except `false` and `nil` evaluates to `true`.
-- Use "**evaluates** to `true`/`false` or "is truthy/falsey" in a boolean context.
+- Use "**evaluates** to `true`/`false`" or "**is** truthy/falsey" in a boolean context.
 - Do not use "**is** `true`/`false`" or "**is equal** to `true`/`false`" unless discussing the boolean `true` or `false`.
 
 #### Method Definition and Method Invocation
