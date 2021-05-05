@@ -82,6 +82,6 @@ puts colors.include? "purple"
 ```
 
 [readme]: /README.md
-[ruby-basics]: ruby-basics-contents.md
+[ruby-basics]: contents.md
 [core-curriculum]: https://launchschool.com/courses
 [launch-school]: https://launchschool.com

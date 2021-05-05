@@ -13,6 +13,6 @@ Ruby Basics exercises from [Launch School's][launch-school] [Core Curriculum][co
    `["abc def ghi", "jkl mno pqr,stu vwx yz"]`
 
 [readme]: /README.md
-[ruby-basics]: ruby-basics-contents.md
+[ruby-basics]: contents.md
 [core-curriculum]: https://launchschool.com/courses
 [launch-school]: https://launchschool.com
