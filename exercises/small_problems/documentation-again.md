@@ -8,7 +8,12 @@ Small Problems exercises from [Launch School's](https://launchschool.com) [Core 
 
 1.
 
+<!-- internal links -->
+
 [readme]: /README.md
-[small-problems]: small-problems-contents.md
+[small-problems]: contents.md
+
+<!-- external links -->
+
 [core-curriculum]: https://launchschool.com/courses
 [launch-school]: https://launchschool.com

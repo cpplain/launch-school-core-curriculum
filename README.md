@@ -33,7 +33,7 @@ Notes and exercises for [Launch School's][launch-school] [Core Curriculum][core-
 [rb101]: rb101/notes.md
 [rb109]: rb109/notes.md
 [ruby-basics]: exercises/ruby_basics/contents.md
-[small-problems]: exercises/small_problems/small-problems-contents.md
+[small-problems]: exercises/small_problems/contents.md
 
 <!-- external links -->
 
