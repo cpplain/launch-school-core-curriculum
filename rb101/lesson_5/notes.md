@@ -54,8 +54,8 @@ Notes for Lesson 5 of [Launch School's][launch-school] RB101 course.
 
 - If `<=>` returns `nil` to `sort`, it throws an argument error.
 - It's important to know two things when sorting a collection:
-  - does the object type of the collection elements implement a `<=>` method?
-  - if yes, what is the specific implementation of that method?
+  1. Does the object type of the collection elements implement a `<=>` method?
+  2. If yes, what is the specific implementation of that method?
 - **ASCII Table** - string order is determined by the by the character's position in the ASCII table.
 - Don't need to memorize the ASCII table, but some useful rules to remember are:
   - uppercase letters come before lowercase letters.
@@ -205,11 +205,11 @@ arr # => [[1], [2], [3, 4]]
 ## Working with Blocks
 
 - When evaluating code, it is helpful to ask the following questions:
-  - what is the action being performed (method call, block, conditional, etc.)?
-  - what is the object the action is being performed on?
-  - what is the side-effect of the action (e.g., output or mutation)?
-  - what is the return value of the action?
-  - is the return value used?
+  - What is the action being performed (method call, block, conditional, etc.)?
+  - What is the object the action is being performed on?
+  - What is the side-effect of the action (e.g., output or mutation)?
+  - What is the return value of the action?
+  - Is the return value used?
 - The information gained from these question can be set in tabular format.
 
 ```ruby
@@ -230,7 +230,7 @@ arr # => [[1], [2], [3, 4]]
 - Take the time to break down code step by step if it appears opaque or complex.
 - Use a systematic approach (like the tabular method) if necessary.
 - Identify what is happening at each step paying particular attention to:
-  - return value.
+  - the return value.
   - side effects.
 - Pay attention to return values, especially where implicit returns are relied on.
 - Be clear about the implementation of the method(s) being used, especially:

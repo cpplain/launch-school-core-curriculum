@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[RB101 Programming Foundations][rb101-notes] >
+[RB101 Programming Foundations][rb101] >
 [Lesson 5: Advanced Ruby Collections][lesson5] >
 Practice Problems: Sorting, Nested Collections and Working with Blocks
 
@@ -281,7 +281,7 @@ end
 new_uuid
 ```
 
-[lesson5]: /rb101/lesson_5/lesson-5-notes.md
-[rb101-notes]: /rb101/rb101-notes.md
+[lesson5]: /rb101/lesson_5/notes.md
+[rb101]: /rb101/notes.md
 [readme]: /README.md
 [launch-school]: https://launchschool.com
