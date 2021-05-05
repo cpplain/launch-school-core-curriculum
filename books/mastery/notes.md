@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[LS95 Orientation][ls95-notes] >
+[LS95 Orientation][ls95] >
 Mastery
 
 # Mastery by George Leonard
@@ -164,6 +164,6 @@ Notes for [Mastery][mastery-amazon] by George Leonard (Amazon).
 - Life is filled with opportunities for practicing mastery, which focuses on process rather than product
 - Ultimately, nothing in this life is "commonplace" or "in between"
 
-[ls95-notes]: /ls95/ls95-notes.md
+[ls95]: /ls95/notes.md
 [readme]: /README.md
 [mastery-amazon]: https://www.amazon.com/Mastery-Keys-Success-Long-Term-Fulfillment/dp/0452267560

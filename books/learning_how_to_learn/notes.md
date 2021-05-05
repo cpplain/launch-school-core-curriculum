@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[LS95 Orientation][ls95-notes] >
+[LS95 Orientation][ls95] >
 Learning How to Learn
 
 # Learning How to Learn
@@ -290,6 +290,6 @@ Notes for [Learning How to Learn][how-to-learn-course] (Coursera).
 - The right hemisphere serves as a sort of devil's advocate to question the status quo and look for global inconsistencies, while the left hemisphere instead tries to cling tenaciously to the way things were
 - One of the best ways to catch your blind spots and errors is to brainstorm and work with others who are also smartly focused on the topic
 
-[ls95-notes]: /ls95/ls95-notes.md
+[ls95]: /ls95/notes.md
 [readme]: /README.md
 [how-to-learn-course]: https://www.coursera.org/learn/learning-how-to-learn
