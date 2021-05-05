@@ -86,7 +86,7 @@ Notes for Lesson 4 of [Launch School's][launch-school] RB101 course.
 
 - The element assignment notation of string can be used to change the value of a specific character.
 - `str[0] = 'c'` assigns the character 'c' to the first character in the string.
-- This method is destructive (i.e, it mutates the string).
+- This method is destructive (i.e., it mutates the string).
 
 #### Array Element Assignment
 
@@ -324,7 +324,7 @@ end
 - Practice working through PEDAC while solving problems.
 - It may be difficult at first but will improve in time and make solving difficult problems easier.
 
-**\*Informal Pseudocode Outline/Template**
+**Informal Pseudocode Outline/Template**
 
 ```text
 input: input 1, ...

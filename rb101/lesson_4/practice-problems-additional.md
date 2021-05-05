@@ -1,5 +1,5 @@
 [Launch School Core Curriculum][readme] >
-[RB101 Programming Foundations][rb101-notes] >
+[RB101 Programming Foundations][rb101] >
 [Lesson 4: Ruby Collections][lesson4] >
 Practice Problems: Additional Practice
 
@@ -153,7 +153,7 @@ munsters.each do |_, profile|
 end
 ```
 
-[lesson4]: /rb101/lesson_4/lesson-4-notes.md
-[rb101-notes]: /rb101/rb101-notes.md
+[lesson4]: /rb101/lesson_4/notes.md
+[rb101]: /rb101/notes.md
 [readme]: /README.md
 [launch-school]: https://launchschool.com
