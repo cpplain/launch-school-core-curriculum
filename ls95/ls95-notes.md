@@ -97,9 +97,14 @@ Notes for [Launch School's][launch-school] LS95 course.
   - `--ff-only` best to specify how to reconcile branches
 - `git pull` essentially combines `git fetch` and `git merge`
 
-[mastery-notes]: mastery/mastery-notes.md
+<!-- internal links -->
+
 [how-to-learn]: /books/learning_how_to_learn/notes.md
+[mastery]: /books/mastery/notes.md
 [readme]: /README.md
+
+<!-- external links -->
+
 [anti-patterns]: https://www.launchschool.com/blog/webinar-learning-to-code-anti-patterns
 [bootcamp-to-mastery]: https://medium.com/launch-school/from-bootcamp-to-mastery-a-five-year-journey-8b1bce8f2cd
 [chat]: https://launchschool.com/chat
