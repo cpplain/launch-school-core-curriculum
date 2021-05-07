@@ -9,7 +9,12 @@ Small Problems exercises from [Launch School's][launch-school] [Core Curriculum]
 
 - [Documentation Again][documentation-again]
 
+<!-- internal links -->
+
 [documentation-again]: documentation-again.md
 [readme]: /README.md
+
+<!-- external links -->
+
 [core-curriculum]: https://launchschool.com/courses
 [launch-school]: https://launchschool.com
