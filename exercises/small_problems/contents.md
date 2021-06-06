@@ -12,6 +12,7 @@ Small Problems exercises from [Launch School's][launch-school] [Core Curriculum]
 - [Easy 2][easy-2]
 - [Easy 3][easy-3]
 - [Easy 4][easy-4]
+- [Easy 5][easy-5]
 
 <!-- internal links -->
 
@@ -20,6 +21,7 @@ Small Problems exercises from [Launch School's][launch-school] [Core Curriculum]
 [easy-2]: easy-2.md
 [easy-3]: easy-3.md
 [easy-4]: easy-4.md
+[easy-5]: easy-5.md
 [readme]: /README.md
 
 <!-- external links -->
